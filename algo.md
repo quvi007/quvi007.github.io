@@ -60,3 +60,15 @@ Around 4 months of self-study, practice and journaling
 48. Suffix Tree, Ukkonen's Algorithm
 49. Y-Fast Trie
 50. Fusion Tree
+51. Maximum Matchings in Bipartite Graphs
+52. Maximum Matchings in Non-Bipartite Graphs
+53. Flows, Cuts, Ford-Fulkerson Algorithm, Edmonds-Karp Algorithm
+54. Dinic's Algorithm
+55. Hopcroft-Karp Algorithm, Push-Relabel
+56. Assignment Problem
+57. Hungarian Algorithm
+58. Minimum Cost Flows
+59. Global Minimum Cuts
+60. Linear Programming
+61. Number Theory and Number Theory Algorithms
+62. Fast Fourier Transform
