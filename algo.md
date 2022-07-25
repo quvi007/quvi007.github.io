@@ -2,7 +2,7 @@
 
 ## What is Project Algorist 2022?
 
-For the next couple of months in this year, I will learn (and probably teach?!) Data Structures and Algorithms in detail. We will implement all the data structures and algorithms (in both Java and C++) and save them in repositories. I will also solve problems related to each topic.
+For the next couple of months in this year, I will learn (and probably teach?!) Data Structures and Algorithms in detail. We will implement all the data structures and algorithms (in both C++ and Java) and save them in repositories. I will also solve many problems related to each topic.
 
 ## How many days?
 
@@ -51,7 +51,10 @@ Around 4 months of self-study, practice and journaling
 39. A* Algorithm
 40. Bellman Ford Algorithm
 41. Floyd-Warshall Algorithm
-42. Graph Games, Sprague-Grundy Theorem, Nim Game
+42. Game Theory
+    1. Graph Games
+    2. Sprague-Grundy Theorem
+    3. Nim Game
 43. Strings, Hashing, KMP and Z Algorithm
 44. Finite State Automata
 45. Trie
@@ -71,4 +74,24 @@ Around 4 months of self-study, practice and journaling
 59. Global Minimum Cuts
 60. Linear Programming
 61. Number Theory and Number Theory Algorithms
+    1. Binary Exponentiation
+    2. Factoring Exponentiation
+    3. Euclidean Algorithm for Computing GCD
+    4. Extended Euclidean Algorithm
+    5. Linear Diophantine Equation
+    6. Fibonacci Numbers
+    7. Sieve of Eratosthenes
+    8. Linear Sieve
+    9. Primality Tests
+    10. Integer Factorization
+    11. Euler's Totient Function
+    12. Number of Divisors
+    13. Sum of Divisors
+    14. Divisibility
+    15. Modular Inverse
+    16. Linear Congruence Equation
+    17. Chinese Remainder Theorem
+    18. Factorial modulo P
+    19. Enumerating Submasks of a bitmask 
 62. Fast Fourier Transform
+63. Linear Algebra
