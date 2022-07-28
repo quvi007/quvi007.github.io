@@ -1,14 +1,14 @@
-### Project Algorist
+# Project Algorist
 
 ## What is Project Algorist 2022?
 
-For the next couple of months in this year, I will learn (and probably teach?!) Data Structures and Algorithms in detail. We will implement all the data structures and algorithms (in both C++ and Java) and save them in repositories. I will also solve many problems related to each topic.
+For the next couple of months in this year, I will work on (and probably teach?!) Data Structures and Algorithms in detail. I will implement all the data structures and algorithms (in both C++ and Java) and save them in repositories. I will also solve many problems related to each topic.
 
 ## How many days?
 
 Around 4 months of self-study, practice and journaling
 
-## What are the data structures and algorithms I will learn?
+## What are the data structures and algorithms I will work on?
 
 1. Merge Sort
 2. Binary Heap and Heap Sort
