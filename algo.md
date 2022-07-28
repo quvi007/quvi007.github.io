@@ -1,4 +1,4 @@
-## Project Algorist
+### Project Algorist
 
 ## What is Project Algorist 2022?
 
@@ -95,4 +95,3 @@ Around 4 months of self-study, practice and journaling
     19. Enumerating Submasks of a bitmask 
 62. Fast Fourier Transform
 63. Linear Algebra
-64. Aroma's Algorithm
