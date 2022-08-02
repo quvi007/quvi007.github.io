@@ -1,5 +1,14 @@
 # Teaching/HSC 2022 Revision Program
 
+## Next Class:
+Wednesday, August 03, 2022
+Time: 9:15 PM
+Online
+Link: 
+Topic:
+1. Physics 1st Paper - Newtonian Mechanics - 2
+2. Chemistry 2nd Paper - ElectroChemistry - 2
+
 Lectures and Resources:
 
 July 2022
@@ -11,7 +20,9 @@ July 2022
     - [Practice Resource - 2 (Written)](https://drive.google.com/file/d/1Jwp357iA7vy09liYTYRSMY1bVNOZ4_nw/view?usp=sharing)
 3. [Lecture - Math 1st Paper - Matrices, Determinants and Straight Line - 1](https://youtu.be/6nKMCXLkuEY)
 4. [Lecture - Math 1st Paper - Matrices, Determinants and Straight Line - 2](https://youtu.be/8aq1muQo2zY)
-5. [Lecture - A problem from Gravitation](https://youtu.be/_dgg-6n-j-w) 
+4. [Lecture - Physics 1st Paper - Ideal Gas - 1](https://www.youtube.com/watch?v=9Fh1vqJmRwA)
+4. [Lecture - Physics 1st Paper - Ideal Gas - 2](https://www.youtube.com/watch?v=6Sf_QdlaJnk)
+5. [Lecture - A problem from Gravitation - Needs re-discussion I guess](https://youtu.be/_dgg-6n-j-w) 
 6. Math 1st Paper - Differentiation (No discussion class yet)
     - [Practice Resource - 1 (MCQ)](https://drive.google.com/file/d/1wQvI60HPTwgjVGi5fFh-ZkL8SO_hRjce/view?usp=sharing)
     - [Practice Resource - 2 (Written)](https://drive.google.com/file/d/1ShkfFCdppcqYM_MajwVOs_D5VnOn0FRq/view?usp=sharing)
@@ -25,7 +36,8 @@ July 2022
 8. [Practice Resource - Physics 1st Paper - Newtonian Mechanics + Work, Energy and Power Mixed (MCQ)](https://drive.google.com/file/d/1Gu2ct2g0dVekoCjBHmYwMNIL69g2xI23/view?usp=sharing)
 9. [Practice Resource - Physics 1st Paper - Newtonian Mechanics + Work, Energy and Power Mixed (Written) - Yet to be uploaded]()
 9. [Lecture - Physics 1st Paper - Newtonian Mechanics - 1](https://www.youtube.com/watch?v=ST3qcko0KRg)
-10. [Lecture - ElectroChemistry - 1](https://www.youtube.com/watch?v=eYZ9P7HHd7w)
+10. [Lecture - ElectroChemistry - 1](https://youtu.be/ueZO5mD6B88)
+11. [Lecture - ElectroChemistry - 2](https://youtu.be/s27PXT0vuC8)
 
 August 2022
 
