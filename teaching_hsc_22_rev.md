@@ -16,6 +16,7 @@ Topic:
 ## Updates:
 - From next week, hopefully there will be offline classes as well.
 - This batch will continue upto the last of September. (2 months remaining)
+- Everyone please study hard for your upcoming HSC on November.
 <hr>
 
 ## Lectures and Resources:
