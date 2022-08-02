@@ -4,11 +4,14 @@
 Wednesday, August 03, 2022
 Time: 9:15 PM
 Online
-Link: 
+[Zoom Link](https://us02web.zoom.us/j/2076592190?pwd=YWlYekdMbGNHREJlYUhrR25qVGNBUT09)
+Meeting ID: 207 659 2190
+Passcode: twelve1234
+
 Topic:
 1. Physics 1st Paper - Newtonian Mechanics - 2
 2. Chemistry 2nd Paper - ElectroChemistry - 2
-
+<hr>
 Lectures and Resources:
 
 July 2022
