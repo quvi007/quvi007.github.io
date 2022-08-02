@@ -1,6 +1,7 @@
 # Teaching/HSC 2022 Revision Program
 
 ## Next Class:
+<hr>
 Wednesday, August 03, 2022<br>
 Time: 9:15 PM<br>
 Online<br>
@@ -13,12 +14,13 @@ Topic:
 2. Chemistry 2nd Paper - ElectroChemistry - 2
 <hr>
 
-## Updates
+## Updates:
+<hr>
 From next week, hopefully there will be offline classes as well.
 <hr>
 
 ## Lectures and Resources:
-
+<hr>
 July 2022
 
 1. [Lecture - Physics 1st Paper - Measurement and Vector](https://www.youtube.com/watch?v=aK_pMX3oy8o)
