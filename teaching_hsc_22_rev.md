@@ -14,7 +14,8 @@ Topic:
 <hr>
 
 ## Updates:
-From next week, hopefully there will be offline classes as well.
+- From next week, hopefully there will be offline classes as well.
+- This batch will continue upto the last of September. (2 months remaining)
 <hr>
 
 ## Lectures and Resources:
