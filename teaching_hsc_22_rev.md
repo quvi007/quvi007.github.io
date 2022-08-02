@@ -10,3 +10,9 @@ Recordings:
 4. [A problem from Gravitation](https://youtu.be/_dgg-6n-j-w) 
 5. [Physics 1st Paper - Newtonian Mechanics - 1](https://www.youtube.com/watch?v=ST3qcko0KRg)
 6. [ElectroChemistry - 1](https://www.youtube.com/watch?v=eYZ9P7HHd7w)
+
+August 2022
+
+1. Physics 1st Paper - Periodic Motion (No discussion class yet)
+    - [Practice Resource - 1 (MCQ + Written)](https://drive.google.com/file/d/1cP8wOFUCF1FJUF07Y5ZoxHFuMC4OMIG2/view?usp=sharing)
+    - [Practice Resource - 2 (MCQ)](https://drive.google.com/file/d/1LpcVbNbrgfwfRiqmWFAE5wboejaeTk3A/view?usp=sharing)
