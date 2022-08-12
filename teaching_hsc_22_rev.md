@@ -1,16 +1,16 @@
 # Teaching/HSC 2022 Revision Program
 
 ## Next Class:
-Wednesday, August 03, 2022<br>
-Time: 9:15 PM<br>
-Online<br>
+Wednesday, August 18, 2022<br>
+Time: TBA<br>
+Online/Offline<br>
 [Zoom Link](https://us02web.zoom.us/j/2076592190?pwd=YWlYekdMbGNHREJlYUhrR25qVGNBUT09)<br>
 Meeting ID: 207 659 2190<br>
 Passcode: twelve1234<br>
 
 Topic:
-1. Physics 1st Paper - Newtonian Mechanics - 2
-2. Chemistry 2nd Paper - ElectroChemistry - 2
+1. Physics 1st Paper - Newtonian Mechanics - Last Class on Concept Review and Problem Solving
+2. Chemistry 2nd Paper - ElectroChemistry - Nernst Equation
 <hr>
 
 ## Updates:
