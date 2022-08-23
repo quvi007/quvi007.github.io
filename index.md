@@ -8,3 +8,21 @@ I was only 13 when I ran my first code in C. Creating [website(s)](http://quvi.w
 I believe that the Web platform and Android are the futures of software development and I plan to be a part of it. My favorite programming language is C++, and my go-to stack for building Web applications is PERN stack. My second favorite language is Javascript, and I enjoy using it for both browser-side code and node.js application code. I'm currently working on [Project Algorist](https://quvi007.github.io/algo.html). I love solving problems on [Codeforces](https://codeforces.com) and [AtCoder](https://atcoder.jp). I store my codes on GitHub, and I enjoy reading e-books from the [Pragmatic Programmers](http://pragprog.com).
 
 My motto: NO [FACEBOOK](https://facebook.com/quvi.ninad)
+
+Some of my writeups:
+
+1. [Building a Minimalist C Compiler in C/C++ - Part 1 (Symbol Table)]
+2. [Building a Minimalist C Compiler in C/C++ - Part 2 (Lexical Analyzer with Flex)]
+3. [Building a Minimalist C Compiler in C/C++ - Part 3 (Syntax and Semantic Analyzer or Parser with YACC / Bison)]
+4. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 1 (Intermediate Code Generation and Optimization -> Intel 8086 Assembly Code)]
+5. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 2 (Intermediate Code Generation and Optimization -> MIPS Assembly Code)]
+6. [Building a Minimalist C Compiler in C/C++ - Part 5 - (Running the Assembly Code on EMU8086 / MARS)]
+7. [Building an Assembler for MIPS ISA]
+8. [Building a Processor / CPU - Part 1 (Arithmetic Logic Unit in Logisim)]
+9. [Building a Processor / CPU - Part 2 (Floating Point Adder in Logisim)]
+10. [Building a Processor / CPU - Part 3 (Datapath in Logisim)]
+11. [Final Capstone: Writing a C Code and Running it on Our Own Machine!]
+12. [DFAs, NFAs and Regular Expression]
+13. [Context Free Grammers and Pushdown Automata]
+14. [The Amazing World of Linear Algebra]
+15. [Oracle SQL and PL-SQL]
