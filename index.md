@@ -11,18 +11,18 @@ My motto: NO [FACEBOOK](https://facebook.com/quvi.ninad)
 
 Some of my writeups:
 
-1. [Building a Minimalist C Compiler in C/C++ - Part 1 (Symbol Table)]
-2. [Building a Minimalist C Compiler in C/C++ - Part 2 (Lexical Analyzer with Flex)]
-3. [Building a Minimalist C Compiler in C/C++ - Part 3 (Syntax and Semantic Analyzer or Parser with YACC / Bison)]
-4. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 1 (Intermediate Code Generation and Optimization -> Intel 8086 Assembly Code)]
-5. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 2 (Intermediate Code Generation and Optimization -> MIPS Assembly Code)]
-6. [Building a Minimalist C Compiler in C/C++ - Part 5 - (Running the Assembly Code on EMU8086 / MARS)]
-7. [Building an Assembler for MIPS ISA]
-8. [Building a Processor / CPU - Part 1 (Arithmetic Logic Unit in Logisim)]
-9. [Building a Processor / CPU - Part 2 (Floating Point Adder in Logisim)]
-10. [Building a Processor / CPU - Part 3 (Datapath in Logisim)]
-11. [Final Capstone: Writing a C Code and Running it on Our Own Machine!]
-12. [DFAs, NFAs and Regular Expression]
-13. [Context Free Grammers and Pushdown Automata]
-14. [The Amazing World of Linear Algebra]
-15. [Oracle SQL and PL-SQL]
+1. [Building a Minimalist C Compiler in C/C++ - Part 1 (Symbol Table)]()
+2. [Building a Minimalist C Compiler in C/C++ - Part 2 (Lexical Analyzer with Flex)]()
+3. [Building a Minimalist C Compiler in C/C++ - Part 3 (Syntax and Semantic Analyzer or Parser with YACC / Bison)]()
+4. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 1 (Intermediate Code Generation and Optimization -> Intel 8086 Assembly Code)]()
+5. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 2 (Intermediate Code Generation and Optimization -> MIPS Assembly Code)]()
+6. [Building a Minimalist C Compiler in C/C++ - Part 5 - (Running the Assembly Code on EMU8086 / MARS)]()
+7. [Building an Assembler for MIPS ISA]()
+8. [Building a Processor / CPU - Part 1 (Arithmetic Logic Unit in Logisim)]()
+9. [Building a Processor / CPU - Part 2 (Floating Point Adder in Logisim)]()
+10. [Building a Processor / CPU - Part 3 (Datapath in Logisim)]()
+11. [Final Capstone: Writing a C Code and Running it on Our Own Machine!]()
+12. [DFAs, NFAs and Regular Expression]()
+13. [Context Free Grammers and Pushdown Automata]()
+14. [The Amazing World of Linear Algebra]()
+15. [Oracle SQL and PL-SQL]()
