@@ -1,3 +1,4 @@
+# Building a Minimalist C Compiler in C/C++ - Part 1 (Symbol Table)
 The purpose of this tutorial series is to construct a simple C compiler. We will build the Compiler using C++.
 
 In the first step to do so, we are going to implement a Symbol Table. A Symbol Table is a data structure maintained by the compilers in order to store information about the occurence of various entities such as identifiers, objects, function names etc. Information of different entities may include type, value, scope etc. At the starting phase of constructing a compiler, we will construct a Symbol Table which maintains a list of Hash Tables (Also known as Scope Tables) where each Hash Table contains information of symbols encountered in a scope of the source program.
