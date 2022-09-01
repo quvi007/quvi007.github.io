@@ -24,7 +24,11 @@ This class contains the information regarding a symbol faced in the source progr
 We create two files for our `SymbolInfo` class: `SymbolInfo.h` and `SymbolInfo.cpp`. Initially `SymbolInfo.h` will look like this->
 
 ```cpp
+#ifndef SYMBOLTABLE_SYMBOLINFO_H
+#define SYMBOLTABLE_SYMBOLINFO_H
+
 #include <bits/stdc++.h>
+#include "Parameter.h"
 using namespace std;
 
 class SymbolInfo {
@@ -35,6 +39,8 @@ private:
     bool defined, global;
     vector<Parameter> parameterList;
 };
+
+#endif //SYMBOLTABLE_SYMBOLINFO_H
 ```
 
 After that, we add the following constructors to our class.
@@ -56,7 +62,11 @@ We also add the following destructor to our class.
 Now, `SymbolInfo.h` will look like this:
 
 ```cpp
+#ifndef SYMBOLTABLE_SYMBOLINFO_H
+#define SYMBOLTABLE_SYMBOLINFO_H
+
 #include <bits/stdc++.h>
+#include "Parameter.h"
 using namespace std;
 
 class SymbolInfo {
@@ -76,6 +86,8 @@ public:
 
     ~SymbolInfo(); // Destructor
 };
+
+#endif //SYMBOLTABLE_SYMBOLINFO_H
 ```
 
 We also have to add getters/setters and other necessary related methods for each of the private members.
@@ -121,7 +133,11 @@ bool isFunction() const;
 Finally `SymbolInfo.h` will look like this:
 
 ```cpp
+#ifndef SYMBOLTABLE_SYMBOLINFO_H
+#define SYMBOLTABLE_SYMBOLINFO_H
+
 #include <bits/stdc++.h>
+#include "Parameter.h"
 using namespace std;
 
 class SymbolInfo {
@@ -177,4 +193,243 @@ public:
     bool isArray() const;
     bool isFunction() const;
 };
+
+#endif //SYMBOLTABLE_SYMBOLINFO_H
+```
+
+Now we move on to implement our constructors, destructor and other methods. We add the following codes to `SymbolInfo.cpp`.
+
+### Constructors' Implementations
+```cpp
+#include "SymbolInfo.h"
+
+SymbolInfo::SymbolInfo() : SymbolInfo("", "") {}
+
+SymbolInfo::SymbolInfo(const string &name, const string &type) : SymbolInfo(name, type, 0) {}
+
+SymbolInfo::SymbolInfo(const string &name, const string &type, int size) {
+    this->name = name;
+    this->type = type;
+    next = nullptr;
+    this->size = size;
+    defined = false;
+    global = false;
+}
+
+SymbolInfo::SymbolInfo(const string &name, const string &type, const vector<Parameter> &parameterList) : SymbolInfo(name, type, -1) {
+    this->parameterList = parameterList;
+}
+
+SymbolInfo::SymbolInfo(const SymbolInfo &symbolInfo) {
+    name = symbolInfo.name;
+    type = symbolInfo.type;
+    next = symbolInfo.next;
+    size = symbolInfo.size;
+    offset = symbolInfo.offset;
+    defined = symbolInfo.defined;
+    global = symbolInfo.global;
+    parameterList = symbolInfo.parameterList;
+}
+```
+
+### Destructor Implementation
+
+```cpp
+SymbolInfo::~SymbolInfo() {
+    // We do nothing :(
+}
+```
+
+### Methods' Implementations
+
+```cpp
+const string &SymbolInfo::getName() const {
+    return name;
+}
+
+void SymbolInfo::setName(const string &name) {
+    this->name = name;
+}
+
+const string &SymbolInfo::getType() const {
+    return type;
+}
+
+void SymbolInfo::setType(const string &type) {
+    this->type = type;
+}
+
+SymbolInfo *SymbolInfo::getNext() const {
+    return next;
+}
+
+void SymbolInfo::setNext(SymbolInfo* next) {
+    this->next = next;
+}
+
+int SymbolInfo::getSize() const {
+    return size;
+}
+
+void SymbolInfo::setSize(int size) {
+    this->size = size;
+}
+
+int SymbolInfo::getOffset() const {
+    return offset;
+}
+
+void SymbolInfo::setOffset(int offset) {
+    this->offset = offset;
+}
+
+bool SymbolInfo::isDefined() const {
+    return defined;
+}
+
+void SymbolInfo::setDefined(bool defined) {
+    this->defined = defined;
+}
+
+bool SymbolInfo::isGlobal() const {
+    return global;
+}
+
+void SymbolInfo::setGlobal(bool global) {
+    this->global = global;
+}
+
+const vector<Parameter> SymbolInfo::getParameterList() const {
+    return parameterList;
+}
+
+void SymbolInfo::setParameterList(const vector<Parameter> &parameterList) {
+    this->parameterList = parameterList;
+}
+
+bool SymbolInfo::isVariable() const {
+    return size == 0;
+}
+
+bool SymbolInfo::isArray() const {
+    return size > 0;
+}
+
+bool SymbolInfo::isFunction() const {
+    return size == -1;
+}
+```
+
+Finally, `SymbolInfo.cpp` will look like this:
+
+```cpp
+#include "SymbolInfo.h"
+
+SymbolInfo::SymbolInfo() : SymbolInfo("", "") {}
+
+SymbolInfo::SymbolInfo(const string &name, const string &type) : SymbolInfo(name, type, 0) {}
+
+SymbolInfo::SymbolInfo(const string &name, const string &type, int size) {
+    this->name = name;
+    this->type = type;
+    next = nullptr;
+    this->size = size;
+    defined = false;
+    global = false;
+}
+
+SymbolInfo::SymbolInfo(const string &name, const string &type, const vector<Parameter> &parameterList) : SymbolInfo(name, type, -1) {
+    this->parameterList = parameterList;
+}
+
+SymbolInfo::SymbolInfo(const SymbolInfo &symbolInfo) {
+    name = symbolInfo.name;
+    type = symbolInfo.type;
+    next = symbolInfo.next;
+    size = symbolInfo.size;
+    offset = symbolInfo.offset;
+    defined = symbolInfo.defined;
+    global = symbolInfo.global;
+    parameterList = symbolInfo.parameterList;
+}
+
+SymbolInfo::~SymbolInfo() {
+    // We do nothing :(
+}
+
+const string &SymbolInfo::getName() const {
+    return name;
+}
+
+void SymbolInfo::setName(const string &name) {
+    this->name = name;
+}
+
+const string &SymbolInfo::getType() const {
+    return type;
+}
+
+void SymbolInfo::setType(const string &type) {
+    this->type = type;
+}
+
+SymbolInfo *SymbolInfo::getNext() const {
+    return next;
+}
+
+void SymbolInfo::setNext(SymbolInfo* next) {
+    this->next = next;
+}
+
+int SymbolInfo::getSize() const {
+    return size;
+}
+
+void SymbolInfo::setSize(int size) {
+    this->size = size;
+}
+
+int SymbolInfo::getOffset() const {
+    return offset;
+}
+
+void SymbolInfo::setOffset(int offset) {
+    this->offset = offset;
+}
+
+bool SymbolInfo::isDefined() const {
+    return defined;
+}
+
+void SymbolInfo::setDefined(bool defined) {
+    this->defined = defined;
+}
+
+bool SymbolInfo::isGlobal() const {
+    return global;
+}
+
+void SymbolInfo::setGlobal(bool global) {
+    this->global = global;
+}
+
+const vector<Parameter> SymbolInfo::getParameterList() const {
+    return parameterList;
+}
+
+void SymbolInfo::setParameterList(const vector<Parameter> &parameterList) {
+    this->parameterList = parameterList;
+}
+
+bool SymbolInfo::isVariable() const {
+    return size == 0;
+}
+
+bool SymbolInfo::isArray() const {
+    return size > 0;
+}
+
+bool SymbolInfo::isFunction() const {
+    return size == -1;
+}
 ```
