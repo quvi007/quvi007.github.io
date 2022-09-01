@@ -122,7 +122,7 @@ bool isGlobal() const;
 void setGlobal(bool global); 
 
 // parameterList
-const vector<Parameter> getParameterList() const;
+vector<Parameter> getParameterList() const;
 void setParameterList(const vector<Parameter> &parameterList);
 
 bool isVariable() const;
@@ -186,7 +186,7 @@ public:
     void setGlobal(bool global); 
 
     // parameterList
-    const vector<Parameter> getParameterList() const;
+    vector<Parameter> getParameterList() const;
     void setParameterList(const vector<Parameter> &parameterList);
 
     bool isVariable() const;
@@ -299,7 +299,7 @@ void SymbolInfo::setGlobal(bool global) {
     this->global = global;
 }
 
-const vector<Parameter> SymbolInfo::getParameterList() const {
+vector<Parameter> SymbolInfo::getParameterList() const {
     return parameterList;
 }
 
@@ -413,7 +413,7 @@ void SymbolInfo::setGlobal(bool global) {
     this->global = global;
 }
 
-const vector<Parameter> SymbolInfo::getParameterList() const {
+vector<Parameter> SymbolInfo::getParameterList() const {
     return parameterList;
 }
 
