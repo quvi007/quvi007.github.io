@@ -3,10 +3,10 @@ The purpose of this tutorial series is to construct a simple C compiler. We will
 In the first step to do so, we are going to implement a Symbol Table. A Symbol Table is a data structure maintained by the compilers in order to store information about the occurence of various entities such as identifiers, objects, function names etc. Information of different entities may include type, value, scope etc. At the starting phase of constructing a compiler, we will construct a Symbol Table which maintains a list of Hash Tables (Also known as Scope Tables) where each Hash Table contains information of symbols encountered in a scope of the source program.
 
 We will implement the following three classes.
-1. SymbolInfo
-2. Parameter
-3. ScopeTable
-4. SymbolTable
+1. `SymbolInfo`
+2. `Parameter`
+3. `ScopeTable`
+4. `SymbolTable`
 
 ### SymbolInfo
 This class contains the information regarding a symbol faced in the source program. It has the following members:
