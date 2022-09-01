@@ -20,11 +20,9 @@ This class contains the information regarding a symbol faced in the source progr
 7. `global` - Indicates whether a variable / array is global or not. This is also a `bool`.
 8. `parameterList` - For function names, we need to store the parameters (names and types) as well. We do that using this vector. This is of type `vector<Parameter>` (We will define the class `Parameter` shortly).
 
-So, initially the class `SymbolInfo` will look like this->
+We create two files for our `SymbolInfo` class: `SymbolInfo.h` and `SymbolInfo.cpp`. Initially `SymbolInfo.h` will look like this->
 
-```
-SymbolInfo.h
-============
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
