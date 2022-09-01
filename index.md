@@ -11,7 +11,7 @@ My motto: NO [FACEBOOK](https://facebook.com/quvi.ninad)
 
 Some of my writeups:
 
-1. [Building a Minimalist C Compiler in C/C++ - Part 1 (Symbol Table)]()
+1. [Building a Minimalist C Compiler in C/C++ - Part 1 (Symbol Table)](https://quvi007.github.io/Building-A-Compiler-Part-1.html)
 2. [Building a Minimalist C Compiler in C/C++ - Part 2 (Lexical Analyzer with Flex)]()
 3. [Building a Minimalist C Compiler in C/C++ - Part 3 (Syntax and Semantic Analyzer or Parser with YACC / Bison)]()
 4. [Building a Minimalist C Compiler in C/C++ - Part 4 - Path 1 (Intermediate Code Generation and Optimization -> Intel 8086 Assembly Code)]()
