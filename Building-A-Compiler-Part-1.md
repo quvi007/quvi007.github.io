@@ -117,3 +117,64 @@ bool isVariable() const;
 bool isArray() const;
 bool isFunction() const;
 ```
+
+Finally `SymbolInfo.h` will look like this:
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+class SymbolInfo {
+private:
+    string name, type;
+    SymbolInfo *next;
+    int size, offset;
+    bool defined, global;
+    vector<Parameter> parameterList;
+
+public:
+    SymbolInfo(); // Empty constructor
+    SymbolInfo(const string &name, const string &type); // Constructor for Variable
+    SymbolInfo(const string &name, const string &type, int size); // Constructor for Array
+    SymbolInfo(const string &name, const string &type, const vector<Parameter> &parameterList); // Constructor for Function
+    SymbolInfo(const SymbolInfo &symbolInfo); // Copy Constructor 
+
+    ~SymbolInfo(); // Destructor
+
+    // name
+    const string &getName() const;
+    void setName(const string &name);
+
+    // type
+    const string &getType() const;
+    void setType(const string &type);
+
+    // next
+    SymbolInfo *getNext() const;
+    void setNext(SymbolInfo *next);
+
+    // size
+    int getSize() const;
+    void setSize(int size);
+
+    // offset
+    int getOffset() const;
+    void setOffset(int offset);
+
+    // defined
+    bool isDefined() const;
+    void setDefined(bool defined);
+
+    // global
+    bool isGlobal() const;
+    void setGlobal(bool global); 
+
+    // parameterList
+    const vector<Parameter> getParameterList() const;
+    void setParameterList(const vector<Parameter> &parameterList);
+
+    bool isVariable() const;
+    bool isArray() const;
+    bool isFunction() const;
+};
+```
