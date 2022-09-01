@@ -9,7 +9,7 @@ We will implement the following three classes.
 3. `ScopeTable`
 4. `SymbolTable`
 
-### `SymbolInfo`
+### SymbolInfo
 This class contains the information regarding a symbol faced in the source program. It has the following members:
 
 1. `name` - Name of the Symbol. This is a `string`.
