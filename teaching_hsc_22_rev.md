@@ -20,6 +20,9 @@ Topic:
 <hr>
 
 ## Lectures and Resources:
+
+[Drive Link](https://drive.google.com/drive/folders/184-AjAMkPtmjnn9wdy5oxL--lZmpJYht?usp=sharing)
+
 July 2022
 
 1. [Lecture - Physics 1st Paper - Measurement and Vector](https://www.youtube.com/watch?v=aK_pMX3oy8o)
