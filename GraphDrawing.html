@@ -5,7 +5,8 @@
 </head>
 
 <body style="margin: 0px; background-color: black;" onkeydown="globalFlagControl(event);">
-    <svg x="0" y="0" height="600" id="svg"></svg>
+    <svg x="0" y="0" height="600" id="svg">
+    </svg>
     <hr />
     <center><button onclick="clearAll()">Clear All</button></center>
     <p id="label"></p>
@@ -24,9 +25,14 @@
         document.getElementById("svg").setAttribute("width", window.innerWidth);
         function clearAll() {
             cnt = 0;
+            edgeCnt = 0;
+            flag = true;
+            edgeDrawingMode = false;
+            edgeCurveMode = false;
             document.getElementById("svg").innerHTML = "";
         }
         function func(event) {
+        	if (event.button !== 0) return;
             if (flag == false) return;
             if (edgeCurveMode) {
             	edgeCurveMode = false;
@@ -35,6 +41,8 @@
             if (edgeDrawingMode == true) {
                 edgeDrawingMode = false;
                 document.getElementById("edge" + edgeCnt).remove();
+                document.getElementById("arrow" + edgeCnt).remove();
+                
                 edgeCnt--;
                 return;
             }
@@ -63,17 +71,39 @@
                 edgeCnt++;
                 ux = node_u.getAttribute("cx");
                 uy = node_u.getAttribute("cy");
-                svg.innerHTML = "<path id='edge" + edgeCnt + "' d='M " + ux + " " + uy + " q 0 0 0 0' stroke-width='5' stroke='white' style='fill-opacity: 0;'/>" + svg.innerHTML;
+                
+                svg.innerHTML = "<path id='edge" + edgeCnt + "' d='M " + ux + " " + uy + " q 0 0 0 0' stroke-width='5' stroke='white' style='fill-opacity: 0;'/><polygon id='arrow" + edgeCnt + "' points='0,0 0,0 0,0' style='fill:white;stroke:white;stroke-width:2;visibility:hidden;'/>" + svg.innerHTML;
             } else {
             	edgeDrawingMode = false;
                 vx = node_u.getAttribute("cx");
                 vy = node_u.getAttribute("cy");
+                vx = vx/1;
+                vy = vy/1;
                 if (vx === ux && vy === uy) {
                 	svg.innerHTML = states.pop();
                 	edgeCnt--;
                 	return;
                 }
                 document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + ux + " " + uy + " q " + ((vx - ux)/2) + " " + ((vy - uy)/2) + " " + (vx - ux) + " " + (vy - uy));
+                
+                var qx = vx/2 + ux/2;
+                var qy = vy/2 + uy/2;
+                var r = 19;
+                var mod = Math.sqrt((qx - vx) * (qx - vx) + (qy - vy) * (qy - vy));
+                var tx = (qx - vx) / mod;
+                var ty = (qy - vy) / mod;
+                var px = tx * r + vx;
+                var py = ty * r + vy;
+                var sx = tx * ((5/3) * r) + vx;
+                var sy = ty * ((5/3) * r) + vy;
+                var mx = sx + (-ty) * (r / 3.0);
+                var my = sy + (tx) * (r / 3.0);
+                
+                var nx = sx - (-ty) * (r / 3.0);
+                var ny = sy - (tx) * (r / 3.0);
+                
+                document.getElementById("arrow" + edgeCnt).setAttribute("points", px + "," + py + " " + mx + "," + my + " " + nx + "," + ny);
+                
          		lastItem.push('edge');
             }
         }
@@ -106,21 +136,70 @@
 				} else if (x === 'edge') {
 					edgeCnt--;
 				}
+  			} else if (event.key === "d") {
+  				if (document.getElementById('arrow' + edgeCnt).getAttribute('style') === 'fill:white;stroke:white;stroke-width:2;visibility:visible;')
+  					document.getElementById('arrow' + edgeCnt).setAttribute('style', 'fill:white;stroke:white;stroke-width:2;visibility:hidden;');
+  				else document.getElementById('arrow' + edgeCnt).setAttribute('style', 'fill:white;stroke:white;stroke-width:2;visibility:visible;');
   			}
 		}
 
         function movingLine(event) {
             if (edgeDrawingMode === true) {
             	document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + ux + ' ' + uy + ' q ' + ((event.clientX - ux)/2) + ' ' + ((event.clientY - uy)/2) + ' ' + (event.clientX - ux) + ' ' + (event.clientY - uy));
+            		
+            	var vx = event.clientX / 1;
+            	var vy = event.clientY / 1;
+            	var qx = vx/2 + ux/2;
+                var qy = vy/2 + uy/2;
+                var r = 19;
+                var mod = Math.sqrt((qx - vx) * (qx - vx) + (qy - vy) * (qy - vy));
+                var tx = (qx - vx) / mod;
+                var ty = (qy - vy) / mod;
+                var px = tx + vx;
+                var py = ty + vy;
+                var sx = tx * ((2/3) * r) + vx;
+                var sy = ty * ((2/3) * r) + vy;
+                var mx = sx + (-ty) * (r / 3.0);
+                var my = sy + (tx) * (r / 3.0);
+                
+                var nx = sx - (-ty) * (r / 3.0);
+                var ny = sy - (tx) * (r / 3.0);
+                
+                document.getElementById("arrow" + edgeCnt).setAttribute("points", px + "," + py + " " + mx + "," + my + " " + nx + "," + ny);
+            	
+            	
             } else if (edgeCurveMode === true) {
             	var strArr = document.getElementById("edge" + edgeCnt).getAttribute("d").split(" ");
-            	var sx = strArr[1], sy = strArr[2], tx = strArr[6], ty = strArr[7];
+            	var sx = strArr[1]/1, sy = strArr[2]/1, tx = strArr[6]/1, ty = strArr[7]/1;
             	
             	var kk = (- 2 * ty * (event.clientX - sx) + 2 * tx * (event.clientY - sy)) / (tx * tx + ty * ty);
             	var qx = -kk * ty / 2 + tx / 2;
             	var qy = kk * tx / 2 + ty / 2;
             	
             	document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + sx + ' ' + sy + ' q ' + qx + ' ' + qy + ' ' + tx + ' ' + ty);
+            	
+            	qx += sx;
+            	qy += sy;
+            	
+            	tx += sx;
+            	ty += sy;
+            	
+                var r = 19;
+                var mod = Math.sqrt((qx - tx) * (qx - tx) + (qy - ty) * (qy - ty));
+                var kx = (qx - tx) / mod;
+                var ky = (qy - ty) / mod;
+                var px = kx * r + tx;
+                var py = ky * r + ty;
+                var jx = kx * ((5/3) * r) + tx;
+                var jy = ky * ((5/3) * r) + ty;
+                var mx = jx + (-ky) * (r / 3.0);
+                var my = jy + (kx) * (r / 3.0);
+                
+                var nx = jx - (-ky) * (r / 3.0);
+                var ny = jy - (kx) * (r / 3.0);
+                
+                document.getElementById("arrow" + edgeCnt).setAttribute("points", px + "," + py + " " + mx + "," + my + " " + nx + "," + ny);
+            	
             }
         }
 
