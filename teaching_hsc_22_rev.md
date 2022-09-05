@@ -1,27 +1,28 @@
 # Teaching/HSC 2022 Revision Program
 
 ## Next Class:
-Wednesday, August 18, 2022<br>
+Thursday, September 08, 2022<br>
 Time: TBA<br>
-Online/Offline<br>
+Online<br>
 [Zoom Link](https://us02web.zoom.us/j/2076592190?pwd=YWlYekdMbGNHREJlYUhrR25qVGNBUT09)<br>
 Meeting ID: 207 659 2190<br>
 Passcode: twelve1234<br>
 
 Topic:
-1. Physics 1st Paper - Newtonian Mechanics - Last Class on Concept Review and Problem Solving
-2. Chemistry 2nd Paper - ElectroChemistry - Nernst Equation
+1. TBA
+2. TBA
 <hr>
 
 ## Updates:
-- From next week, hopefully there will be offline classes as well.
-- This batch will continue upto the last of September. (2 months remaining)
+- This batch will continue upto the last of September. (25 days remaining)
 - Everyone please study hard for your upcoming HSC on November.
 <hr>
 
 ## Lectures and Resources:
 
-[Drive Link](https://drive.google.com/drive/folders/184-AjAMkPtmjnn9wdy5oxL--lZmpJYht?usp=sharing)
+All the resources have been uploaded. Nothing's left.
+[Revision Program Drive Link](https://drive.google.com/drive/folders/184-AjAMkPtmjnn9wdy5oxL--lZmpJYht?usp=sharing)
+[Academic Program Drive Link - Class Eleven-Twelve (HSC 2022) PDFs](https://drive.google.com/drive/folders/1ZP17ff8WPfqdfQtdaYyzV15BJvVf4u7f?usp=sharing)
 
 July 2022
 
