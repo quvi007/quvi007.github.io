@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <title>Draw A Graph!</title>
+</head>
+
+<body style="margin: 0px; background-color: black;" onkeydown="globalFlagControl(event);">
+    <svg x="0" y="0" height="600" id="svg"></svg>
+    <hr />
+    <center><button onclick="clearAll()">Clear All</button></center>
+    <p id="label"></p>
+    <script>
+        var ux, uy, vx, vy;
+        var edgeDrawingMode = false;
+        var edgeCurveMode = false;
+        var cnt = 0;
+        var edgeCnt = 0;
+        var flag = true;
+        var label = document.getElementById("label");
+        var svg = document.getElementById("svg");
+        const states = [];
+        const lastItem = [];
+        
+        document.getElementById("svg").setAttribute("width", window.innerWidth);
+        function clearAll() {
+            cnt = 0;
+            document.getElementById("svg").innerHTML = "";
+        }
+        function func(event) {
+            if (flag == false) return;
+            if (edgeCurveMode) {
+            	edgeCurveMode = false;
+            	return;
+            }
+            if (edgeDrawingMode == true) {
+                edgeDrawingMode = false;
+                document.getElementById("edge" + edgeCnt).remove();
+                edgeCnt--;
+                return;
+            }
+            
+        	states.push(svg.innerHTML);
+            svg.innerHTML += "<g id='node" + cnt + "' class='node' style='cursor: pointer;' onmouseenter='disableDrawing()' onmouseleave='enableDrawing()' onclick='startDrawingEdge(this)'>"
+                + "<circle id='nodecirc" + cnt + "' cx='" + (event.clientX) + "' cy='" + (event.clientY) + "' r='19' stroke='orange' " +
+                "stroke-width='2' fill='orange'/><text font-size='14' dy='.35em' stroke-width='1' text-anchor='middle' stroke='black' x='" + event.clientX + "' y='" + event.clientY + "' fill='black' style='user-select: none;'>q" + cnt + "</text></g>";
+        	cnt++;
+        	lastItem.push('node');
+        }
+
+        function markCircle(m) {
+            var nodeName = "nodecirc" + m.id.substr(4, m.id.length - 4);
+            document.getElementById(nodeName).setAttribute("stroke-width", "4");
+        }
+
+        function startDrawingEdge(m) {
+            var u = "nodecirc" + m.id.substr(4, m.id.length - 4);
+            var node_u = document.getElementById(u);
+            // node_u.setAttribute("stroke-width", "4");
+
+            if (edgeDrawingMode == false) {
+            	states.push(svg.innerHTML);
+                edgeDrawingMode = true;
+                edgeCnt++;
+                ux = node_u.getAttribute("cx");
+                uy = node_u.getAttribute("cy");
+                svg.innerHTML = "<path id='edge" + edgeCnt + "' d='M " + ux + " " + uy + " q 0 0 0 0' stroke-width='5' stroke='white' style='fill-opacity: 0;'/>" + svg.innerHTML;
+            } else {
+            	edgeDrawingMode = false;
+                vx = node_u.getAttribute("cx");
+                vy = node_u.getAttribute("cy");
+                document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + ux + " " + uy + " q " + ((vx - ux)/2) + " " + ((vy - uy)/2) + " " + (vx - ux) + " " + (vy - uy));
+         		lastItem.push('edge');
+            }
+        }
+
+        function disableDrawing(event) {
+            flag = false;
+        }
+
+        function enableDrawing(event) {
+            flag = true;
+        }
+
+		function globalFlagControl(event) {
+			if (event.shiftKey) {
+				if (edgeCurveMode === false) edgeCurveMode = true;
+				else {
+					edgeCurveMode = false;
+				}
+			} else if (event.code === 'Escape') {
+				if (edgeDrawingMode === true) {
+					edgeDrawingMode = false;
+					edgeCnt--;
+					svg.innerHTML = states.pop();
+				}
+			} else if (event.ctrlKey && event.key === "z") {
+				if (states.length === 0) return;
+				svg.innerHTML = states.pop();
+				const x = lastItem.pop();
+				if (x === 'node') {
+					cnt--;
+					if (flag === false) flag = true;
+				} else if (x === 'edge') {
+					edgeCnt--;
+				}
+  			}
+		}
+
+        function movingLine(event) {
+            if (edgeDrawingMode === true) {
+            	document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + ux + ' ' + uy + ' q ' + ((event.clientX - ux)/2) + ' ' + ((event.clientY - uy)/2) + ' ' + (event.clientX - ux) + ' ' + (event.clientY - uy));
+            } else if (edgeCurveMode === true) {
+            	var strArr = document.getElementById("edge" + edgeCnt).getAttribute("d").split(" ");
+            	var sx = strArr[1], sy = strArr[2], tx = strArr[6], ty = strArr[7];
+            	
+            	var kk = (- 2 * ty * (event.clientX - sx) + 2 * tx * (event.clientY - sy)) / (tx * tx + ty * ty);
+            	var qx = -kk * ty / 2 + tx / 2;
+            	var qy = kk * tx / 2 + ty / 2;
+            	
+            	document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + sx + ' ' + sy + ' q ' + qx + ' ' + qy + ' ' + tx + ' ' + ty);
+            }
+        }
+
+        svg.addEventListener("mousedown", func);
+        svg.addEventListener("mousemove", movingLine);
+
+    </script>
+</body>
+
+</html>
