@@ -21,7 +21,9 @@ Topic:
 ## Lectures and Resources:
 
 All the resources have been uploaded. Nothing's left.
+
 [Revision Program Drive Link](https://drive.google.com/drive/folders/184-AjAMkPtmjnn9wdy5oxL--lZmpJYht?usp=sharing)
+
 [Academic Program Drive Link - Class Eleven-Twelve (HSC 2022) PDFs](https://drive.google.com/drive/folders/1ZP17ff8WPfqdfQtdaYyzV15BJvVf4u7f?usp=sharing)
 
 July 2022
