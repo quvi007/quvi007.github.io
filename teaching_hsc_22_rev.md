@@ -59,3 +59,25 @@ August 2022
 1. Physics 1st Paper - Periodic Motion (No discussion class yet)
     - [Practice Resource - 1 (MCQ + Written)](https://drive.google.com/file/d/1cP8wOFUCF1FJUF07Y5ZoxHFuMC4OMIG2/view?usp=sharing)
     - [Practice Resource - 2 (MCQ)](https://drive.google.com/file/d/1LpcVbNbrgfwfRiqmWFAE5wboejaeTk3A/view?usp=sharing)
+2. August 3
+    - [Lecture Part 1](https://www.youtube.com/watch?v=8trK9FsijwU)
+    - [Lecture Part 2](https://www.youtube.com/watch?v=SdbbKtUrqtY)
+3. August 7
+    - [Lecture](https://www.youtube.com/watch?v=f26oqD0ns_8)
+4. August 10
+    - [Lecture](https://www.youtube.com/watch?v=gRKgk-pZO20)
+5. August 11
+    - [Lecture](https://www.youtube.com/watch?v=pO-EQ_2HN44)
+6. August 12
+    - [Lecture](https://www.youtube.com/watch?v=nMuRJhCZvCo)
+7. August 19
+    - [Lecture](https://www.youtube.com/watch?v=fZNfwst0w3o)
+8. August 25
+    - [Lecture](https://www.youtube.com/watch?v=o7q1Cnr-p_Y)
+9. August 26
+    - [Lecture](https://www.youtube.com/watch?v=-U32CXv7Sdw)
+    
+September 2022
+
+1. September 2
+    - [Lecture](https://www.youtube.com/watch?v=pu0SzDaatoE)
