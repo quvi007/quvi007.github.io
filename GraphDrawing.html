@@ -68,6 +68,11 @@
             	edgeDrawingMode = false;
                 vx = node_u.getAttribute("cx");
                 vy = node_u.getAttribute("cy");
+                if (vx === ux && vy === uy) {
+                	svg.innerHTML = states.pop();
+                	edgeCnt--;
+                	return;
+                }
                 document.getElementById("edge" + edgeCnt).setAttribute("d", 'M ' + ux + " " + uy + " q " + ((vx - ux)/2) + " " + ((vy - uy)/2) + " " + (vx - ux) + " " + (vy - uy));
          		lastItem.push('edge');
             }
@@ -84,9 +89,7 @@
 		function globalFlagControl(event) {
 			if (event.shiftKey) {
 				if (edgeCurveMode === false) edgeCurveMode = true;
-				else {
-					edgeCurveMode = false;
-				}
+				else edgeCurveMode = false;
 			} else if (event.code === 'Escape') {
 				if (edgeDrawingMode === true) {
 					edgeDrawingMode = false;
