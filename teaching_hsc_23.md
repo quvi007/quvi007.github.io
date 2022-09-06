@@ -17,6 +17,9 @@ Topic:
 
 <hr>
 
+## YouTube Playlist:
+[Playlist Link](https://www.youtube.com/playlist?list=PL-BzI4KV96WLEt6OrJMOktVQ38dam7hdT)
+
 ## Lectures and Resources:
 
 1. [Math 1st Paper - Differentiation Book Link](https://drive.google.com/file/d/18DlTvwfmn6zSFsa3h6a8ZA6pfHFmw_Kv/view?usp=sharing)
