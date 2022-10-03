@@ -10,11 +10,11 @@ Time: 03:00 PM - 05:00 PM<br>
 <hr>
 
 ## Schedule:
-Thursday: 03:00 - 05:00 PM
+Thursday: 03:00 - 05:00 PM<br>
 Friday: 09:30 - 11:30 AM
 
-Address: 1st Floor, House 14, Road 16, Sector 12, Uttara, Dhaka
-Contact No: 01877828385, 01940422143
+Address: 1st Floor, House 14, Road 16, Sector 12, Uttara, Dhaka<br>
+Contact No: 01877828385, 01940422143<br>
 
 ## Updates:
 
