@@ -80,10 +80,50 @@ Contact No: 01877828385, 01940422143<br>
 ### The Most Perfect Ordering of ICT Chapters which we will follow :)
 1. ICT - Chapter 4 - HTML
 2. ICT - Chapter 5 - C Programming
-3. ICT - Chapter 3 - Digital Logic Design
+3. ICT - Chapter 3 - Number System and Logic Gates
 4. ICT - Chapter 6 - Database
 
 *We skip two chapters (Chapter 1 and 2) just to make our life simpler :)*
+
+### Textbook List:
+You don't need to buy everything here at once. Buying one textbook for each subject will suffice. Buy the latest edition that is available in the market right now. We will follow those.
+
+Physics:
+1. Shahjahan Topon 1st & 2nd Paper
+2. Ishak 1st & 2nd Paper
+3. Ganitik Podarthobiggan 1st & 2nd Paper, Bangla Version - Lecture / Newton
+
+Optional Textbooks:
+1. Roma Bijoy 1st Paper
+2. Gias Uddin 1st & 2nd Paper - 2013 edition (don't buy any later editions)
+
+Engineering Admission Focused Books (You may collect these now or later, but these are recommended. So the sooner you collect, the better):
+
+1. Physics 1st & 2nd Paper Concept Book - Udvash (written by me)
+2. Engineering Question Bank (Phy, Chem, Math combined) - Udvash (cowritten by me)
+
+Math:
+1. Ketab Uddin 1st Paper (Latest)
+2. Ketab Uddin 1st Paper Solution
+3. Ketab Uddin 2nd Paper Latest
+4. Ketab Uddin 2nd Paper Solution
+
+Engineering Admission Focused Books:
+
+1. Math 1st & 2nd Paper Concept Books - Udvash (Written by me)
+
+Chemistry
+1. Hazari & Nag 1st paper & 2nd paper
+2. Ganitik Roshayon by munimul hoq 1st & 2nd paper
+3. Chemistry 1st Paper & 2nd Paper - Sanjit Kumar Guho
+
+ICT
+1. Don't buy any book now, college er teacher ra jeta bolbe sheta.
+
+Biology (in case you don't take Statistics)
+1. Ajmol - Zoology
+2. Abul Hasan - Botany
+
 <hr>
 
 ## Lectures and Resources:
