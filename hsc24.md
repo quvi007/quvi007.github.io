@@ -75,8 +75,15 @@ Contact No: 01877828385, 01940422143<br>
 7. Chemistry 2nd Paper - Chapter 04 - Electrochemistry
 8. Chemistry 1st Paper - Chapter 01 - Laboratory Chemistry (Only different balances)
 
-*We skip two chapters just to make our life simpler :)*
+*We skip two chapters (Chemistry 1st Paper - Chapter 5 and Chemistry 2nd Paper - Chapter 5) just to make our life simpler :)*
 
+### The Most Perfect Ordering of ICT Chapters which we will follow :)
+1. ICT - Chapter 4 - HTML
+2. ICT - Chapter 5 - C Programming
+3. ICT - Chapter 3 - Digital Logic Design
+4. ICT - Chapter 6 - Database
+
+*We skip two chapters (Chapter 1 and 2) just to make our life simpler :)*
 <hr>
 
 ## Lectures and Resources:
