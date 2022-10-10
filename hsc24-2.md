@@ -48,22 +48,22 @@ Contact No: 01877828385, 01940422143<br>
 03. Physics 1st Paper - Chapter 04 - Newtonian Mechanics
 04. Physics 1st Paper - Chapter 05 - Work, Energy and Power
 05. Physics 1st Paper - Chapter 06 - Gravitation and Gravity
-06. Physics 1st Paper - Chapter 10 - Ideal Gas
-07. Physics 2nd Paper - Chapter 01 - Thermodynamics
-08. Physics 1st Paper - Chapter 07 - Structural Properties of Matter
-09. Physics 1st Paper - Chapter 08 - Periodic Motion
-10. Physics 1st Paper - Chapter 09 - Wave
 11. Physics 2nd Paper - Chapter 02 - Static Electricity
 12. Physics 2nd Paper - Chapter 03 - Current Electricity
-13. Physics 2nd Paper - Chapter 04 - Magnetic Effects of Current and Magnetism
-14. Physics 2nd Paper - Chapter 05 - Electromagnetic Induction
-15. Physics 2nd Paper - Chapter 06 - Geometric Optics
-16. Physics 2nd Paper - Chapter 07 - Physical Optics
-17. Physics 2nd Paper - Chapter 08 - Modern Physics
-18. Physics 2nd Paper - Chapter 09 - Nuclear Physics
-19. Physics 2nd Paper - Chapter 10 - Semiconductor and Electronics
-20. Physics 2nd Paper - Chapter 11 - Astrophysics
-21. Physics 1st Paper - Chapter 01 - Measurement
+09. Physics 1st Paper - Chapter 08 - Periodic Motion
+10. Physics 1st Paper - Chapter 09 - Wave
+14. Physics 1st Paper - Chapter 10 - Ideal Gas
+15. Physics 2nd Paper - Chapter 01 - Thermodynamics
+16. Physics 2nd Paper - Chapter 04 - Magnetic Effects of Current and Magnetism
+17. Physics 2nd Paper - Chapter 05 - Electromagnetic Induction
+18. Physics 2nd Paper - Chapter 06 - Geometric Optics
+19. Physics 2nd Paper - Chapter 07 - Physical Optics
+20. Physics 2nd Paper - Chapter 08 - Modern Physics
+21. Physics 2nd Paper - Chapter 09 - Nuclear Physics
+22. Physics 2nd Paper - Chapter 10 - Semiconductor and Electronics
+23. Physics 1st Paper - Chapter 07 - Structural Properties of Matter
+24. Physics 1st Paper - Chapter 01 - Measurement
+25. Physics 2nd Paper - Chapter 11 - Astrophysics
 
 ### The Most Perfect Ordering of Chemistry Chapters which we will follow :)
 1. Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - *Running*
