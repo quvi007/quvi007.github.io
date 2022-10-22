@@ -18,7 +18,7 @@ Contact No: 01877828385, 01940422143<br>
 <hr>
 
 ## Updates
-1. Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry Home-task - 1 has been uploaded. Write the solutions on A4 offset papers. Due Date: Thursday, October 27, 2022. Submission: During class. [Download File](https://quvi007.github.io/Assignments/Chemistry%202nd%20Paper/Chapter%2003/Chemistry%202nd%20Paper%20-%20Chapter%2003%20-%20Quantitative%20Chemistry%20Home-task%20-%201.pdf)
+1. Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry Home-task - 1 has been uploaded.<br>Write the solutions on A4 offset papers.<br>Due Date: Thursday, October 27, 2022.<br>Submission: During class.<br>[Download File](https://quvi007.github.io/Assignments/Chemistry%202nd%20Paper/Chapter%2003/Chemistry%202nd%20Paper%20-%20Chapter%2003%20-%20Quantitative%20Chemistry%20Home-task%20-%201.pdf)
 
 ## Lectures and Resources:
 
@@ -37,6 +37,6 @@ October 2022
   - [Physics 1st Paper - Chapter 01 - Vector - 3]()
 
 4. Friday, October 21, 2022
-  - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 2]()
+  - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 2]()<br>
     (i) [Home-Task - 1](https://quvi007.github.io/Assignments/Chemistry%202nd%20Paper/Chapter%2003/Chemistry%202nd%20Paper%20-%20Chapter%2003%20-%20Quantitative%20Chemistry%20Home-task%20-%201.pdf)
   - [Math 1st Paper - Permutation and Combination - 1]()
