@@ -21,7 +21,7 @@ Contact No: 01877828385, 01940422143<br>
 
 ## Problem Books
 1. Physics 1st Paper
-  - [Chapter 02 - Vector Problem Book - 1](https://quvi007.github.io/Problem Books/Physics%201st%20Paper/Chapter%2002/Chemistry%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book%20-%201.pdf)
+  - [Chapter 02 - Vector Problem Book - 1](https://quvi007.github.io/ProblemBooks/Physics%201st%20Paper/Chapter%2002/Physics%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book%20-%201.pdf)
 2. Physics 2nd Paper
 3. Chemistry 1st Paper
 4. Chemistry 2nd Paper
@@ -48,7 +48,6 @@ October 2022
 
 4. Friday, October 21, 2022
   - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 2]()<br>
-    (i) [Home-Task - 1](https://quvi007.github.io/Assignments/Chemistry%202nd%20Paper/Chapter%2003/Chemistry%202nd%20Paper%20-%20Chapter%2003%20-%20Quantitative%20Chemistry%20Home-task%20-%201.pdf)
   - [Math 1st Paper - Chapter 05 - Permutation and Combination - 1]()
 
 5. Friday, October 28, 2022
