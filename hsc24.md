@@ -17,14 +17,25 @@ Contact No: 01877828385, 01940422143<br>
 <hr>
 
 ## Updates
-1. Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry Home-task - 1 has been uploaded.<br>Write the solutions on A4 offset papers.<br>Due Date: Thursday, October 27, 2022.<br>Submission: During class.<br>[Download File](https://quvi007.github.io/Assignments/Chemistry%202nd%20Paper/Chapter%2003/Chemistry%202nd%20Paper%20-%20Chapter%2003%20-%20Quantitative%20Chemistry%20Home-task%20-%201.pdf)
+<hr>
 
+## Problem Books
+1. Physics 1st Paper
+  - [Chapter 02 - Vector Problem Book - 1](https://quvi007.github.io/Problem Books/Physics%201st%20Paper/Chapter%2002/Chemistry%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book%20-%201.pdf)
+2. Physics 2nd Paper
+3. Chemistry 1st Paper
+4. Chemistry 2nd Paper
+  - [Chapter 03 - Quantitative Chemistry Problem Book - 1]()
+5. Higher Math 1st Paper
+  - [Chapter 05 - Permutation and Combination Problem Book - 1]()
+6. Higher Math 2nd Paper
+<hr>
 ## Lectures and Resources:
 
 October 2022
 
 1. Thursday, October 06, 2022
-  - [Physics 1st Paper - Chapter 01 - Vector - 1]()
+  - [Physics 1st Paper - Chapter 02 - Vector - 1]()
   - Load-shedding :(
 
 2. Friday, October 07, 2022
@@ -32,8 +43,8 @@ October 2022
   - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 1]()
   
 3. Thursday, October 20, 2022
-  - [Physics 1st Paper - Chapter 01 - Vector - 2]()
-  - [Physics 1st Paper - Chapter 01 - Vector - 3]()
+  - [Physics 1st Paper - Chapter 02 - Vector - 2]()
+  - [Physics 1st Paper - Chapter 02 - Vector - 3]()
 
 4. Friday, October 21, 2022
   - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 2]()<br>
@@ -41,7 +52,7 @@ October 2022
   - [Math 1st Paper - Chapter 05 - Permutation and Combination - 1]()
 
 5. Friday, October 28, 2022
-  - [Physics 1st Paper - Chapter 01 - Vector - 4]()
+  - [Physics 1st Paper - Chapter 02 - Vector - 4]()
   - [Math 1st Paper - Chapter 05 - Permutation and Combination - 2]()
 
 6. Saturday, October 29, 2022
