@@ -21,7 +21,7 @@ Contact No: 01877828385, 01940422143<br>
 
 ## Problem Books
 1. Physics 1st Paper
-  - [Chapter 02 - Vector Problem Book - 1](https://quvi007.github.io/ProblemBooks/Physics%201st%20Paper/Chapter%2002/Physics%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book%20-%201.pdf)
+  - [Chapter 02 - Vector Problem Book](https://quvi007.github.io/ProblemBooks/Physics%201st%20Paper/Chapter%2002/Physics%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book.pdf)
 2. Physics 2nd Paper
 3. Chemistry 1st Paper
 4. Chemistry 2nd Paper
