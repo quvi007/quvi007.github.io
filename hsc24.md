@@ -1,11 +1,12 @@
 # HSC 2024 Academic Program
 
 ## Next Class:
-Sunday, October 30, 2022<br>
-Time: 09:00 PM - 10:30 PM<br>
-(ONLINE)
+Thursday, November 10, 2022<br>
+Time: 03:00 PM - 05:00 PM<br>
+
 ### Topic:
-1. ICT HTML
+1. TBA
+2. TBA
 <hr>
 
 ## Schedule:
@@ -52,7 +53,7 @@ October 2022
   - [Physics 1st Paper - Chapter 02 - Vector - 3]()
 
 4. Friday, October 21, 2022
-  - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 2]()<br>
+  - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 2]()
   - [Math 1st Paper - Chapter 05 - Permutation and Combination - 1]()
 
 5. Friday, October 28, 2022
@@ -62,3 +63,20 @@ October 2022
 6. Saturday, October 29, 2022
   - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 3]()
   - [Math 1st Paper - Chapter 05 - Permutation and Combination - 3]()
+
+7. Sunday, October 30, 2022
+  - [ICT - Chapter 04 - HTML - 1](https://www.youtube.com/watch?v=IXGed-gGxfc)
+
+8. Monday, October 31, 2022
+  - [Physics 1st Paper - Chapter 02 - Vector - 5]()
+  - [Physics 1st Paper - Chapter 02 - Vector - 6]()
+
+November 2022
+
+1. Thursday, November 03, 2022
+  - [Chemistry 2nd Paper - Chapter 03 - Quantitative Chemistry - 4]()
+  - [Math 1st Paper - Chapter 05 - Permutation and Combination - 4]()
+
+2. Friday, November 04, 2022
+  - [Physics 1st Paper - Chapter 02 - Vector - 7]()
+  - [Physics 1st Paper - Chapter 02 - Vector - 8]()
