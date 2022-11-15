@@ -12,27 +12,59 @@ Time: 03:00 PM - 05:00 PM<br>
 ## Schedule:
 Thursday: 03:00 - 05:00 PM<br>
 Friday: 09:30 - 11:30 AM
-
-Address: 1st Floor, House 14, Road 16, Sector 12, Uttara, Dhaka<br>
-Contact No: 01877828385, 01940422143<br>
 <hr>
 
 ## Updates
-1. <b>Homework - 1: (Complete within tomorrow)</b><br>
-- [Physics Vector Problem Book](https://quvi007.github.io/ProblemBooks/Physics%201st%20Paper/Chapter%2002/Physics%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book.pdf)
-- <b>Problem No: 1.1.1~4, 1.2.1~6</b>
-- Total <b>10</b> problems.
-- Konota na parle or confusing lagle shathe shathei amake WhatsApp e dekhaye niyo.
+1. Physics Vector HW
+- 2.3.1
+- 4.0.1~3
+- 5.1.1~3
+- 5.2.1
+- 5.3.1~3
+- 6.1.1~3
+- 6.2.1~3
+- 7.0.1~4
+- 8.0.1~3
+- 9.0.1~7
+- 10.0.1
+- 11.1.1
+- 11.2.1~3
+- 12.1.1~6
+- 12.2.1~14
+- 13.0.1~5
+- 14.0.1~5
+- 15.0.1
+- 16.1.1~2
+- 16.2.1~2
+- 16.3.1
+- 17.0.1
+- 18.0.1
+- <b>Total 74 Maths</b>
+- <b>Deadline: November 25th, Friday (Total 9 days, 8 maths per day).</b>
 
-2. <b>Homework - 2: (Complete within tomorrow)</b><br>
-- [Physics Vector Problem Book](https://quvi007.github.io/ProblemBooks/Physics%201st%20Paper/Chapter%2002/Physics%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book.pdf)
-- <b>Problem No: 1.2.7~11, 1.3.1, 1.4.1, 1.4.3</b>
-- Total <b>8</b> problems.
+2. Quantitative Chemistry HW
+- 2.6
+- 2.8~9
+- 2.11~19
+- 2.21~24
+- 2.26~32
+- 2.34~40
+- 2.42~43
+- 3.2~3
+- 3.5
+- <b>Total 34 Maths</b>
+- <b>Deadline: November 25th, Friday (Total 9 days, 4 Maths per day).</b>
 
-3. <b>Homework - 3: (Complete within tomorrow)</b><br>
-- [Physics Vector Problem Book](https://quvi007.github.io/ProblemBooks/Physics%201st%20Paper/Chapter%2002/Physics%201st%20Paper%20-%20Chapter%2002%20-%20Vector%20Problem%20Book.pdf)
-- <b>Problem No: 2.1.1~3, 2.2.1~9</b>
-- Total <b>12</b> problems.
+3. Permutation HW
+- 1.11~16
+- 1.22~29
+- 1.31~43
+- 1.45~68
+- <b>Total 51 Maths</b>
+- <b>Deadline: November 25th, Friday (Total 9 days, 6 Maths per day).</b>
+
+4. Failure in submission within the deadline will cause removal from the batch.
+
 <hr>
 
 ## Problem Books
