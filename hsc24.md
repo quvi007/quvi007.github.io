@@ -75,6 +75,7 @@ Friday: 09:30 - 11:30 AM
 4. Chemistry 2nd Paper
   - [Chapter 03 - Quantitative Chemistry Problem Book - 1](https://quvi007.github.io/ProblemBooks/Chemistry%202nd%20Paper/Chapter%2003/Chemistry%202nd%20Paper%20-%20Chapter%2003%20-%20Quantitative%20Chemistry%20Problem%20Book%20-%201.pdf)
 5. Higher Math 1st Paper
+  - [Chapter 01 - Matrices and Determinants Problem Book - 1](https://quvi007.github.io/ProblemBooks/Higher%20Math%201st%20Paper/Chapter%2001/Higher%20Math%201st%20Paper%20-%20Chapter%2001%20-%20Matrices%20and%20Determinants%20Problem%20Book%20-%201.pdf)
   - [Chapter 05 - Permutation and Combination Problem Book - 1](https://quvi007.github.io/ProblemBooks/Higher%20Math%201st%20Paper/Chapter%2005/Higher%20Math%201st%20Paper%20-%20Chapter%2005%20-%20Permutation%20and%20Combination%20Problem%20Book%20-%201.pdf)
 6. Higher Math 2nd Paper
 <hr>
