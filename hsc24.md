@@ -64,7 +64,7 @@ Friday: 09:30 - 11:30 AM
 - <b>Deadline: December 1st, Thursday (Total 15 days, 3 Maths per day).</b>
 
 4. Failure in submission within the deadline will cause removal from the batch.
-
+5. Just some fun!
 <hr>
 
 ## Problem Books
