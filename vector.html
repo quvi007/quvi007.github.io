@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Vector Problem Book</title>
+    <title>Vector Problem Book Solution</title>
     <script>
         MathJax = {
             tex: {
@@ -30,7 +30,42 @@
         var cnt = 0;
 
         function display() {
-            var inputQuestion = "$4.5$ m/s\n$2.4$ km/hr";
+            var inputQuestion = "\
+<b>20.0.1</b>\n\
+$7.81$ km/hr, $26.30\\deg$ with the current.\n\
+\n\
+<b>20.0.2</b> \n\
+$4$ km/hr\n\
+\n\
+<b>20.0.3</b> \n\
+$120\\deg$ with the current.\n\
+\n\
+<b>20.0.4</b> \n\
+$20$ mins.\n\
+\n\
+<b>20.0.5</b> \n\
+$120\\deg$ with the current, $0.077$ hr.\n\
+\n\
+<b>20.0.6</b> \n\
+$120\\deg$ with the current, $6\\sqrt{3}$ km/hr.\n\
+\n\
+<b>20.0.7</b> \n\
+(a) $120\\deg$ with the current, $10$ km, $0.962$ hr (b) $90\\deg$ with the current, $5\\sqrt{5}$ km, $\\displaystyle \\frac{5}{6}$ hr.\n\
+\n\
+<b>20.0.8</b> \n\
+$15$ km/hr\n\
+\n\
+<b>20.0.9</b> \n\
+$6.5$ m/s\n\
+\n\
+<b>20.0.10</b> \n\
+$100$ s, $5$ m/s, $53.13\\deg$ with the current.\n\
+\n\
+<b>20.0.11</b> \n\
+(a) $0.25$ km\n\
+\n\
+\n\
+			";
             inputQuestion = inputQuestion.replace(/\\deg/g, "^\\circ");
             inputQuestion = inputQuestion.replace(/\n/g, "<br>\n");
             document.getElementById('display').innerHTML = inputQuestion;
