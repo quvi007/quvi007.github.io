@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MathJax example</title>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+</head>
+
+<body onload="display()">
+
+    <ol id="display" contenteditable="true">
+    </ol>
+
+    <script>
+        var prevText = "";
+        var cnt = 0;
+
+        function display() {
+            var inputQuestion = "$4.5$ m/s\n$2.4$ km/hr";
+            inputQuestion = inputQuestion.replace(/\\deg/g, "^\\circ");
+            inputQuestion = inputQuestion.replace(/\n/g, "<br>\n");
+            document.getElementById('display').innerHTML = inputQuestion;
+            MathJax.typeset();
+        }
+    </script>
+
+
+
+</body>
+
+</html>
