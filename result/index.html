@@ -739,7 +739,8 @@
             event.preventDefault();
             let name = document.getElementById("name").value;
             name = name.trim();
-            console.log(name.length);
+            name = name.toLowerCase();
+            name = name.charAt(0).toUpperCase() + name.slice(1);
             if (name.length === 0) {
                 document.getElementById("error").innerHTML = "<font color='red'>Enter a name first!</font>";
             } else {
