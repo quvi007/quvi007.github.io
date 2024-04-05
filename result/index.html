@@ -1,0 +1,751 @@
+
+<html>
+<head><title>View Result</title></head>
+<body>
+<h1 align="center">View Recent Exam Result</h1>
+<label for="name">Name: </label>
+<input type="text" id="name"/>
+<input type="button" id="view" value="View Result" onclick="view()"/>
+<p id="exam"></p>
+<p id="participant"></p>
+<p id="grade"></p>
+<p id="omr"></p>
+<script>
+const exam = "Matrix, Determinants and Trigonometry";
+const data = {"Afzalur": {
+    "score": 20.5,
+    "correct": 21,
+    "wrong": 10,
+    "unanswered": 17,
+    "auto": 2,
+    "wrong_list": [
+        5,
+        7,
+        9,
+        25,
+        29,
+        30,
+        35,
+        43,
+        45,
+        50
+    ],
+    "unanswered_list": [
+        3,
+        6,
+        8,
+        13,
+        18,
+        20,
+        22,
+        23,
+        26,
+        32,
+        36,
+        38,
+        40,
+        42,
+        44,
+        47,
+        48
+    ],
+    "auto_list": [
+        4,
+        34
+    ]
+},
+"Jarin": {
+    "score": 29.75,
+    "correct": 30,
+    "wrong": 9,
+    "unanswered": 9,
+    "auto": 2,
+    "wrong_list": [
+        7,
+        17,
+        20,
+        27,
+        28,
+        37,
+        40,
+        42,
+        46
+    ],
+    "unanswered_list": [
+        6,
+        8,
+        10,
+        30,
+        34,
+        38,
+        39,
+        43,
+        48
+    ],
+    "auto_list": [
+        3,
+        23
+    ]
+},
+"Maisha Mahjabin": {
+    "score": 43.75,
+    "correct": 44,
+    "wrong": 5,
+    "unanswered": 0,
+    "auto": 1,
+    "wrong_list": [
+        22,
+        26,
+        28,
+        33,
+        37
+    ],
+    "unanswered_list": [],
+    "auto_list": [
+        24
+    ]
+},
+"Zahin": {
+    "score": 31.25,
+    "correct": 32,
+    "wrong": 11,
+    "unanswered": 5,
+    "auto": 2,
+    "wrong_list": [
+        5,
+        8,
+        10,
+        12,
+        16,
+        17,
+        18,
+        23,
+        25,
+        28,
+        44
+    ],
+    "unanswered_list": [
+        20,
+        39,
+        41,
+        46,
+        47
+    ],
+    "auto_list": [
+        3,
+        36
+    ]
+},
+"Irfan": {
+    "score": 36.75,
+    "correct": 38,
+    "wrong": 9,
+    "unanswered": 2,
+    "auto": 1,
+    "wrong_list": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        30,
+        35,
+        40,
+        45
+    ],
+    "unanswered_list": [
+        46,
+        50
+    ],
+    "auto_list": [
+        36
+    ]
+},
+"Rafid": {
+    "score": 26.0,
+    "correct": 24,
+    "wrong": 4,
+    "unanswered": 19,
+    "auto": 3,
+    "wrong_list": [
+        7,
+        17,
+        40,
+        49
+    ],
+    "unanswered_list": [
+        1,
+        3,
+        4,
+        8,
+        15,
+        16,
+        18,
+        19,
+        24,
+        30,
+        33,
+        37,
+        41,
+        42,
+        44,
+        45,
+        46,
+        47,
+        48
+    ],
+    "auto_list": [
+        25,
+        31,
+        32
+    ]
+},
+"Farhan": {
+    "score": 36.0,
+    "correct": 35,
+    "wrong": 4,
+    "unanswered": 9,
+    "auto": 2,
+    "wrong_list": [
+        7,
+        20,
+        34,
+        38
+    ],
+    "unanswered_list": [
+        9,
+        19,
+        21,
+        27,
+        31,
+        32,
+        39,
+        41,
+        46
+    ],
+    "auto_list": [
+        44,
+        50
+    ]
+},
+"Nehal": {
+    "score": 39.5,
+    "correct": 38,
+    "wrong": 6,
+    "unanswered": 3,
+    "auto": 3,
+    "wrong_list": [
+        4,
+        20,
+        28,
+        41,
+        46,
+        49
+    ],
+    "unanswered_list": [
+        22,
+        36,
+        44
+    ],
+    "auto_list": [
+        23,
+        25,
+        29
+    ]
+},
+"Bornil": {
+    "score": 41.5,
+    "correct": 42,
+    "wrong": 6,
+    "unanswered": 1,
+    "auto": 1,
+    "wrong_list": [
+        6,
+        13,
+        19,
+        23,
+        31,
+        36
+    ],
+    "unanswered_list": [
+        45
+    ],
+    "auto_list": [
+        17
+    ]
+},
+"Faria": {
+    "score": 46.25,
+    "correct": 43,
+    "wrong": 3,
+    "unanswered": 0,
+    "auto": 4,
+    "wrong_list": [
+        26,
+        28,
+        30
+    ],
+    "unanswered_list": [],
+    "auto_list": [
+        10,
+        22,
+        27,
+        35
+    ]
+},
+"Prithviraj": {
+    "score": 44.0,
+    "correct": 41,
+    "wrong": 0,
+    "unanswered": 6,
+    "auto": 3,
+    "wrong_list": [],
+    "unanswered_list": [
+        9,
+        22,
+        32,
+        35,
+        36,
+        40
+    ],
+    "auto_list": [
+        3,
+        29,
+        46
+    ]
+},
+"Afif": {
+    "score": 23.75,
+    "correct": 24,
+    "wrong": 9,
+    "unanswered": 15,
+    "auto": 2,
+    "wrong_list": [
+        2,
+        7,
+        8,
+        18,
+        24,
+        25,
+        40,
+        45,
+        48
+    ],
+    "unanswered_list": [
+        6,
+        17,
+        19,
+        22,
+        23,
+        27,
+        30,
+        31,
+        35,
+        37,
+        38,
+        39,
+        42,
+        43,
+        47
+    ],
+    "auto_list": [
+        16,
+        46
+    ]
+},
+"Jubayer": {
+    "score": 47.75,
+    "correct": 44,
+    "wrong": 1,
+    "unanswered": 1,
+    "auto": 4,
+    "wrong_list": [
+        39
+    ],
+    "unanswered_list": [
+        24
+    ],
+    "auto_list": [
+        11,
+        22,
+        34,
+        36
+    ]
+},
+"Jannatul": {
+    "score": 39.5,
+    "correct": 38,
+    "wrong": 2,
+    "unanswered": 8,
+    "auto": 2,
+    "wrong_list": [
+        21,
+        23
+    ],
+    "unanswered_list": [
+        6,
+        20,
+        24,
+        28,
+        35,
+        40,
+        41,
+        48
+    ],
+    "auto_list": [
+        39,
+        49
+    ]
+},
+"Afraz": {
+    "score": 44.25,
+    "correct": 42,
+    "wrong": 3,
+    "unanswered": 2,
+    "auto": 3,
+    "wrong_list": [
+        8,
+        28,
+        49
+    ],
+    "unanswered_list": [
+        44,
+        48
+    ],
+    "auto_list": [
+        21,
+        35,
+        43
+    ]
+},
+"Adiba": {
+    "score": 47.5,
+    "correct": 44,
+    "wrong": 2,
+    "unanswered": 0,
+    "auto": 4,
+    "wrong_list": [
+        1,
+        3
+    ],
+    "unanswered_list": [],
+    "auto_list": [
+        26,
+        30,
+        45,
+        50
+    ]
+},
+"Nayeem": {
+    "score": 39.75,
+    "correct": 40,
+    "wrong": 5,
+    "unanswered": 4,
+    "auto": 1,
+    "wrong_list": [
+        1,
+        13,
+        27,
+        30,
+        35
+    ],
+    "unanswered_list": [
+        14,
+        15,
+        28,
+        46
+    ],
+    "auto_list": [
+        41
+    ]
+},
+"Mashfi": {
+    "score": 40.75,
+    "correct": 41,
+    "wrong": 5,
+    "unanswered": 3,
+    "auto": 1,
+    "wrong_list": [
+        18,
+        34,
+        37,
+        41,
+        49
+    ],
+    "unanswered_list": [
+        4,
+        13,
+        32
+    ],
+    "auto_list": [
+        50
+    ]
+},
+"Mohona": {
+    "score": 36.75,
+    "correct": 37,
+    "wrong": 9,
+    "unanswered": 2,
+    "auto": 2,
+    "wrong_list": [
+        4,
+        9,
+        29,
+        30,
+        32,
+        33,
+        34,
+        36,
+        39
+    ],
+    "unanswered_list": [
+        15,
+        45
+    ],
+    "auto_list": [
+        13,
+        35
+    ]
+},
+"Ishraq": {
+    "score": 50.0,
+    "correct": 49,
+    "wrong": 0,
+    "unanswered": 0,
+    "auto": 1,
+    "wrong_list": [],
+    "unanswered_list": [],
+    "auto_list": [
+        14
+    ]
+},
+"Talha": {
+    "score": 39.75,
+    "correct": 38,
+    "wrong": 5,
+    "unanswered": 4,
+    "auto": 3,
+    "wrong_list": [
+        4,
+        5,
+        12,
+        13,
+        45
+    ],
+    "unanswered_list": [
+        8,
+        24,
+        33,
+        38
+    ],
+    "auto_list": [
+        25,
+        26,
+        46
+    ]
+},
+"Nadman": {
+    "score": 47.5,
+    "correct": 46,
+    "wrong": 2,
+    "unanswered": 0,
+    "auto": 2,
+    "wrong_list": [
+        4,
+        47
+    ],
+    "unanswered_list": [],
+    "auto_list": [
+        17,
+        25
+    ]
+},
+"Taskin Riyan Khan": {
+    "score": 31.75,
+    "correct": 32,
+    "wrong": 9,
+    "unanswered": 7,
+    "auto": 2,
+    "wrong_list": [
+        6,
+        7,
+        9,
+        13,
+        19,
+        34,
+        36,
+        41,
+        49
+    ],
+    "unanswered_list": [
+        3,
+        4,
+        22,
+        23,
+        33,
+        40,
+        50
+    ],
+    "auto_list": [
+        37,
+        42
+    ]
+},
+"Tahmid": {
+    "score": 48.75,
+    "correct": 48,
+    "wrong": 1,
+    "unanswered": 0,
+    "auto": 1,
+    "wrong_list": [
+        30
+    ],
+    "unanswered_list": [],
+    "auto_list": [
+        33
+    ]
+},
+"Nuha": {
+    "score": 36.75,
+    "correct": 37,
+    "wrong": 5,
+    "unanswered": 7,
+    "auto": 1,
+    "wrong_list": [
+        14,
+        29,
+        31,
+        33,
+        46
+    ],
+    "unanswered_list": [
+        4,
+        8,
+        10,
+        19,
+        21,
+        25,
+        42
+    ],
+    "auto_list": [
+        40
+    ]
+},
+"Jannat": {
+    "score": 40.5,
+    "correct": 40,
+    "wrong": 6,
+    "unanswered": 2,
+    "auto": 2,
+    "wrong_list": [
+        1,
+        11,
+        15,
+        16,
+        24,
+        33
+    ],
+    "unanswered_list": [
+        4,
+        8
+    ],
+    "auto_list": [
+        36,
+        43
+    ]
+},
+"Adisha": {
+    "score": 32.0,
+    "correct": 35,
+    "wrong": 12,
+    "unanswered": 3,
+    "auto": 0,
+    "wrong_list": [
+        2,
+        8,
+        9,
+        16,
+        18,
+        28,
+        34,
+        35,
+        36,
+        43,
+        44,
+        45
+    ],
+    "unanswered_list": [
+        7,
+        21,
+        42
+    ],
+    "auto_list": []
+},
+"Tahsin": {
+    "score": 38.0,
+    "correct": 38,
+    "wrong": 8,
+    "unanswered": 2,
+    "auto": 2,
+    "wrong_list": [
+        6,
+        12,
+        21,
+        25,
+        26,
+        36,
+        46,
+        49
+    ],
+    "unanswered_list": [
+        32,
+        42
+    ],
+    "auto_list": [
+        15,
+        34
+    ]
+},
+}
+function view() {
+	let name = document.getElementById("name").value;
+	document.getElementById("exam").innerHTML = "<h2>" + exam + " MCQ Result</h2>";
+	document.getElementById("participant").innerHTML = "<h3>Name: " + name + "</h3>";
+	let score = "Score: " + data[name]["score"]
+	let correct = "Correct: " + data[name]["correct"]
+	let wrong = "Wrong: " + data[name]["wrong"]
+	let unanswered = "Unanswered: " + data[name]["unanswered"]
+	let auto = "Auto: " + data[name]["auto"]
+	let wrong_list_str = "Wrong List: ";
+	for (let i = 0; i < data[name]["wrong_list"].length; i++) {
+		wrong_list_str += data[name]["wrong_list"][i];
+		if (i < data[name]["wrong_list"].length - 1) {
+			wrong_list_str += ", ";
+		}
+	} 
+	let unanswered_list_str = "Unanswered List: ";
+	for (let i = 0; i < data[name]["unanswered_list"].length; i++) {
+		unanswered_list_str += data[name]["unanswered_list"][i];
+		if (i < data[name]["unanswered_list"].length - 1) {
+			unanswered_list_str += ", ";
+		}
+	}
+	let auto_list_str = "Auto List: ";
+	for (let i = 0; i < data[name]["auto_list"].length; i++) {
+		auto_list_str += data[name]["auto_list"][i];
+		if (i < data[name]["auto_list"].length - 1) {
+			auto_list_str += ", ";
+		}
+	}
+	document.getElementById("grade").innerHTML = "<b>" + score + "</b><br>\n";
+	document.getElementById("grade").innerHTML += "<font color='green'>" + correct + "</font><br>\n";
+	document.getElementById("grade").innerHTML += "<font color='red'>" + wrong + "</font><br>\n";
+	document.getElementById("grade").innerHTML += "<font color='red'>" + wrong_list_str + "</font><br>\n";
+	document.getElementById("grade").innerHTML += "<font color='blue'>" + unanswered + "</font><br>\n";
+	document.getElementById("grade").innerHTML += "<font color='blue'>" + unanswered_list_str + "</font><br>\n";
+	document.getElementById("grade").innerHTML += "<font color='green'>" + auto + "</font><br>\n";		document.getElementById("grade").innerHTML += "<font color='green'>" + auto_list_str + "</font><br>\n";
+	document.getElementById("omr").innerHTML = "<a href='" + name + ".jpg' download>Download OMR Sheet</a><br>\n<img src='" + name + ".jpg' width='800px'/>"
+}
+</script>
+</body>
+</html>
