@@ -657,7 +657,7 @@
                         document.getElementById("grade").innerHTML += "<font color='green'>" + auto + "</font><br>\n";
                         document.getElementById("grade").innerHTML += "<font color='green'>" + auto_list_str + "</font><br><br>\n";
                     }
-                    document.getElementById("omr").innerHTML = "<a href='" + name + ".jpg' download class='btn btn-primary'>Download OMR Sheet</a><br><br>\n<img src='staticelectricity_mcq_1_" + name + ".jpg'/>"
+                    document.getElementById("omr").innerHTML = "<a href='" + exam + '_mcq_1_' + name + ".jpg' download class='btn btn-primary'>Download OMR Sheet</a><br><br>\n<img src='staticelectricity_mcq_1_" + name + ".jpg'/>"
                 } catch (e) {
                     document.getElementById("error").innerHTML = "<font color='red'>No such student exists!</font>";
                     document.getElementById("exam").innerHTML = "";
