@@ -496,6 +496,7 @@
 "Rafid": 14,
 "Farhan": 15,
 "Irfan": 16,
+"Nehal": '--',
 }
         document.getElementById("sillyForm").addEventListener("submit", function (event) {
             event.preventDefault();
@@ -539,7 +540,7 @@
                     document.getElementById("error").innerHTML = "";
                     document.getElementById("exam").innerHTML = "<h2>" + exam + " MCQ Result</h2>";
                     document.getElementById("participant").innerHTML = "<h3>Name: " + name + "</h3>";
-                    document.getElementById("position").innerHTML = "<h4>Position: " + positions[name] + "/" + Object.keys(positions).length; + "</h4>";
+                    document.getElementById("position").innerHTML = "<h4>Position: " + positions[name] + "/" + (Object.keys(positions).length - 1); + "</h4>";
                     document.getElementById("grade").innerHTML = "<h4>" + score + "</h4>\n";
                     document.getElementById("grade").innerHTML += "<font color='green'>" + correct + "</font><br>\n";
                     if (parseInt(wrong.split(":")[1]) !== 0) {
