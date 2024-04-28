@@ -24,10 +24,12 @@
                 <input type="text" class="form-control" id="name" required>
                 <label for="exam">Exam:</label>
                 <select id="exam" class="form-control" required>
-                    <option value="vector">Physics 1st Paper - Vector</option>
-                    <option value="staticelectricity">Physics 2nd Paper - Static Electricity</option>
-                    <option value="differentiation">Higher Mathematics 1st Paper - Differentiation</option>
-                    <option value="shm" selected>Physics 1st Paper - Periodic Motion</option>
+                    <option value="vector_mcq_1">Physics 1st Paper - Vector</option>
+                    <option value="staticelectricity_mcq_1">Physics 2nd Paper - Static Electricity</option>
+                    <option value="differentiation_mcq_1">Higher Mathematics 1st Paper - Differentiation</option>
+                    <option value="newtonianmechanics_mcq_1">Physics 1st Paper - Newtonian Mechanics 1</option>
+                    <option value="shm_mcq_1">Physics 1st Paper - Periodic Motion</option>
+                    <option value="newtonianmechanics_mcq_4" selected>Physics 1st Paper - Newtonian Mechanics 2</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">View Result</button>
@@ -47,7 +49,7 @@
     <script>
         const data =
         {
-            "vector": {
+            "vector_mcq_1": {
                 "Jannat": {
                     "score": 45.0,
                     "correct": 45,
@@ -802,7 +804,7 @@
                     ]
                 }
             },
-            "staticelectricity": {
+            "staticelectricity_mcq_1": {
                 "Maliyat": {
                     "score": 25.25,
                     "correct": 27,
@@ -1340,7 +1342,7 @@
                     "auto_list": []
                 }
             },
-            "differentiation": {
+            "differentiation_mcq_1": {
                 "Irfan": {
                     "score": 15.25,
                     "correct": 20,
@@ -1788,7 +1790,7 @@
                     "auto_list": []
                 }
             },
-            "shm": {
+            "shm_mcq_1": {
                 "Afraz": {
                     "score": 50.75,
                     "correct": 49,
@@ -2361,11 +2363,1048 @@
                         36
                     ]
                 }
+            },
+            "newtonianmechanics_mcq_4": {
+                "Nadman": {
+                    "score": 53.0,
+                    "correct": 52,
+                    "wrong": 4,
+                    "unanswered": 2,
+                    "auto": 2,
+                    "wrong_list": [
+                        10,
+                        53,
+                        57,
+                        59
+                    ],
+                    "unanswered_list": [
+                        8,
+                        42
+                    ],
+                    "auto_list": [
+                        33,
+                        38
+                    ]
+                },
+                "Mashfi": {
+                    "score": 56.25,
+                    "correct": 55,
+                    "wrong": 3,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [
+                        13,
+                        22,
+                        39
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        49,
+                        54
+                    ]
+                },
+                "Nayeem": {
+                    "score": 55.5,
+                    "correct": 54,
+                    "wrong": 2,
+                    "unanswered": 2,
+                    "auto": 2,
+                    "wrong_list": [
+                        3,
+                        59
+                    ],
+                    "unanswered_list": [
+                        5,
+                        42
+                    ],
+                    "auto_list": [
+                        6,
+                        46
+                    ]
+                },
+                "Tahsin": {
+                    "score": 48.25,
+                    "correct": 48,
+                    "wrong": 7,
+                    "unanswered": 3,
+                    "auto": 2,
+                    "wrong_list": [
+                        1,
+                        21,
+                        29,
+                        32,
+                        45,
+                        49,
+                        50
+                    ],
+                    "unanswered_list": [
+                        3,
+                        44,
+                        48
+                    ],
+                    "auto_list": [
+                        28,
+                        42
+                    ]
+                },
+                "Adiba": {
+                    "score": 46.25,
+                    "correct": 47,
+                    "wrong": 11,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [
+                        3,
+                        18,
+                        28,
+                        32,
+                        33,
+                        34,
+                        35,
+                        43,
+                        46,
+                        54,
+                        55
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        49,
+                        52
+                    ]
+                },
+                "Jubayer": {
+                    "score": 55.25,
+                    "correct": 54,
+                    "wrong": 3,
+                    "unanswered": 1,
+                    "auto": 2,
+                    "wrong_list": [
+                        31,
+                        53,
+                        54
+                    ],
+                    "unanswered_list": [
+                        56
+                    ],
+                    "auto_list": [
+                        1,
+                        58
+                    ]
+                },
+                "Jannat": {
+                    "score": 53.75,
+                    "correct": 53,
+                    "wrong": 5,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [
+                        4,
+                        15,
+                        29,
+                        39,
+                        60
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        17,
+                        37
+                    ]
+                },
+                "Irfan": {
+                    "score": 50.5,
+                    "correct": 50,
+                    "wrong": 6,
+                    "unanswered": 2,
+                    "auto": 2,
+                    "wrong_list": [
+                        9,
+                        16,
+                        35,
+                        43,
+                        49,
+                        58
+                    ],
+                    "unanswered_list": [
+                        26,
+                        32
+                    ],
+                    "auto_list": [
+                        18,
+                        23
+                    ]
+                },
+                "Zahin": {
+                    "score": 42.25,
+                    "correct": 43,
+                    "wrong": 11,
+                    "unanswered": 4,
+                    "auto": 2,
+                    "wrong_list": [
+                        12,
+                        21,
+                        22,
+                        25,
+                        32,
+                        33,
+                        35,
+                        36,
+                        37,
+                        44,
+                        57
+                    ],
+                    "unanswered_list": [
+                        17,
+                        45,
+                        55,
+                        58
+                    ],
+                    "auto_list": [
+                        42,
+                        54
+                    ]
+                },
+                "Prottasha": {
+                    "score": 52.5,
+                    "correct": 51,
+                    "wrong": 2,
+                    "unanswered": 5,
+                    "auto": 2,
+                    "wrong_list": [
+                        22,
+                        27
+                    ],
+                    "unanswered_list": [
+                        4,
+                        7,
+                        14,
+                        30,
+                        35
+                    ],
+                    "auto_list": [
+                        15,
+                        36
+                    ]
+                },
+                "Talha": {
+                    "score": 46.5,
+                    "correct": 45,
+                    "wrong": 2,
+                    "unanswered": 11,
+                    "auto": 2,
+                    "wrong_list": [
+                        2,
+                        5
+                    ],
+                    "unanswered_list": [
+                        1,
+                        10,
+                        11,
+                        13,
+                        15,
+                        24,
+                        36,
+                        44,
+                        47,
+                        48,
+                        53
+                    ],
+                    "auto_list": [
+                        23,
+                        49
+                    ]
+                },
+                "Afraz": {
+                    "score": 60.0,
+                    "correct": 58,
+                    "wrong": 0,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        12,
+                        48
+                    ]
+                },
+                "Faria": {
+                    "score": 44.25,
+                    "correct": 45,
+                    "wrong": 11,
+                    "unanswered": 2,
+                    "auto": 2,
+                    "wrong_list": [
+                        4,
+                        18,
+                        29,
+                        30,
+                        31,
+                        34,
+                        40,
+                        41,
+                        43,
+                        57,
+                        59
+                    ],
+                    "unanswered_list": [
+                        2,
+                        45
+                    ],
+                    "auto_list": [
+                        24,
+                        38
+                    ]
+                },
+                "Nehal": {
+                    "score": 49.5,
+                    "correct": 49,
+                    "wrong": 6,
+                    "unanswered": 3,
+                    "auto": 2,
+                    "wrong_list": [
+                        5,
+                        8,
+                        9,
+                        11,
+                        13,
+                        43
+                    ],
+                    "unanswered_list": [
+                        17,
+                        35,
+                        37
+                    ],
+                    "auto_list": [
+                        53,
+                        54
+                    ]
+                },
+                "Maliyat": {
+                    "score": 38.25,
+                    "correct": 39,
+                    "wrong": 11,
+                    "unanswered": 8,
+                    "auto": 2,
+                    "wrong_list": [
+                        2,
+                        3,
+                        15,
+                        16,
+                        19,
+                        23,
+                        36,
+                        41,
+                        56,
+                        58,
+                        59
+                    ],
+                    "unanswered_list": [
+                        5,
+                        17,
+                        22,
+                        25,
+                        34,
+                        38,
+                        52,
+                        55
+                    ],
+                    "auto_list": [
+                        18,
+                        21
+                    ]
+                },
+                "Ishraq": {
+                    "score": 56.25,
+                    "correct": 55,
+                    "wrong": 3,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [
+                        28,
+                        39,
+                        60
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        5,
+                        30
+                    ]
+                },
+                "Prithviraj": {
+                    "score": 57.5,
+                    "correct": 56,
+                    "wrong": 2,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [
+                        28,
+                        48
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        26,
+                        60
+                    ]
+                },
+                "Adisha": {
+                    "score": 47.5,
+                    "correct": 48,
+                    "wrong": 10,
+                    "unanswered": 0,
+                    "auto": 2,
+                    "wrong_list": [
+                        13,
+                        17,
+                        28,
+                        32,
+                        38,
+                        40,
+                        42,
+                        50,
+                        52,
+                        56
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        7,
+                        29
+                    ]
+                },
+                "Jarin": {
+                    "score": 41.75,
+                    "correct": 42,
+                    "wrong": 9,
+                    "unanswered": 7,
+                    "auto": 2,
+                    "wrong_list": [
+                        1,
+                        10,
+                        20,
+                        28,
+                        30,
+                        34,
+                        52,
+                        55,
+                        60
+                    ],
+                    "unanswered_list": [
+                        3,
+                        4,
+                        14,
+                        24,
+                        35,
+                        39,
+                        53
+                    ],
+                    "auto_list": [
+                        22,
+                        36
+                    ]
+                },
+                "Farhan": {
+                    "score": 43.25,
+                    "correct": 43,
+                    "wrong": 7,
+                    "unanswered": 8,
+                    "auto": 2,
+                    "wrong_list": [
+                        1,
+                        3,
+                        5,
+                        29,
+                        44,
+                        47,
+                        55
+                    ],
+                    "unanswered_list": [
+                        2,
+                        4,
+                        11,
+                        16,
+                        20,
+                        25,
+                        31,
+                        34
+                    ],
+                    "auto_list": [
+                        23,
+                        28
+                    ]
+                },
+                "Bornil": {
+                    "score": 48.0,
+                    "correct": 48,
+                    "wrong": 8,
+                    "unanswered": 2,
+                    "auto": 2,
+                    "wrong_list": [
+                        10,
+                        26,
+                        27,
+                        28,
+                        32,
+                        47,
+                        48,
+                        56
+                    ],
+                    "unanswered_list": [
+                        23,
+                        57
+                    ],
+                    "auto_list": [
+                        37,
+                        46
+                    ]
+                },
+                "Mohona": {
+                    "score": 35.5,
+                    "correct": 38,
+                    "wrong": 18,
+                    "unanswered": 2,
+                    "auto": 2,
+                    "wrong_list": [
+                        6,
+                        8,
+                        9,
+                        10,
+                        12,
+                        21,
+                        22,
+                        26,
+                        30,
+                        31,
+                        32,
+                        34,
+                        37,
+                        40,
+                        43,
+                        54,
+                        55,
+                        57
+                    ],
+                    "unanswered_list": [
+                        24,
+                        50
+                    ],
+                    "auto_list": [
+                        39,
+                        56
+                    ]
+                }
+            },
+            "newtonianmechanics_mcq_1": {
+                "Maisha": {
+                    "score": 51.25,
+                    "correct": 52,
+                    "wrong": 7,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        1,
+                        13,
+                        17,
+                        34,
+                        54,
+                        57,
+                        60
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        25
+                    ]
+                },
+                "Maliyat": {
+                    "score": 31.25,
+                    "correct": 33,
+                    "wrong": 11,
+                    "unanswered": 15,
+                    "auto": 1,
+                    "wrong_list": [
+                        8,
+                        9,
+                        10,
+                        14,
+                        19,
+                        32,
+                        34,
+                        38,
+                        49,
+                        54,
+                        57
+                    ],
+                    "unanswered_list": [
+                        2,
+                        15,
+                        18,
+                        20,
+                        23,
+                        26,
+                        29,
+                        36,
+                        39,
+                        40,
+                        41,
+                        42,
+                        55,
+                        58,
+                        59
+                    ],
+                    "auto_list": [
+                        46
+                    ]
+                },
+                "Mohona": {
+                    "score": 18.5,
+                    "correct": 23,
+                    "wrong": 22,
+                    "unanswered": 14,
+                    "auto": 1,
+                    "wrong_list": [
+                        1,
+                        2,
+                        8,
+                        17,
+                        23,
+                        24,
+                        27,
+                        30,
+                        31,
+                        32,
+                        35,
+                        37,
+                        38,
+                        42,
+                        43,
+                        45,
+                        47,
+                        48,
+                        50,
+                        52,
+                        53,
+                        57
+                    ],
+                    "unanswered_list": [
+                        6,
+                        13,
+                        14,
+                        19,
+                        21,
+                        25,
+                        39,
+                        41,
+                        49,
+                        54,
+                        55,
+                        56,
+                        58,
+                        60
+                    ],
+                    "auto_list": [
+                        36
+                    ]
+                },
+                "Jubayer": {
+                    "score": 58.75,
+                    "correct": 58,
+                    "wrong": 1,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        52
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        24
+                    ]
+                },
+                "Prithviraj": {
+                    "score": 57.5,
+                    "correct": 57,
+                    "wrong": 2,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        45,
+                        48
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        8
+                    ]
+                },
+                "Ishraq": {
+                    "score": 56.25,
+                    "correct": 56,
+                    "wrong": 3,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        13,
+                        18,
+                        40
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        47
+                    ]
+                },
+                "Nayeem": {
+                    "score": 52.75,
+                    "correct": 53,
+                    "wrong": 5,
+                    "unanswered": 1,
+                    "auto": 1,
+                    "wrong_list": [
+                        19,
+                        25,
+                        26,
+                        42,
+                        57
+                    ],
+                    "unanswered_list": [
+                        52
+                    ],
+                    "auto_list": [
+                        12
+                    ]
+                },
+                "Nehal": {
+                    "score": 43.0,
+                    "correct": 44,
+                    "wrong": 8,
+                    "unanswered": 7,
+                    "auto": 1,
+                    "wrong_list": [
+                        10,
+                        12,
+                        25,
+                        28,
+                        33,
+                        54,
+                        55,
+                        56
+                    ],
+                    "unanswered_list": [
+                        4,
+                        6,
+                        14,
+                        16,
+                        26,
+                        57,
+                        58
+                    ],
+                    "auto_list": [
+                        50
+                    ]
+                },
+                "Mashfi": {
+                    "score": 57.5,
+                    "correct": 57,
+                    "wrong": 2,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        39,
+                        44
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        46
+                    ]
+                },
+                "Bornil": {
+                    "score": 45.25,
+                    "correct": 46,
+                    "wrong": 7,
+                    "unanswered": 6,
+                    "auto": 1,
+                    "wrong_list": [
+                        7,
+                        16,
+                        33,
+                        38,
+                        44,
+                        49,
+                        60
+                    ],
+                    "unanswered_list": [
+                        34,
+                        37,
+                        39,
+                        52,
+                        54,
+                        56
+                    ],
+                    "auto_list": [
+                        2
+                    ]
+                },
+                "Talha": {
+                    "score": 50.25,
+                    "correct": 51,
+                    "wrong": 7,
+                    "unanswered": 1,
+                    "auto": 1,
+                    "wrong_list": [
+                        1,
+                        4,
+                        19,
+                        24,
+                        43,
+                        49,
+                        52
+                    ],
+                    "unanswered_list": [
+                        7
+                    ],
+                    "auto_list": [
+                        54
+                    ]
+                },
+                "Irfan": {
+                    "score": 31.5,
+                    "correct": 34,
+                    "wrong": 14,
+                    "unanswered": 11,
+                    "auto": 1,
+                    "wrong_list": [
+                        9,
+                        12,
+                        20,
+                        23,
+                        27,
+                        35,
+                        36,
+                        38,
+                        40,
+                        43,
+                        47,
+                        49,
+                        52,
+                        58
+                    ],
+                    "unanswered_list": [
+                        10,
+                        31,
+                        33,
+                        34,
+                        44,
+                        45,
+                        46,
+                        48,
+                        50,
+                        53,
+                        57
+                    ],
+                    "auto_list": [
+                        39
+                    ]
+                },
+                "Nadman": {
+                    "score": 58.75,
+                    "correct": 58,
+                    "wrong": 1,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        5
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        51
+                    ]
+                },
+                "Afraz": {
+                    "score": 51.25,
+                    "correct": 52,
+                    "wrong": 7,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        12,
+                        16,
+                        23,
+                        34,
+                        46,
+                        47,
+                        55
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        45
+                    ]
+                },
+                "Jannat": {
+                    "score": 60.0,
+                    "correct": 59,
+                    "wrong": 0,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        4
+                    ]
+                },
+                "Fariha": {
+                    "score": 26.0,
+                    "correct": 29,
+                    "wrong": 16,
+                    "unanswered": 14,
+                    "auto": 1,
+                    "wrong_list": [
+                        2,
+                        3,
+                        13,
+                        16,
+                        21,
+                        26,
+                        27,
+                        30,
+                        37,
+                        38,
+                        48,
+                        50,
+                        52,
+                        53,
+                        56,
+                        57
+                    ],
+                    "unanswered_list": [
+                        10,
+                        11,
+                        19,
+                        20,
+                        22,
+                        23,
+                        28,
+                        29,
+                        33,
+                        43,
+                        44,
+                        47,
+                        55,
+                        60
+                    ],
+                    "auto_list": [
+                        14
+                    ]
+                },
+                "Farhan": {
+                    "score": 43.25,
+                    "correct": 44,
+                    "wrong": 7,
+                    "unanswered": 8,
+                    "auto": 1,
+                    "wrong_list": [
+                        8,
+                        12,
+                        17,
+                        22,
+                        29,
+                        43,
+                        55
+                    ],
+                    "unanswered_list": [
+                        10,
+                        15,
+                        16,
+                        39,
+                        47,
+                        52,
+                        58,
+                        59
+                    ],
+                    "auto_list": [
+                        14
+                    ]
+                },
+                "Jarin": {
+                    "score": 49.75,
+                    "correct": 50,
+                    "wrong": 5,
+                    "unanswered": 4,
+                    "auto": 1,
+                    "wrong_list": [
+                        7,
+                        13,
+                        26,
+                        31,
+                        37
+                    ],
+                    "unanswered_list": [
+                        6,
+                        11,
+                        27,
+                        57
+                    ],
+                    "auto_list": [
+                        38
+                    ]
+                },
+                "Rafid": {
+                    "score": 35.5,
+                    "correct": 37,
+                    "wrong": 10,
+                    "unanswered": 12,
+                    "auto": 1,
+                    "wrong_list": [
+                        12,
+                        13,
+                        16,
+                        22,
+                        26,
+                        33,
+                        39,
+                        43,
+                        46,
+                        56
+                    ],
+                    "unanswered_list": [
+                        6,
+                        17,
+                        19,
+                        20,
+                        21,
+                        28,
+                        37,
+                        38,
+                        40,
+                        41,
+                        42,
+                        44
+                    ],
+                    "auto_list": [
+                        51
+                    ]
+                },
+                "Faria": {
+                    "score": 49.5,
+                    "correct": 50,
+                    "wrong": 6,
+                    "unanswered": 3,
+                    "auto": 1,
+                    "wrong_list": [
+                        8,
+                        24,
+                        40,
+                        45,
+                        50,
+                        55
+                    ],
+                    "unanswered_list": [
+                        32,
+                        34,
+                        35
+                    ],
+                    "auto_list": [
+                        57
+                    ]
+                }
             }
         }
         const positions =
         {
-            "vector": {
+            "vector_mcq_1": {
                 "Prithviraj": 1,
                 "Jubayer": 1,
                 "Mashfi": 3,
@@ -2398,7 +3437,7 @@
                 "Afif": 30,
                 "Sayma": 31
             },
-            "staticelectricity": {
+            "staticelectricity_mcq_1": {
                 "Jubayer": 1,
                 "Jannat": 1,
                 "Afraz": 3,
@@ -2421,7 +3460,7 @@
                 "Tahmid": 20,
                 "Fariha": 21
             },
-            "differentiation": {
+            "differentiation_mcq_1": {
                 "Jubayer": 1,
                 "Nadman": 2,
                 "Maisha": 3,
@@ -2440,7 +3479,7 @@
                 "Farhan": 16,
                 "Irfan": 17
             },
-            "shm": {
+            "shm_mcq_1": {
                 "Maisha": 1,
                 "Nadman": 2,
                 "Jubayer": 2,
@@ -2463,6 +3502,52 @@
                 "Jarin": 20,
                 "Jannatul": 21,
                 "Taskin": 22
+            },
+            "newtonianmechanics_mcq_4": {
+                "Afraz": 1,
+                "Prithviraj": 2,
+                "Mashfi": 3,
+                "Ishraq": 3,
+                "Nayeem": 5,
+                "Jubayer": 6,
+                "Jannat": 7,
+                "Nadman": 8,
+                "Prottasha": 9,
+                "Irfan": 10,
+                "Nehal": 11,
+                "Tahsin": 12,
+                "Bornil": 13,
+                "Adisha": 14,
+                "Talha": 15,
+                "Adiba": 16,
+                "Faria": 17,
+                "Farhan": 18,
+                "Zahin": 19,
+                "Jarin": 20,
+                "Maliyat": 21,
+                "Mohona": 22
+            },
+            "newtonianmechanics_mcq_1": {
+                "Jannat": 1,
+                "Nadman": 2,
+                "Jubayer": 2,
+                "Prithviraj": 4,
+                "Mashfi": 4,
+                "Ishraq": 6,
+                "Nayeem": 7,
+                "Maisha": 8,
+                "Afraz": 8,
+                "Talha": 10,
+                "Jarin": 11,
+                "Faria": 12,
+                "Bornil": 13,
+                "Farhan": 14,
+                "Nehal": 15,
+                "Rafid": 16,
+                "Irfan": 17,
+                "Maliyat": 18,
+                "Fariha": 19,
+                "Mohona": 20
             }
         }
         document.getElementById("sillyForm").addEventListener("submit", function (event) {
@@ -2525,7 +3610,7 @@
                         document.getElementById("grade").innerHTML += "<font color='green'>" + auto + "</font><br>\n";
                         document.getElementById("grade").innerHTML += "<font color='green'>" + auto_list_str + "</font><br><br>\n";
                     }
-                    document.getElementById("omr").innerHTML = "<a href='" + exam + "_mcq_1_" + name + ".jpg' download class='btn btn-primary'>Download OMR Sheet</a><br><br>\n<img src='" + exam + "_mcq_1_" + name + ".jpg'/>"
+                    document.getElementById("omr").innerHTML = "<a href='" + exam + "_" + name + ".jpg' download class='btn btn-primary'>Download OMR Sheet</a><br><br>\n<img src='" + exam + "_" + name + ".jpg'/>"
                 } catch (e) {
                     document.getElementById("error").innerHTML = "<font color='red'>ফাঁকিবাজটা পরীক্ষা দেয় নাই!!</font>";
                     document.getElementById("examName").innerHTML = "";
