@@ -32,7 +32,8 @@
                     <option value="newtonianmechanics_mcq_4">Physics 1st Paper - Newtonian Mechanics 2</option>
                     <option value="modernphysics_mcq_1">Physics 2nd Paper - Modern Physics</option>
                     <option value="gravity_mcq_1">Physics 1st Paper - Gravitation and Gravity</option>
-                    <option value="wep_mcq_1" selected>Physics 1st Paper - Work, Energy and Power</option>
+                    <option value="wep_mcq_1">Physics 1st Paper - Work, Energy and Power</option>
+                    <option value="integration_mcq_1" selected>Higher Mathematics 1st Paper - Integration</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">View Result</button>
@@ -50,8 +51,7 @@
     </div>
 
     <script>
-        const data =
-        {
+        const data = {
             "vector_mcq_1": {
                 "Jannat": {
                     "score": 45.0,
@@ -5145,10 +5145,215 @@
                         54
                     ]
                 }
+            },
+            "integration_mcq_1": {
+                "Farhan": {
+                    "score": 31.25,
+                    "correct": 32,
+                    "wrong": 7,
+                    "unanswered": 20,
+                    "auto": 1,
+                    "wrong_list": [
+                        10,
+                        24,
+                        25,
+                        29,
+                        43,
+                        46,
+                        52
+                    ],
+                    "unanswered_list": [
+                        2,
+                        8,
+                        12,
+                        13,
+                        18,
+                        21,
+                        31,
+                        32,
+                        33,
+                        34,
+                        37,
+                        39,
+                        42,
+                        44,
+                        49,
+                        50,
+                        51,
+                        53,
+                        57,
+                        59
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Tahsin": {
+                    "score": 56.75,
+                    "correct": 56,
+                    "wrong": 1,
+                    "unanswered": 2,
+                    "auto": 1,
+                    "wrong_list": [
+                        50
+                    ],
+                    "unanswered_list": [
+                        30,
+                        56
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Maisha": {
+                    "score": 55.25,
+                    "correct": 55,
+                    "wrong": 3,
+                    "unanswered": 1,
+                    "auto": 1,
+                    "wrong_list": [
+                        16,
+                        18,
+                        53
+                    ],
+                    "unanswered_list": [
+                        52
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Toshrif": {
+                    "score": 37.75,
+                    "correct": 40,
+                    "wrong": 13,
+                    "unanswered": 6,
+                    "auto": 1,
+                    "wrong_list": [
+                        8,
+                        10,
+                        12,
+                        16,
+                        23,
+                        25,
+                        28,
+                        31,
+                        33,
+                        34,
+                        37,
+                        49,
+                        59
+                    ],
+                    "unanswered_list": [
+                        13,
+                        30,
+                        39,
+                        44,
+                        56,
+                        57
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Talha": {
+                    "score": 46.25,
+                    "correct": 47,
+                    "wrong": 7,
+                    "unanswered": 5,
+                    "auto": 1,
+                    "wrong_list": [
+                        10,
+                        18,
+                        20,
+                        29,
+                        37,
+                        54,
+                        59
+                    ],
+                    "unanswered_list": [
+                        24,
+                        25,
+                        30,
+                        52,
+                        56
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Nehal": {
+                    "score": 50.75,
+                    "correct": 51,
+                    "wrong": 5,
+                    "unanswered": 3,
+                    "auto": 1,
+                    "wrong_list": [
+                        46,
+                        49,
+                        50,
+                        54,
+                        57
+                    ],
+                    "unanswered_list": [
+                        30,
+                        52,
+                        56
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Nadman": {
+                    "score": 57.5,
+                    "correct": 57,
+                    "wrong": 2,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        3,
+                        18
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Mashfi": {
+                    "score": 56.75,
+                    "correct": 56,
+                    "wrong": 1,
+                    "unanswered": 2,
+                    "auto": 1,
+                    "wrong_list": [
+                        18
+                    ],
+                    "unanswered_list": [
+                        30,
+                        56
+                    ],
+                    "auto_list": [
+                        35
+                    ]
+                },
+                "Jannat": {
+                    "score": 57.5,
+                    "correct": 57,
+                    "wrong": 2,
+                    "unanswered": 0,
+                    "auto": 1,
+                    "wrong_list": [
+                        11,
+                        53
+                    ],
+                    "unanswered_list": [],
+                    "auto_list": [
+                        35
+                    ]
+                }
             }
         }
-        const positions =
-        {
+        const positions = {
             "vector_mcq_1": {
                 "Prithviraj": 1,
                 "Jubayer": 1,
@@ -5368,6 +5573,17 @@
                 "Taskin": 22,
                 "Jannatul": 23,
                 "Fariha": 24
+            },
+            "integration_mcq_1": {
+                "Nadman": 1,
+                "Jannat": 1,
+                "Tahsin": 3,
+                "Mashfi": 3,
+                "Maisha": 5,
+                "Nehal": 6,
+                "Talha": 7,
+                "Toshrif": 8,
+                "Farhan": 9
             }
         }
         document.getElementById("sillyForm").addEventListener("submit", function (event) {
