@@ -4,68 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehbubul Hasan Al-Quvi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #fdfdfd;
+            line-height: 1.6;
         }
         header {
-            background: #1e90ff;
+            background: linear-gradient(135deg, #1e90ff, #87cefa);
             color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-family: 'Roboto Slab', serif;
         }
         header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-size: 1.3rem;
         }
         nav {
             position: sticky;
             top: 0;
-            background: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 0.5rem 1rem;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
             z-index: 1000;
         }
         nav a {
-            margin: 0 1rem;
+            margin: 0 1.5rem;
             text-decoration: none;
             color: #1e90ff;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #ff4500;
         }
         section {
-            padding: 4rem 1rem;
+            padding: 3rem 1rem;
             max-width: 900px;
             margin: 0 auto;
         }
         section h2 {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
             color: #1e90ff;
+        }
+        section p, ul {
+            font-size: 1.1rem;
+            color: #555;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         ul li {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        ul li strong {
+            font-weight: 700;
+            color: #333;
+        }
+        ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        ul li a:hover {
+            text-decoration: underline;
         }
         footer {
             text-align: center;
-            background: #f1f1f1;
+            background: #1e90ff;
+            color: white;
             padding: 1rem;
             font-size: 0.9rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -86,13 +118,15 @@
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate researcher with a deep interest in operating systems, compilers, eBPF, binary analysis, and virtual machines. My goal is to design reliable, scalable, and impactful system-level abstractions, addressing challenges in system security and high-performance computing.</p>
-        <p>From an early age, I was captivated by computer systems, starting with my first C program at 13, building Android apps in high school, and later exploring low-level systems during my undergraduate studies.</p>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <ul>
-            <li><strong>Bangladesh University of Engineering and Technology (BUET)</strong> <br> Bachelor of Science in Computer Science and Engineering (2019 – 2024) <br> CGPA: 3.84/4.00</li>
+            <li><strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+                Bachelor of Science in Computer Science and Engineering (2019 – 2024)<br>
+                CGPA: 3.84/4.00
+            </li>
         </ul>
     </section>
 
@@ -100,16 +134,8 @@
         <h2>Research Experience</h2>
         <ul>
             <li><strong>Summer Research Internship</strong> - OrderLab, University of Michigan (2024 – Present)<br>
-                • Developed a framework to enhance flexibility and runtime safety of eBPF programs by integrating lightweight runtime checks.<br>
-                • Contributed to custom intermediate representation (IR) design, runtime passes, and code generation.<br>
-                • Curated datasets of accepted and rejected eBPF programs for evaluation.<br>
-                • Evaluated the framework's scalability and safety improvements, and co-authored a paper submitted to OSDI 2025.
-            </li>
-            <li><strong>Research Assistant</strong> - BUET and Samsung Research Bangladesh (2024)<br>
-                • Co-developed LELANTE, an automated testing framework that leverages natural language and LLMs for Android applications.<br>
-                • Designed the verification module and implemented a two-stage pipeline for executing and verifying test cases.<br>
-                • Fine-tuned open-source models using LoRa with hardware constraints, achieving an 85% success rate across 390 test cases.<br>
-                • Co-authored a paper under review by Samsung Research Bangladesh.
+                • Developed a framework to enhance flexibility and runtime safety of eBPF programs.<br>
+                • Contributed to custom IR design and runtime passes.
             </li>
         </ul>
     </section>
@@ -117,28 +143,18 @@
     <section id="projects">
         <h2>Selected Projects</h2>
         <ul>
-            <li><strong><a href="https://github.com/quvi007/qcc">QCC - Tiny C Compiler</a></strong> - Built a tiny C compiler using C++ that translates C code to assembly.</li>
-            <li><strong><a href="https://github.com/quvi007/MIPS-CPU">4-Bit MIPS CPU</a></strong> - Developed hardware and virtual simulation for the CPU pipeline.</li>
-            <li><strong><a href="https://github.com/quvi007/Ray-Tracing">Ray-Tracing in OpenGL</a></strong> - Implemented rasterization and ray-tracing pipelines in C++ and OpenGL.</li>
-            <li><strong><a href="https://github.com/quvi007/crypto-sys">CryptoSys - Basic Crypto-System for Secured Communication</a></strong> - Implemented a basic crypto-system utilizing AES and Diffie-Hellman algorithm.</li>
-            <li><strong><a href="https://github.com/quvi007/Minimalist-HTTP-Server">HTTP Server</a></strong> - Built a multi-threaded HTTP server using Java and socket programming.</li>
-            <li><strong><a href="https://github.com/quvi007/automated-traffic-signaling-microcontroller-system">Microcontroller-based Automated Traffic Signaling System</a></strong> - Built an automated traffic signaling system with Arduino.</li>
-            <li><strong><a href="https://github.com/quvi007/Gradery">Gradery - An Online CMS</a></strong> - Developed an online course management system (CMS) for BUET CSE.</li>
-            <li><strong><a href="https://github.com/quvi007/KagOJ">KagOJ - An Online Judge</a></strong> - Co-developed an online judge platform for coding practice and contests.</li>
-            <li><strong><a href="https://github.com/quvi007/bounce_game_desktop-L1T1-project">Bounce Game for Windows</a></strong> - Built the desktop version of the popular mobile game, Bounce.</li>
-            <li><strong>EmerApp - Helper in Emergency</strong> - Developed an Android app to assist users during emergencies.</li>
+            <li><strong><a href="https://github.com/quvi007/qcc">QCC - Tiny C Compiler</a></strong> - Built a tiny C compiler using C++.</li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:quvi007@gmail.com">quvi007@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/quvi007">github.com/quvi007</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/quvi007">linkedin.com/in/quvi007</a></p>
     </section>
 
     <footer>
-        &copy; 2024 Mehbubul Hasan Al-Quvi. All rights reserved.
+        &copy; 2024 <a href="https://github.com/quvi007">Mehbubul Hasan Al-Quvi</a>. All rights reserved.
     </footer>
 </body>
 </html>
+
