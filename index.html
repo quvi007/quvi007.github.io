@@ -129,8 +129,8 @@
             color: #333;
         }
         .project-card {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
         }
         .project-card .card {
@@ -138,8 +138,6 @@
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            flex: 1 1 calc(50% - 1.5rem);
-            max-width: calc(50% - 1.5rem);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .project-card .card:hover {
@@ -190,9 +188,8 @@
                 flex: 1 1 100%;
                 max-width: 100%;
             }
-            .project-card .card {
-                flex: 1 1 100%;
-                max-width: 100%;
+            .project-card {
+                grid-template-columns: 1fr;
             }
         }
     </style>
