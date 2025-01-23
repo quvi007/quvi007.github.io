@@ -172,15 +172,15 @@ content:
     layout: list
     content:
       - layout: left
-        title: Systems Research Intern
-        caption: June 2024 - Present
+        title: Research Intern
+        caption: June 2024 - Present (Remote)
         link: https://orderlab.io
         # quote: >
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          Department of Computer Science and Engineering
+          Advised by Professor Ryan (Peng) Huang
 
-          University of Michigan, Ann Arbor
+          [http://orderlab.io](Ordered Systems Lab, U-M)
       
       - layout: left
         title: Systems Researcher
