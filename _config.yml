@@ -245,9 +245,8 @@ content:
   - title: News
     layout: text
     content: | # this will include new lines to allow paragraphs
-      * **[Aug 2023]** Started as a Grad student at UW-Madison.
-      * **[Oct 2022]** Defended my Master's thesis. Thanks to my supervisors.
-      * **[Sep 2022]** Attended ECML-PKDD 2022 in Grenoble, France. [Met Yann LeCun!](/images/yann-lecun-and-tareq.jpg). 
+      * **[Jun 2024]** Started as a Remote Research Intern at OrderLab, U-M.
+      * **[Jun 2024]** Defended my Bachelor's thesis. Thanks to my supervisor.
       * **[Jun 2022]** PathOracle accepted in ECML-PKDD 2022.
 
   - title: A Little More About Me
