@@ -58,23 +58,20 @@ content:
         sub_title: Yiming Xiang, Wanning He, Mehbubul Hasan Al-Quvi, and Peng Huang
         link: 
         link_text: <mark>Paper Link</mark>
-        caption: 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b> - Acceptance Rate 19%
+        caption: 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b>
         description: | # this will include new lines to allow paragraphs
           <h4><b>
-            ePass: A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
+            A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
           </b></h4><br>
 
           <p style="text-align: center">
-            <img align="center" src="images/eBPF.png" alt="eBPF" height="300"/>
             <img align="center" src="images/ePass.png" alt="ePass" height="300"/>
-            <img align="center" src="images/ePass_CORE.png" alt="ePass_CORE" height="300"/>
-            <img align="center" src="images/ePass_Transformation.png" alt="ePass_Transformation" height="300"/>
           </p>
 
           <details>
           <summary><p>⮞ Details</p></summary>
           <p>
-
+            
           </p>
           </details>
 
@@ -89,12 +86,28 @@ content:
 
           <p style="text-align: center">
             <img align="center" src="images/LELANTE_EXEC.png" alt="LELANTE_EXEC" height="300"/>
-            <img align="center" src="images/LELANTE_VERIF.png" alt="LELANTE_VERIF" height="300"/>
           </p>
 
           <details>
           <summary><p>⮞ Details</p></summary>
           <p>
+          Automated mobile application testing faces two critical challenges: 
+            (1) executing natural language test specifications without manual scripting, 
+            and (2) reliably verifying test outcomes across diverse application states. 
+            Existing approaches often require specialized scripting languages or 
+            rely on fragile record-and-replay mechanisms, which increase maintenance 
+            costs and reduce verification reliability. To address these issues, 
+            we introduce LELANTE, a novel framework that leverages large language models (LLMs) 
+            to automate both execution and verification of natural language test cases. 
+            LELANTE employs a two-stage pipeline: an LLM interprets and executes test 
+            steps via interaction with the device's graphical user interface (GUI), 
+            while another language model validates execution outcomes against expected conditions. 
+            In experiments across 390 test cases spanning 10 popular Android applications, 
+            LELANTE achieved an <b>85%</b> execution success rate and an <b>85%</b> verification 
+            accuracy using open-source models on standard hardware. 
+            These results show that LLMs can effectively bridge the gap between natural language 
+            test specifications and automated test execution, 
+            making mobile testing more accessible without compromising reliability.
           </p>
           </details>
 
