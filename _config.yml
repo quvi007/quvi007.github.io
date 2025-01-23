@@ -138,38 +138,6 @@ content:
           </p>
           </details>
 
-      - layout: left
-        sub_title: Mehbubul Hasan Al-Quvi, Aszad Rakin, Md Saqib Hasan, and Muhammad Abdullah Adnan
-        caption: 
-        link: 
-        link_text: <mark>Paper Link</mark>
-        description: | # this will include new lines to allow paragraphs
-          <h4><b>
-            
-          </b></h4><br>
-
-          <p style="text-align: center">
-            <img align="center" src="images/Self_Translate.png" alt="Self Translate" height="200"/>
-          </p>
-
-          <details>
-          <summary><p>⮞ Details</p></summary>
-          <p>
-          Large language models (LLMs) show remarkable few-shot capabilities across a variety 
-          of NLP tasks. However, performance degrades when handling tasks in non-native 
-          languages such as Bangla. As a result, researchers develop techniques to improve 
-          the multilingual capabilities of LLMs. One such technique is <i>Self-Translate</i> 
-          where source language text is translated to a higher resource language and then 
-          prompted for the solution. Multiple researches show this method to be effective. 
-          In our work, we demonstrate that <i>this is not as simple as it seems</i>. We 
-          select four benchmark datasets from Bangla, a low-resource language for LLMs. We 
-          prompt different open and closed-source LLMs to directly generate answer and to 
-          translate first before generation of the solution. Our simulations show that 
-          performance depends on the model's multilingual capabilities and the downstream task, 
-          thereby showing that <i>Self-Translate</i> is not always optimal.
-          </p>
-          </details>
-
   - title: Experience
     layout: list
     content:
@@ -247,18 +215,16 @@ content:
   - title: News
     layout: text
     content: | # this will include new lines to allow paragraphs
+      * **[Jan 2025]** Started as a Systems Engineer at EdgeLab, BUET.
+      * **[Dec 2024]** Left Samsung Applied Machine Learning Research Laboratory, BUET.
       * **[Jun 2024]** Started as a Remote Research Intern at OrderLab, U-M.
       * **[Jun 2024]** Defended my Bachelor's thesis. Thanks to my supervisor.
-      * **[Jun 2022]** PathOracle accepted in ECML-PKDD 2022.
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
       In my spare time, I like to try new frameworks, languages and linux distros. 
       I love to build small apps/software/scripts for my own use.
-      
-      My Erdős number is 4. 
-      Paul Erdős - Ronald L. Graham - Jeffrey D. Ullman - Timos K. Sellis - Me.
 
 # Footer
 footer_show_references: false
