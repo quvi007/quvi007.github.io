@@ -48,97 +48,68 @@ about_content: | # this will include new lines to allow paragraphs
   I am a remote research intern at OrderLab, 
   <a href="https://www.umich.edu/">University of Michigan, Ann Arbor</a>. 
   My research interests lie in the intersection of Operating Systems, Computer Architecture and Compilers. 
-  My current research focuses on building efficient distributed ML systems 
-  for large-scale GPU clusters. 
+  My current research focuses on reliable kernel extensibility.
   
 content:
   - title: Research Papers # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        # title: PathOracle - A Deep Learning Based Trip Planner for Daily Commuters
-        sub_title: Md. Tareq Mahmood, Mohammed Eunus Ali, Muhammad Aamir Cheema, Syed Md. Mukit Rashid, and Timos Sellis
-        link: https://doi.org/10.1007/978-3-031-26422-1_35
+        # title: ePass - A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
+        sub_title: Yiming Xiang, Wanning He, Mehbubul Hasan Al-Quvi, and Peng Huang
+        link: 
         link_text: <mark>Paper Link</mark>
-        caption: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2022) - CORE Rank <b>A</b> - Acceptance Rate 26%
+        caption: 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b> - Acceptance Rate 19%
         # quote: 
-        #   Md. Tareq Mahmood, Mohammed Eunus Ali, Muhammad Aamir Cheema, Syed Md. Mukit Rashid, and Timos Sellis
+        #   Yiming Xiang, Wanning He, Mehbubul Hasan Al-Quvi, and Peng Huang
         description: | # this will include new lines to allow paragraphs
           <h4><b>
-            PathOracle - A Deep Learning Based Trip Planner for Daily Commuters
+            ePass - A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
           </b></h4><br>
 
           <p style="text-align: center">
-            <img align="center" src="images/learn-popular-trip.png" alt="learn-popular-trip" height="300"/>
+            <img align="center" src="images/eBPF.png" alt="eBPF" height="300"/>
           </p>
 
           <details>
           <summary><p>⮞ Details</p></summary>
           <p>
-          In this paper, we propose a novel data-driven approach for a 
-          trip planner, that finds the most popular multi-modal trip 
-          using public transport from historical trips, given a source, 
-          a destination, and user-defined constraints such as time, 
-          minimum switches, or preferred modes of transport. To solve 
-          the most popular trip and its variants, we propose a multi-stage 
-          deep learning architecture, PathOracle, that consists of two 
-          major components: KSNet to generate key stops, and MPTNet to 
-          generate popular path trips from a source to a destination 
-          passing through the key stops. We also introduce a unique 
-          representation of stops using Stop2Vec that considers both the 
-          neighborhood and trip popularity between stops to facilitate 
-          accurate path planning. We present an extensive experimental 
-          study with a large real-world public transport based commuting 
-          Myki dataset of Melbourne city, and demonstrate the effectiveness 
-          of our proposed approaches.
+          eBPF has become a popular technology for extending the Linux kernel.
           </p>
           </details>
 
       - layout: left
-        sub_title: Md. Tareq Mahmood and Mohammed Eunus Ali
-        link: https://arxiv.org/abs/2108.03378
+        sub_title: Mehbubul Hasan Al-Quvi, Shamit Fatin, Sukarna Barua, and Anindya Iqbal
+        link: 
         link_text: <mark>Paper Link</mark>
         # quote: 
-        #   Md. Tareq Mahmood and Mohammed Eunus Ali
+        #   Mehbubul Hasan Al-Quvi, Shamit Fatin, Sukarna Barua, and Anindya Iqbal
         description: | # this will include new lines to allow paragraphs
           <h4><b>
-            Learning Indoor Layouts from Simple Point-Clouds
+            LELANTE: LEveraging LLM for Automated ANdroid Test Execution
           </b></h4><br>
 
           <p style="text-align: center">
-            <img align="center" src="images/pointcloud-to-room.png" alt="pointcloud-to-room" height="200"/>
+            <img align="center" src="images/LELANTE_EXEC.png" alt="LELANTE_EXEC" height="200"/>
           </p>
 
           <details>
           <summary><p>⮞ Details</p></summary>
           <p>
-          Reconstructing a layout of indoor spaces has been a crucial part of growing 
-          indoor location based services. One of the key challenges in the proliferation 
-          of indoor location based services is the unavailability of indoor spatial maps 
-          due to the complex nature of capturing an indoor space model (e.g., floor plan) 
-          of an existing building. In this paper, we propose a system to automatically 
-          generate floor plans that can recognize rooms from the point-clouds obtained 
-          through smartphones like Google's Tango. In particular, we propose two 
-          approaches - a Recurrent Neural Network based approach using Pointer Network 
-          and a Convolutional Neural Network based approach using Mask-RCNN to identify 
-          rooms (and thereby floor plans) from point-clouds. Experimental results on 
-          different datasets demonstrate approximately 0.80-0.90 Intersection-over-Union 
-          scores, which show that our models can effectively identify the rooms and regenerate 
-          the shapes of the rooms in heterogeneous environment. 
           </p>
           </details>
 
       - layout: left
-        sub_title: Fariha Tabassum Islam, Md. Tareq Mahmood and Mahmuda Naznin
-        caption: International Conference on Networking, Systems and Security (NSysS 2022)
-        link: https://doi.org/10.1145/3569551.3569554
+        sub_title: Mehbubul Hasan Al-Quvi, Aszad Rakin, Md Saqib Hasan, and Muhammad Abdullah Adnan
+        caption: 
+        link: 
         link_text: <mark>Paper Link</mark>
 
         # quote: 
-        #   Md. Mahmudul Hasan, Md. Rafid UI Islam, and Md. Tareq Mahmood
+        #   Mehbubul Hasan Al-Quvi, Aszad Rakin, Md Saqib Hasan, and Muhammad Abdullah Adnan
         description: | # this will include new lines to allow paragraphs
           <h4><b>
-            MTUL: A Novel Approach for Multi-Trajectory User Linking
+            
           </b></h4><br>
 
           <p style="text-align: center">
