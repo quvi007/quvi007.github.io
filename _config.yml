@@ -259,6 +259,8 @@ content:
       In my spare time, I like to try new frameworks, languages and linux distros. 
       I love to build small apps/software/scripts for my own use.
 
+      <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=mKLyIjWT577bDc9kAESkC_hHaxcXtAD5mKvhZGFApHQ"></script>
+
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
