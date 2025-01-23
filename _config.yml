@@ -183,7 +183,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           Advised by Professor Ryan (Peng) Huang
 
-          [http://orderlab.io](Ordered Systems Lab, U-M)
+          [Ordered Systems Lab, U-M](http://orderlab.io)
       
       - layout: left
         title: Systems Researcher
