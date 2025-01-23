@@ -42,7 +42,7 @@ additional_links:
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/quvi.png
+about_profile_image: images/quvi.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, <b>Quvi</b> here. 
   I am a remote research intern at OrderLab, 
@@ -55,20 +55,21 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        # title: ePass - A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
         sub_title: Yiming Xiang, Wanning He, Mehbubul Hasan Al-Quvi, and Peng Huang
         link: 
         link_text: <mark>Paper Link</mark>
         caption: 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b> - Acceptance Rate 19%
-        # quote: 
-        #   Yiming Xiang, Wanning He, Mehbubul Hasan Al-Quvi, and Peng Huang
         description: | # this will include new lines to allow paragraphs
           <h4><b>
-            ePass - A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
+            ePass: A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
           </b></h4><br>
 
           <p style="text-align: center">
             <img align="center" src="images/eBPF.png" alt="eBPF" height="300"/>
+            <img align="center" src="images/ePass.png" alt="ePass" height="300"/>
+            <br>
+            <img align="center" src="images/ePass_CORE.png" alt="ePass_CORE" height="300"/>
+            <img align="center" src="images/ePass_Transformation.png" alt="ePass_Transformation" height="300"/>
           </p>
 
           <details>
@@ -90,7 +91,26 @@ content:
           </b></h4><br>
 
           <p style="text-align: center">
-            <img align="center" src="images/LELANTE_EXEC.png" alt="LELANTE_EXEC" height="200"/>
+            <img align="center" src="images/LELANTE_EXEC.png" alt="LELANTE_EXEC" height="300"/>
+          </p>
+
+          <details>
+          <summary><p>⮞ Details</p></summary>
+          <p>
+          </p>
+          </details>
+
+      - layout: left
+        sub_title: H.A.Z. Sameen Shahgir, Mehbubul Hasan Al-Quvi, Shamit Fatin, Sukarna Barua, and Anindya Iqbal
+        link: 
+        link_text: <mark>Paper Link</mark>
+        description: | # this will include new lines to allow paragraphs
+          <h4><b>
+            DistilAgent: Distilling Agentic Capabilities from Large Language Models for Long-Horizon UI Navigation
+          </b></h4><br>
+
+          <p style="text-align: center">
+            <img align="center" src="images/LELANTE_EXEC.png" alt="LELANTE_EXEC" height="300"/>
           </p>
 
           <details>
