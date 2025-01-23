@@ -260,7 +260,7 @@ content:
       I love to build small apps/software/scripts for my own use.
 
       <div style="width: 150px; height: 150px; overflow: hidden; display: inline-block;">
-        <div style="transform: scale(0.5); transform-origin: top left;">
+        <div style="transform: scale(0.1); transform-origin: top left;">
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=mKLyIjWT577bDc9kAESkC_hHaxcXtAD5mKvhZGFApHQ"></script>
         </div>
       </div>
