@@ -22,14 +22,14 @@ darkmode: never
 
 # Social links
 github_username:  quvi007
-stackoverflow_username: ""
-linkedin_username: quvi007
+# stackoverflow_username: ""
+linkedin_username: mehbubul-hasan-al-quvi-b97072275
 
 # Additional icon links
-additional_links:
-- title: Google Scholar
-  icon: fas fa-graduation-cap
-  url: 
+# additional_links:
+# - title: Google Scholar
+#   icon: fas fa-graduation-cap
+#   url: 
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -45,10 +45,13 @@ additional_links:
 about_profile_image: images/quvi.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, <b>Quvi</b> here. 
-  I am a remote research intern at OrderLab, 
+  I am a systems research intern at <a href="https://orderlab.io">OrderLab</a>, 
   <a href="https://www.umich.edu/">University of Michigan, Ann Arbor</a>. 
   My research interests lie in the intersection of Operating Systems, Computer Architecture and Compilers. 
-  My current research focuses on reliable kernel extensibility.
+  My current research focuses on reliable kernel extensibility. I am a recent graduate from the Department
+  of Computer Science and Engineering, <a href="https://www.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a>.
+  
+  Currently, I am looking for a Ph.D. position in OS/Architecture/Compilers.
   
 content:
   - title: Research Papers # Title for the section
