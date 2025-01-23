@@ -1,0 +1,337 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Mehbubul Hasan Al-Quvi
+title: Researcher | Prospective Grad Student | Engineer
+email: quvi007 [at] gmail [dot] com
+# email_title: 
+# phone: +88 01877828385
+# phone_title: Phone (Phone title override)
+# website: quvi007.github.io
+# website_title: Web (Website title override)
+# cv: tareqmahmood.xyz/files/tareq_cv.pdf
+# cv_title: Curriculum vitae
+
+# Dark Mode (true/false/never)
+darkmode: never
+
+# Social links
+github_username:  quvi007
+stackoverflow_username: ""
+linkedin_username: quvi007
+
+# Additional icon links
+additional_links:
+- title: Google Scholar
+  icon: fas fa-graduation-cap
+  url: 
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/tareq.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, <b>Quvi</b> here. 
+  I am a remote research intern at OrderLab, 
+  <a href="https://www.umich.edu/">University of Michigan, Ann Arbor</a>. 
+  My research interests lie in the intersection of Operating Systems, Computer Architecture and Compilers. 
+  My current research focuses on building efficient distributed ML systems 
+  for large-scale GPU clusters. 
+  
+content:
+  - title: Research Papers # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        # title: PathOracle - A Deep Learning Based Trip Planner for Daily Commuters
+        sub_title: Md. Tareq Mahmood, Mohammed Eunus Ali, Muhammad Aamir Cheema, Syed Md. Mukit Rashid, and Timos Sellis
+        link: https://doi.org/10.1007/978-3-031-26422-1_35
+        link_text: <mark>Paper Link</mark>
+        caption: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2022) - CORE Rank <b>A</b> - Acceptance Rate 26%
+        # quote: 
+        #   Md. Tareq Mahmood, Mohammed Eunus Ali, Muhammad Aamir Cheema, Syed Md. Mukit Rashid, and Timos Sellis
+        description: | # this will include new lines to allow paragraphs
+          <h4><b>
+            PathOracle - A Deep Learning Based Trip Planner for Daily Commuters
+          </b></h4><br>
+
+          <p style="text-align: center">
+            <img align="center" src="images/learn-popular-trip.png" alt="learn-popular-trip" height="300"/>
+          </p>
+
+          <details>
+          <summary><p>⮞ Details</p></summary>
+          <p>
+          In this paper, we propose a novel data-driven approach for a 
+          trip planner, that finds the most popular multi-modal trip 
+          using public transport from historical trips, given a source, 
+          a destination, and user-defined constraints such as time, 
+          minimum switches, or preferred modes of transport. To solve 
+          the most popular trip and its variants, we propose a multi-stage 
+          deep learning architecture, PathOracle, that consists of two 
+          major components: KSNet to generate key stops, and MPTNet to 
+          generate popular path trips from a source to a destination 
+          passing through the key stops. We also introduce a unique 
+          representation of stops using Stop2Vec that considers both the 
+          neighborhood and trip popularity between stops to facilitate 
+          accurate path planning. We present an extensive experimental 
+          study with a large real-world public transport based commuting 
+          Myki dataset of Melbourne city, and demonstrate the effectiveness 
+          of our proposed approaches.
+          </p>
+          </details>
+
+      - layout: left
+        sub_title: Md. Tareq Mahmood and Mohammed Eunus Ali
+        link: https://arxiv.org/abs/2108.03378
+        link_text: <mark>Paper Link</mark>
+        # quote: 
+        #   Md. Tareq Mahmood and Mohammed Eunus Ali
+        description: | # this will include new lines to allow paragraphs
+          <h4><b>
+            Learning Indoor Layouts from Simple Point-Clouds
+          </b></h4><br>
+
+          <p style="text-align: center">
+            <img align="center" src="images/pointcloud-to-room.png" alt="pointcloud-to-room" height="200"/>
+          </p>
+
+          <details>
+          <summary><p>⮞ Details</p></summary>
+          <p>
+          Reconstructing a layout of indoor spaces has been a crucial part of growing 
+          indoor location based services. One of the key challenges in the proliferation 
+          of indoor location based services is the unavailability of indoor spatial maps 
+          due to the complex nature of capturing an indoor space model (e.g., floor plan) 
+          of an existing building. In this paper, we propose a system to automatically 
+          generate floor plans that can recognize rooms from the point-clouds obtained 
+          through smartphones like Google's Tango. In particular, we propose two 
+          approaches - a Recurrent Neural Network based approach using Pointer Network 
+          and a Convolutional Neural Network based approach using Mask-RCNN to identify 
+          rooms (and thereby floor plans) from point-clouds. Experimental results on 
+          different datasets demonstrate approximately 0.80-0.90 Intersection-over-Union 
+          scores, which show that our models can effectively identify the rooms and regenerate 
+          the shapes of the rooms in heterogeneous environment. 
+          </p>
+          </details>
+
+      - layout: left
+        sub_title: Fariha Tabassum Islam, Md. Tareq Mahmood and Mahmuda Naznin
+        caption: International Conference on Networking, Systems and Security (NSysS 2022)
+        link: https://doi.org/10.1145/3569551.3569554
+        link_text: <mark>Paper Link</mark>
+
+        # quote: 
+        #   Md. Mahmudul Hasan, Md. Rafid UI Islam, and Md. Tareq Mahmood
+        description: | # this will include new lines to allow paragraphs
+          <h4><b>
+            MTUL: A Novel Approach for Multi-Trajectory User Linking
+          </b></h4><br>
+
+          <p style="text-align: center">
+            <img align="center" src="images/mtul.png" alt="MTUL" height="200"/>
+          </p>
+
+          <details>
+          <summary><p>⮞ Details</p></summary>
+          <p>
+          Trajectory User Linking (TUL) is the problem of identifying the user 
+          (i.e., his identity) from the trajectories generated by him. 
+          Existing works on TUL leverage a single trajectory for identifying a user. 
+          We propose a novel problem called Multi-Trajectory User Linking (MTUL), 
+          which leverages all available trajectories generated by a particular user 
+          to identify him. Thus, MTUL is essentially the generalized TUL problem. 
+          This problem has significant applications in Location-Based Services 
+          (LBSs) such as personalized route planning and point-of-interests (POI) 
+          recommendation, movement anomaly detection, etc. 
+          We provide an end-to-end solution to the MTUL problem using 
+          sequence embedding and GRU and achieve reasonable accuracy by taking into 
+          account the POI type and region information. 
+          We consider this work to be an important addition to the TUL research.  
+          </p>
+          </details>
+
+      - layout: left
+        # title: Recognition of Bengali Handwritten Digits Using Convolutional Neural Network Architectures
+        sub_title: Md. Mahmudul Hasan, Md. Rafid UI Islam, and Md. Tareq Mahmood
+        caption: International Conference on Bangla Speech and Language Processing (ICBSLP 2018)
+        link: https://doi.org/10.1109/ICBSLP.2018.8554753
+        link_text: <mark>Paper Link</mark>
+        # quote: 
+        #   Md. Mahmudul Hasan, Md. Rafid UI Islam, and Md. Tareq Mahmood
+        description: | # this will include new lines to allow paragraphs
+          <h4><b>
+            Recognition of Bengali Handwritten Digits Using Convolutional Neural Network Architectures
+          </b></h4><br>
+
+          <p style="text-align: center">
+            <img align="center" src="images/bangla-digit-recognition.png" alt="bangla-digit-recognition" height="200"/>
+          </p>
+
+          <details>
+          <summary><p>⮞ Details</p></summary>
+          <p>
+          Handwritten digit recognition has been the “hello world” of deep learning. 
+          Yet, there are no significant work on Bengali handwritten digits due to a 
+          lack of benchmark dataset. NumtaDB is the largest dataset on Bengali handwritten 
+          digits and currently we have the best accuracy of 99.3359% on it. We used popular 
+          CNN architectures namely, ResNet34 and Resnet50. We preprocessed the data, used data 
+          augmentation, and trained our models with augmented data. We tested our models on 
+          both the raw test data and cleaned test data. We found that slightly underfitted 
+          models work better on the test data. And finally ensembled our six best models to 
+          get our final predictions. In this paper we describe some methods and techniques that 
+          performs well in NumtaDB dataset.  
+          </p>
+          </details>
+
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Faculty Member
+        # sub_title: Lecturer
+        caption: October 2019 - August 2023 [On-leave]
+        # link: https://buet.ac.bd
+        # quote: >
+        #   Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Department of Computer Science and Engineering
+
+          Bangladesh University of Engineering and Technology 
+
+
+      # - layout: left
+      #   title: Lecturer 
+      #   # sub_title: Lecturer
+      #   caption: October 2019 - December 2022
+      #   # link: https://buet.ac.bd
+      #   # quote: >
+      #   #   Short description of the company (optional)
+      #   description: | # this will include new lines to allow paragraphs
+      #     Department of Computer Science and Engineering
+
+      #     Bangladesh University of Engineering and Technology 
+      
+      - layout: left
+        title: Research Assistant 
+        # sub_title: Lecturer
+        caption: November 2018 - September 2019
+        # link: https://buet.ac.bd
+        # quote: >
+        #   Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Data Science and Engineering Laboratory (DataLab@BUET)
+
+          [http://datalab.buet.io](http://datalab.buet.io)
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Master of Science 
+        # sub_title: Lecturer
+        caption: December 2018 - October 2022
+        # link: https://buet.ac.bd
+        # quote: >
+        #   Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Computer Science and Engineering
+
+          Bangladesh University of Engineering and Technology 
+
+          CGPA: **4.00 out of 4.00**
+
+          Thesis: *Deep Learning-based Approaches for Intelligent Trip Planning Using Public Transport*
+
+      - layout: left
+        title: Bachelor of Science 
+        # sub_title: Lecturer
+        caption: July 2014 - October 2018
+        # link: https://buet.ac.bd
+        # quote: >
+        #   Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Computer Science and Engineering
+
+          Bangladesh University of Engineering and Technology 
+
+          CGPA: **3.99 out of 4.00**
+
+          Thesis: *Learning Indoor Layouts from Simple Point-Clouds*
+          
+
+  - title: Grants and Fellowships
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      * Selected for High Profile ICT Scholar Fellowship 2018-19
+      * Received ICT Innovation Fund 2018-19 (with Kazi Antor Hasan)
+
+
+  - title: Awards and Honors
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      * Runner Up Student Poster Award - NSysS, 2018
+      * Best Student Paper Award - ICBSLP, 2018 
+      * Champion Team (BUET Backpropers), NumtaDB Computer Vision Challenge - Bengali.Ai, 2018
+      * Best Kernel, NumtaDB Computer Vision Challenge - Bengali.Ai, 2018
+      * Honourable Mentioned Team (BUET Backpropers), Machine Learning Challenge - National Robotic Festival, 2017
+      * Champion Team (BUET Resonance) - Battle of Speed, LFR Challenge, 2015
+      * 2nd Placed Team (BUET Novices) - Intra-BUET Programming Contest, 2015
+
+  - title: News
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      * **[Aug 2023]** Started as a Grad student at UW-Madison.
+      * **[Oct 2022]** Defended my Master's thesis. Thanks to my supervisors.
+      * **[Sep 2022]** Attended ECML-PKDD 2022 in Grenoble, France. [Met Yann LeCun!](/images/yann-lecun-and-tareq.jpg). 
+      * **[Jun 2022]** PathOracle accepted in ECML-PKDD 2022.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      In my spare time, I like to try new frameworks, languages and linux distros. 
+      I love to build small apps/software/scripts for my own use.
+      
+      My Erdős number is 4. 
+      Paul Erdős - Ronald L. Graham - Jeffrey D. Ullman - Timos K. Sellis - Me.
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
