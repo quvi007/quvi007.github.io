@@ -61,7 +61,7 @@ content:
         sub_title: Yiming Xiang, Wanning He, Mehbubul Hasan Al-Quvi, and Peng Huang
         link: 
         link_text: <mark>Paper Link</mark>
-        caption: 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b>
+        caption: Submitted to 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b>
         description: | # this will include new lines to allow paragraphs
           <h4><b>
             A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
