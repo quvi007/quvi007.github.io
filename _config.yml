@@ -220,9 +220,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           Computer Science and Engineering
 
-          Bangladesh University of Engineering and Technology 
-
-          CGPA: **3.84 out of 4.00**
+          Bangladesh University of Engineering and Technology (BUET)
 
           Thesis: *Analyzing Large Language Models in Low-Resource Settings*
           
