@@ -194,7 +194,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           EDGE Research Laboratory (EdgeLab@BUET)
 
-          [http://edgelab.buet.io](http://edgelab.buet.io)
+          Department of Computer Science and Engineering, BUET
 
       - layout: left
         title: Research Assistant
@@ -205,7 +205,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           SAMSUNG Applied Machine Learning Research Laboratory (SRBDLab@BUET)
 
-          [http://srbd.buet.io](http://srbd.buet.io)
+          Room 901, ECE Building, BUET
 
   - title: Education
     layout: list
@@ -230,20 +230,15 @@ content:
   - title: Grants and Fellowships
     layout: text
     content: | # this will include new lines to allow paragraphs
-      * Selected for High Profile ICT Scholar Fellowship 2018-19
-      * Received ICT Innovation Fund 2018-19 (with Kazi Antor Hasan)
-
+      * Selected for RISE Research Grant 2023-24
+      * Selected for High Profile ICT Scholar Fellowship 2023-24
 
   - title: Awards and Honors
     layout: text
     content: | # this will include new lines to allow paragraphs
-      * Runner Up Student Poster Award - NSysS, 2018
-      * Best Student Paper Award - ICBSLP, 2018 
-      * Champion Team (BUET Backpropers), NumtaDB Computer Vision Challenge - Bengali.Ai, 2018
-      * Best Kernel, NumtaDB Computer Vision Challenge - Bengali.Ai, 2018
-      * Honourable Mentioned Team (BUET Backpropers), Machine Learning Challenge - National Robotic Festival, 2017
-      * Champion Team (BUET Resonance) - Battle of Speed, LFR Challenge, 2015
-      * 2nd Placed Team (BUET Novices) - Intra-BUET Programming Contest, 2015
+      * Runner Up Student Poster Award - RISE Research Grant, 2023
+      * Champion Team (BUET Resonance) - Battle of Speed, LFR Challenge, 2022
+      * 2nd Placed Team (BUET Novices) - Intra-BUET Programming Contest, 2019
 
   - title: News
     layout: text
