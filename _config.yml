@@ -64,36 +64,12 @@ content:
         caption: Submitted to 19th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2025) - CORE Rank <b>A*</b>
         description: | # this will include new lines to allow paragraphs
           <h4><b>
-            A Framework for Enhancing Flexibility and Runtime Safety of eBPF Programs
+            A Framework for Adding Runtime-Checks in eBPF Programs
           </b></h4><br>
 
           <p style="text-align: center">
-            <img align="center" src="images/ePass.png" alt="ePass" height="300"/>
+            <img align="center" src="images/eBPF.png" alt="ePass" height="300"/>
           </p>
-
-          <details>
-          <summary><p>⮞ Details</p></summary>
-          <p>
-            eBPF is an emerging technology to extend kernel functionalities safely. 
-            However, its verifier's overly conservative reasoning often leads to 
-            rejections of valid programs, forcing developers to adopt cumbersome workarounds. In addition,
-            its static-only analysis sometimes misses safety violations in
-            complex scenarios. To address these limitations, we present
-            ePass, a lightweight, in-kernel framework that integrates selective runtime checks into eBPF programs.
-            ePass introduces a compact Intermediate Representation
-            (IR) and associated APIs which allow developers to add flexible passes 
-            for instrumenting various checks to tackle different
-            verification challenges. These passes work with the existing
-            static verifier, allowing rejected but well-behaved programs
-            to run. ePass additionally adds runtime checks to ensure the
-            program's behavior is consistent with the verifier's expectations. 
-            ePASS allows system administrators to pre-configure
-            passes to establish flexible, trustworthy policies globally. Our
-            evaluation shows that it simplifies the adoption of advanced
-            features (e.g., termination check) while maintaining reliability,
-            with minimal overhead.
-          </p>
-          </details>
 
       - layout: left
         sub_title: Mehbubul Hasan Al-Quvi, Shamit Fatin, Sukarna Barua, and Anindya Iqbal
