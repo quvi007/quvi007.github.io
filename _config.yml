@@ -218,7 +218,7 @@ content:
   - title: News
     layout: text
     content: | # this will include new lines to allow paragraphs
-      * **[Jan 2025]** Started as a Systems Engineer at EdgeLab, BUET.
+      * **[Jan 2025]** Started as a Systems Researcher at EdgeLab, BUET.
       * **[Dec 2024]** Left Samsung Applied Machine Learning Research Laboratory, BUET.
       * **[Jun 2024]** Started as a Remote Research Intern at OrderLab, U-M.
       * **[Jun 2024]** Defended my Bachelor's thesis. Thanks to my supervisor.
