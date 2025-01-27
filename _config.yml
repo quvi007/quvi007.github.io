@@ -14,8 +14,8 @@ email: quvi007 [at] gmail [dot] com
 # phone_title: Phone (Phone title override)
 # website: quvi007.github.io
 # website_title: Web (Website title override)
-# cv: tareqmahmood.xyz/files/tareq_cv.pdf
-# cv_title: Curriculum vitae
+cv: files/Quvi_CV.pdf
+cv_title: Curriculum vitae
 
 # Dark Mode (true/false/never)
 darkmode: never
@@ -47,11 +47,11 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, <b>Quvi</b> here. 
   I am a systems research intern at <a href="https://orderlab.io">OrderLab</a>, 
   <a href="https://www.umich.edu/">University of Michigan, Ann Arbor</a>. 
-  My research interests lie in the intersection of Operating Systems, Storage Systems, Computer Architecture and Compilers.
-  My current research focuses on reliable kernel extensibility, and binary lifting, recompilation frameworks. I am a recent graduate from the Department
+  My research interests lie in the intersection of Operating Systems, Storage Systems, Computer Architecture, Compilers, and System Security.
+  My current research focuses on reliable kernel extensibility, and binary lifting, recompilation frameworks for security. I am a recent graduate from the Department
   of Computer Science and Engineering, <a href="https://www.buet.ac.bd/">Bangladesh University of Engineering and Technology (BUET)</a>.
   
-  Currently, I am looking for a Ph.D. position in OS/Architecture/Compilers.
+  Currently, I am looking for a Ph.D. position in OS/Architecture/Compilers/Security.
   
 content:
   - title: Research Papers # Title for the section
