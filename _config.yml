@@ -256,6 +256,46 @@ content:
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=mKLyIjWT577bDc9kAESkC_hHaxcXtAD5mKvhZGFApHQ"></script>
         </div>
       </div>
+
+Projects:
+  - title: QCC - Tiny C Compiler
+    description: Built a tiny C compiler using C++ that translates C code to assembly.
+    link: https://github.com/quvi007/qcc
+
+  - title: 4-Bit MIPS CPU
+    description: Developed hardware and virtual simulation for the CPU pipeline.
+    link: https://github.com/quvi007/MIPS-CPU
+
+  - title: Ray-Tracing in OpenGL
+    description: Implemented rasterization and ray-tracing pipelines in C++ and OpenGL.
+    link: https://github.com/quvi007/Ray-Tracing
+
+  - title: CryptoSys
+    description: Implemented a basic crypto-system utilizing AES and Diffie-Hellman algorithm.
+    link: https://github.com/quvi007/crypto-sys
+
+  - title: HTTP Server
+    description: Built a multi-threaded HTTP server using Java and socket programming.
+    link: https://github.com/quvi007/Minimalist-HTTP-Server
+
+  - title: Traffic Signaling System
+    description: Built an automated traffic signaling system with Arduino.
+    link: https://github.com/quvi007/automated-traffic-signaling-microcontroller-system
+
+  - title: Gradery - Online CMS
+    description: Developed an online course management system for BUET CSE.
+    link: https://github.com/quvi007/Gradery
+
+  - title: KagOJ - Online Judge
+    description: Co-developed an online judge platform for coding practice and contests.
+    link: https://github.com/quvi007/KagOJ
+
+  - title: Bounce Game
+    description: Built the desktop version of the popular mobile game, Bounce.
+    link: https://github.com/quvi007/bounce_game_desktop-L1T1-project
+
+  - title: EmerApp - Helper in Emergency
+    description: Developed an Android app to assist users during emergencies.      
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
