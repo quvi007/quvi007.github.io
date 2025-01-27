@@ -112,6 +112,7 @@ content:
         sub_title: H.A.Z. Sameen Shahgir, Mehbubul Hasan Al-Quvi, Shamit Fatin, Sukarna Barua, and Anindya Iqbal
         link: 
         link_text: <mark>Paper Link</mark>
+        caption: Under preparation for submission to Autonomous Agents and Multi-Agent Systems (AAMAS 2025)
         description: | # this will include new lines to allow paragraphs
           <h4><b>
             DistilAgent: Distilling Agentic Capabilities from Large Language Models for Long-Horizon UI Navigation
@@ -147,48 +148,6 @@ content:
           autonomous UI navigation.
           </p>
           </details>
-
-  - title: Projects
-    content:
-    - layout: left
-        title: QCC - Tiny C Compiler
-        description: Built a tiny C compiler using C++ that translates C code to assembly.
-        link: https://github.com/quvi007/qcc
-    - layout: left
-        title: 4-Bit MIPS CPU
-        description: Developed hardware and virtual simulation for the CPU pipeline.
-        link: https://github.com/quvi007/MIPS-CPU
-    - layout: left
-        title: Ray-Tracing in OpenGL
-        description: Implemented rasterization and ray-tracing pipelines in C++ and OpenGL.
-        link: https://github.com/quvi007/Ray-Tracing
-    - layout: left
-        title: CryptoSys
-        description: Implemented a basic crypto-system utilizing AES and Diffie-Hellman algorithm.
-        link: https://github.com/quvi007/crypto-sys
-    - layout: left
-        title: HTTP Server
-        description: Built a multi-threaded HTTP server using Java and socket programming.
-        link: https://github.com/quvi007/Minimalist-HTTP-Server
-    - layout: left
-        title: Traffic Signaling System
-        description: Built an automated traffic signaling system with Arduino.
-        link: https://github.com/quvi007/automated-traffic-signaling-microcontroller-system
-    - layout: left
-        title: Gradery - Online CMS
-        description: Developed an online course management system for BUET CSE.
-        link: https://github.com/quvi007/Gradery
-    - layout: left
-        title: KagOJ - Online Judge
-        description: Co-developed an online judge platform for coding practice and contests.
-        link: https://github.com/quvi007/KagOJ
-    - layout: left
-        title: Bounce Game
-        description: Built the desktop version of the popular mobile game, Bounce.
-        link: https://github.com/quvi007/bounce_game_desktop-L1T1-project
-    - layout: left
-        title: EmerApp - Helper in Emergency
-        description: Developed an Android app to assist users during emergencies.
 
   - title: Experience
     layout: list
