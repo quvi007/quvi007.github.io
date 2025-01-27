@@ -75,6 +75,7 @@ content:
         sub_title: Mehbubul Hasan Al-Quvi, Shamit Fatin, Sukarna Barua, and Anindya Iqbal
         link: 
         link_text: <mark>Paper Link</mark>
+        caption: Under evaluation at <a href="https://research.samsung.com/srbd" target="_blank">Samsung Research Bangladesh (SRBD)</a>
         description: | # this will include new lines to allow paragraphs
           <h4><b>
             LELANTE: LEveraging LLM for Automated ANdroid Test Execution
