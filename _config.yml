@@ -225,18 +225,23 @@ content:
 
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-    In my spare time, I love exploring new frameworks, programming languages, and Linux distributions. I enjoy building small apps, software, and scripts for personal use. | 
-    I became a self-taught programmer during my teenage years, driven by curiosity and a passion for learning. My coding journey began at 13 when I ran my first C program. Back in 2012, as a 7th grader, I was captivated by web development—creating websites with HTML, CSS, JavaScript, jQuery, and PHP. That same year, I delved into C programming, followed by JavaScript, Java, Android Development, Visual Basic.NET, C#, SQL, and more. I even experimented with game development in Unity but quickly lost interest, shifting my focus to Security and Penetration Testing.|
-    During high school, two of my most significant projects were a Remote Administration Tool and an Android app for emergency situations: EmerApp. My passion for problem-solving and software development continued to grow, and in 2018, I secured the 8th position in the BUET admission test.|
-    C/C++ remains my most favorite programming language for building system softwares. For web development, I prefer the PERN stack. JavaScript is also my favorite, and I enjoy using it for both frontend development and Node.js applications. Currently, I'm working on a hobby project, Project Algorist, which aims to make learning data structures and algorithms more accessible for the newcomer community—completely free. I actively solve problems on AtCoder, store my projects on GitHub, and love reading e-books from The Pragmatic Programmers.|
-    My other hobbies are reading books, watching movies, and playing video games. I'm a huge fan of the DC Comics and the Mr. Robot series. I also enjoy playing games like GTA San Andreas, GTA V and Call of Duty. I'm a big fan of the Call of Duty series and have played every game in the franchise.
+    content: |
+        In my spare time, I love exploring new frameworks, programming languages, and Linux distributions. I enjoy building small apps, software, and scripts for personal use.
 
-      <div style="width: 150px; height: 150px; overflow: hidden; display: inline-block;">
+        I became a self-taught programmer during my teenage years, driven by curiosity and a passion for learning. My coding journey began at 13 when I ran my first C program. Back in 2012, as a 7th grader, I was captivated by web development—creating websites with HTML, CSS, JavaScript, jQuery, and PHP. That same year, I delved into C programming, followed by JavaScript, Java, Android Development, Visual Basic.NET, C#, SQL, and more. I even experimented with game development in Unity but quickly lost interest, shifting my focus to Security and Penetration Testing.
+
+        During high school, two of my most significant projects were a Remote Administration Tool and an Android app for emergency situations: EmerApp. My passion for problem-solving and software development continued to grow, and in 2018, I secured the 8th position in the BUET admission test.
+
+        C/C++ remains my most favorite programming language for building system software. For web development, I prefer the PERN stack. JavaScript is also my favorite, and I enjoy using it for both frontend development and Node.js applications. Currently, I'm working on a hobby project, Project Algorist, which aims to make learning data structures and algorithms more accessible for the newcomer community—completely free. I actively solve problems on AtCoder, store my projects on GitHub, and love reading e-books from The Pragmatic Programmers.
+
+        My other hobbies are reading books, watching movies, and playing video games. I'm a huge fan of the DC Comics and the Mr. Robot series. I also enjoy playing games like GTA San Andreas, GTA V, and Call of Duty. I'm a big fan of the Call of Duty series and have played every game in the franchise.
+
+        <div style="width: 150px; height: 150px; overflow: hidden; display: inline-block;">
         <div style="transform: scale(1); transform-origin: top left;">
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=mKLyIjWT577bDc9kAESkC_hHaxcXtAD5mKvhZGFApHQ"></script>
         </div>
-      </div>
+        </div>
+
 
 # Footer
 footer_show_references: false
