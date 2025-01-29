@@ -1,347 +1,1117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehbubul Hasan Al-Quvi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>View Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-        }
-        .left-panel {
-            background: linear-gradient(135deg, #8B0000, #A52A2A);
-            color: white;
-            width: 100%;
-            max-width: 300px;
-            padding: 2rem 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            position: fixed;
-            height: 100vh;
-        }
-        .left-panel img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 3px solid white;
-        }
-        .left-panel h1 {
-            font-size: 1.8rem;
-            margin: 0.5rem 0;
-            font-weight: 600;
-        }
-        .left-panel h2 {
-            font-size: 1rem;
-            margin: 0.3rem 0;
-            font-weight: 400;
-        }
-        .left-panel p {
-            margin: 0.3rem 0;
-            font-size: 0.9rem;
-        }
-        .left-panel a {
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .left-panel a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            margin-left: 300px;
-            padding: 2rem;
-            flex: 1;
-        }
-        nav {
-            position: sticky;
-            top: 0;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1rem 0;
-            text-align: center;
-            z-index: 100;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #8B0000;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #FFD700;
-        }
-        section {
-            padding: 2rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        section h2 {
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            color: #8B0000;
-        }
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-        .research-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            flex: 1 1 calc(100% - 1rem);
-            max-width: calc(100% - 1rem);
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .research-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .research-card-icon {
-            font-size: 3rem;
-            color: #8B0000;
-            flex-shrink: 0;
-        }
-        .research-card-content {
-            flex: 1;
-        }
-        .research-card-content strong {
-            font-size: 1.2rem;
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-        .project-card {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-        }
-        .project-card .card {
-            background: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .project-card .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .card-icon {
-            font-size: 2rem;
-            color: #8B0000;
-            margin-bottom: 1rem;
-        }
-        .card-content {
-            flex: 1;
-        }
-        .card-content a {
-            color: #8B0000;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        .card-content a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            background: #8B0000;
-            color: white;
-            padding: 1rem;
-            font-size: 0.9rem;
-            margin-top: 3rem;
-        }
-        footer a {
-            color: #FFD700;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .left-panel {
-                position: relative;
-                width: 100%;
-                height: auto;
-            }
-            .content {
-                margin-left: 0;
-            }
-            .research-card {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-            .project-card {
-                grid-template-columns: 1fr;
-            }
+        /* Custom CSS for additional styling */
+        #omr img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
+
 <body>
-    <div class="left-panel">
-        <img src="quvi.jpg" alt="Profile Picture">
-        <h1>Mehbubul Hasan Al-Quvi</h1>
-        <h2>Research Intern, OrderLab<br>University of Michigan</h2>
-        <p>Bangladesh University of Engineering and Technology</p>
-        <p>Email: <a href="mailto:quvi007@gmail.com">quvi007@gmail.com</a></p>
-        <p>Email: <a href="mailto:1805007@cse.buet.ac.bd">1805007@cse.buet.ac.bd</a></p>
+    <div class="container mt-5">
+        <h1 class="text-center">View Recent Exam Result</h1>
+        <form id="sillyForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+                <label for="exam">Exam:</label>
+                <select id="exam" class="form-control" required>
+                    <option value="nuclearphysics_mcq_1">Physics 2nd Paper - Nuclear Physics</option>
+                    <option value="thermo25_mcq_0">Physics 2nd Paper - Thermodynamics</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">View Result</button>
+        </form>
+        <center>
+            <div class="mt-3">
+                <p id="error" class="text-danger"></p>
+                <div id="examName"></div>
+                <div id="participant"></div>
+                <div id="position"></div>
+                <div id="grade"></div>
+                <div id="omr"></div>
+            </div>
+        </center>
     </div>
 
-    <div class="content">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <script>
+        const data = {
+    "thermo25_mcq_0": {
+        "Nazif": {
+            "score": 26.0,
+            "correct": 20,
+            "wrong": 9,
+            "unanswered": 15,
+            "auto": 6,
+            "wrong_list": [
+                2,
+                4,
+                6,
+                12,
+                22,
+                30,
+                33,
+                35,
+                40
+            ],
+            "unanswered_list": [
+                9,
+                10,
+                11,
+                13,
+                26,
+                34,
+                37,
+                41,
+                42,
+                43,
+                45,
+                46,
+                47,
+                48,
+                49
+            ],
+            "auto_list": [
+                3,
+                14,
+                18,
+                32,
+                39,
+                44
+            ]
+        },
+        "Ahnaf Kabir": {
+            "score": 26.0,
+            "correct": 20,
+            "wrong": 17,
+            "unanswered": 7,
+            "auto": 6,
+            "wrong_list": [
+                1,
+                3,
+                11,
+                12,
+                13,
+                15,
+                18,
+                21,
+                22,
+                25,
+                26,
+                29,
+                30,
+                34,
+                38,
+                49,
+                50
+            ],
+            "unanswered_list": [
+                4,
+                5,
+                6,
+                10,
+                17,
+                39,
+                44
+            ],
+            "auto_list": [
+                8,
+                14,
+                28,
+                37,
+                41,
+                46
+            ]
+        },
+        "Ahnaf Tahmid": {
+            "score": 27.0,
+            "correct": 21,
+            "wrong": 13,
+            "unanswered": 10,
+            "auto": 6,
+            "wrong_list": [
+                3,
+                11,
+                13,
+                15,
+                17,
+                18,
+                20,
+                24,
+                28,
+                29,
+                45,
+                47,
+                49
+            ],
+            "unanswered_list": [
+                8,
+                9,
+                12,
+                34,
+                35,
+                37,
+                39,
+                40,
+                44,
+                50
+            ],
+            "auto_list": [
+                21,
+                25,
+                30,
+                32,
+                43,
+                48
+            ]
+        },
+        "Sadaf": {
+            "score": 24.0,
+            "correct": 18,
+            "wrong": 26,
+            "unanswered": 0,
+            "auto": 6,
+            "wrong_list": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                7,
+                9,
+                11,
+                12,
+                14,
+                19,
+                20,
+                21,
+                22,
+                25,
+                28,
+                29,
+                31,
+                32,
+                36,
+                40,
+                41,
+                42,
+                44,
+                48,
+                49
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                8,
+                18,
+                23,
+                24,
+                27,
+                34
+            ]
+        },
+        "Abdullah": {
+            "score": 16.0,
+            "correct": 10,
+            "wrong": 26,
+            "unanswered": 8,
+            "auto": 6,
+            "wrong_list": [
+                2,
+                3,
+                5,
+                7,
+                9,
+                11,
+                12,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                27,
+                28,
+                31,
+                35,
+                37,
+                38,
+                39
+            ],
+            "unanswered_list": [
+                33,
+                36,
+                41,
+                44,
+                46,
+                47,
+                48,
+                49
+            ],
+            "auto_list": [
+                1,
+                29,
+                40,
+                43,
+                45,
+                50
+            ]
+        },
+        "Rafsan": {
+            "score": 15.0,
+            "correct": 9,
+            "wrong": 11,
+            "unanswered": 24,
+            "auto": 6,
+            "wrong_list": [
+                10,
+                19,
+                20,
+                24,
+                25,
+                27,
+                28,
+                29,
+                35,
+                41,
+                44
+            ],
+            "unanswered_list": [
+                2,
+                3,
+                4,
+                6,
+                7,
+                9,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                21,
+                23,
+                26,
+                30,
+                32,
+                34,
+                36,
+                39,
+                47,
+                50
+            ],
+            "auto_list": [
+                5,
+                22,
+                31,
+                33,
+                37,
+                38
+            ]
+        },
+        "Daiyaan": {
+            "score": 26.0,
+            "correct": 20,
+            "wrong": 24,
+            "unanswered": 0,
+            "auto": 6,
+            "wrong_list": [
+                1,
+                2,
+                5,
+                7,
+                8,
+                11,
+                12,
+                15,
+                16,
+                19,
+                20,
+                21,
+                23,
+                24,
+                26,
+                28,
+                35,
+                37,
+                39,
+                41,
+                44,
+                47,
+                48,
+                49
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                10,
+                14,
+                27,
+                29,
+                42,
+                45
+            ]
+        },
+        "Nabil": {
+            "score": 31.0,
+            "correct": 25,
+            "wrong": 7,
+            "unanswered": 12,
+            "auto": 6,
+            "wrong_list": [
+                1,
+                12,
+                13,
+                16,
+                21,
+                25,
+                49
+            ],
+            "unanswered_list": [
+                3,
+                15,
+                20,
+                24,
+                29,
+                32,
+                35,
+                43,
+                45,
+                47,
+                48,
+                50
+            ],
+            "auto_list": [
+                2,
+                6,
+                7,
+                8,
+                17,
+                36
+            ]
+        },
+        "Pritom": {
+            "score": 23.0,
+            "correct": 17,
+            "wrong": 5,
+            "unanswered": 22,
+            "auto": 6,
+            "wrong_list": [
+                4,
+                31,
+                33,
+                36,
+                46
+            ],
+            "unanswered_list": [
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                14,
+                15,
+                16,
+                19,
+                20,
+                24,
+                25,
+                27,
+                28,
+                30,
+                34,
+                37,
+                39,
+                40,
+                41,
+                42
+            ],
+            "auto_list": [
+                10,
+                12,
+                18,
+                32,
+                35,
+                43
+            ]
+        },
+        "Sadif": {
+            "score": 21.0,
+            "correct": 15,
+            "wrong": 29,
+            "unanswered": 0,
+            "auto": 6,
+            "wrong_list": [
+                1,
+                4,
+                5,
+                6,
+                7,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                30,
+                34,
+                40,
+                42,
+                44,
+                45,
+                47
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                27,
+                29,
+                36,
+                46,
+                49,
+                50
+            ]
+        },
+        "Sanat": {
+            "score": 36.0,
+            "correct": 30,
+            "wrong": 9,
+            "unanswered": 5,
+            "auto": 6,
+            "wrong_list": [
+                2,
+                8,
+                12,
+                16,
+                18,
+                29,
+                42,
+                44,
+                45
+            ],
+            "unanswered_list": [
+                24,
+                25,
+                34,
+                43,
+                46
+            ],
+            "auto_list": [
+                19,
+                26,
+                28,
+                30,
+                36,
+                50
+            ]
+        },
+        "Tajwar": {
+            "score": 39.0,
+            "correct": 33,
+            "wrong": 1,
+            "unanswered": 10,
+            "auto": 6,
+            "wrong_list": [
+                20
+            ],
+            "unanswered_list": [
+                3,
+                32,
+                33,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50
+            ],
+            "auto_list": [
+                1,
+                12,
+                22,
+                25,
+                42,
+                43
+            ]
+        },
+        "Mafin": {
+            "score": 21.0,
+            "correct": 15,
+            "wrong": 9,
+            "unanswered": 20,
+            "auto": 6,
+            "wrong_list": [
+                1,
+                2,
+                5,
+                14,
+                16,
+                19,
+                23,
+                37,
+                39
+            ],
+            "unanswered_list": [
+                7,
+                8,
+                11,
+                12,
+                15,
+                22,
+                26,
+                28,
+                29,
+                30,
+                33,
+                36,
+                40,
+                41,
+                42,
+                44,
+                45,
+                46,
+                48,
+                49
+            ],
+            "auto_list": [
+                3,
+                6,
+                32,
+                34,
+                35,
+                50
+            ]
+        },
+        "Faria": {
+            "score": 24.0,
+            "correct": 18,
+            "wrong": 12,
+            "unanswered": 14,
+            "auto": 6,
+            "wrong_list": [
+                3,
+                7,
+                9,
+                10,
+                13,
+                14,
+                16,
+                24,
+                27,
+                30,
+                35,
+                37
+            ],
+            "unanswered_list": [
+                1,
+                11,
+                12,
+                19,
+                20,
+                21,
+                23,
+                25,
+                43,
+                44,
+                45,
+                47,
+                48,
+                49
+            ],
+            "auto_list": [
+                4,
+                5,
+                15,
+                18,
+                36,
+                46
+            ]
+        },
+        "Leana": {
+            "score": 23.0,
+            "correct": 17,
+            "wrong": 15,
+            "unanswered": 12,
+            "auto": 6,
+            "wrong_list": [
+                3,
+                4,
+                7,
+                9,
+                14,
+                17,
+                18,
+                21,
+                24,
+                25,
+                26,
+                29,
+                30,
+                42,
+                47
+            ],
+            "unanswered_list": [
+                1,
+                2,
+                15,
+                27,
+                33,
+                36,
+                38,
+                39,
+                40,
+                43,
+                46,
+                48
+            ],
+            "auto_list": [
+                13,
+                23,
+                31,
+                45,
+                49,
+                50
+            ]
+        }
+    },
+    "nuclearphysics_mcq_1": {
+        "Sadaf": {
+            "score": 44.0,
+            "correct": 42,
+            "wrong": 6,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                4,
+                12,
+                15,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Nazif": {
+            "score": 43.0,
+            "correct": 41,
+            "wrong": 6,
+            "unanswered": 1,
+            "auto": 2,
+            "wrong_list": [
+                12,
+                15,
+                22,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [
+                29
+            ],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Nabil": {
+            "score": 37.0,
+            "correct": 35,
+            "wrong": 6,
+            "unanswered": 7,
+            "auto": 2,
+            "wrong_list": [
+                12,
+                21,
+                22,
+                25,
+                27,
+                50
+            ],
+            "unanswered_list": [
+                8,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+            ],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Safuan": {
+            "score": 42.0,
+            "correct": 40,
+            "wrong": 8,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                4,
+                6,
+                12,
+                15,
+                20,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Leana": {
+            "score": 32.0,
+            "correct": 30,
+            "wrong": 16,
+            "unanswered": 2,
+            "auto": 2,
+            "wrong_list": [
+                7,
+                8,
+                10,
+                12,
+                15,
+                17,
+                18,
+                22,
+                24,
+                27,
+                28,
+                41,
+                42,
+                43,
+                48,
+                49
+            ],
+            "unanswered_list": [
+                4,
+                21
+            ],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Tajwar": {
+            "score": 44.0,
+            "correct": 42,
+            "wrong": 6,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                12,
+                15,
+                22,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Mafin": {
+            "score": 43.0,
+            "correct": 41,
+            "wrong": 7,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                10,
+                11,
+                12,
+                15,
+                28,
+                48,
+                49
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Tahmid": {
+            "score": 41.0,
+            "correct": 39,
+            "wrong": 9,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                3,
+                6,
+                12,
+                15,
+                27,
+                28,
+                33,
+                38,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Sadif": {
+            "score": 43.0,
+            "correct": 41,
+            "wrong": 7,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                11,
+                12,
+                15,
+                20,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Pritom": {
+            "score": 44.0,
+            "correct": 42,
+            "wrong": 6,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                4,
+                12,
+                15,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Sayeeb": {
+            "score": 45.0,
+            "correct": 43,
+            "wrong": 5,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                4,
+                12,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Ahnaf": {
+            "score": 44.0,
+            "correct": 42,
+            "wrong": 6,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                4,
+                7,
+                12,
+                27,
+                28,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        },
+        "Daiyaan": {
+            "score": 32.0,
+            "correct": 30,
+            "wrong": 18,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                4,
+                8,
+                10,
+                12,
+                14,
+                15,
+                17,
+                18,
+                19,
+                22,
+                25,
+                27,
+                28,
+                29,
+                38,
+                40,
+                47,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                39,
+                45
+            ]
+        }
+    }
+}
+        const positions = {
+    "thermo25_mcq_0": {
+        "Tajwar": 1,
+        "Sanat": 2,
+        "Nabil": 3,
+        "Ahnaf Tahmid": 4,
+        "Nazif": 5,
+        "Daiyaan": 5,
+        "Ahnaf Kabir": 5,
+        "Sadaf": 8,
+        "Faria": 8,
+        "Pritom": 10,
+        "Leana": 10,
+        "Sadif": 12,
+        "Mafin": 12,
+        "Abdullah": 14,
+        "Rafsan": 15
+    },
+    "nuclearphysics_mcq_1": {
+        "Sayeeb": 1,
+        "Tajwar": 2,
+        "Sadaf": 2,
+        "Pritom": 2,
+        "Ahnaf": 2,
+        "Sadif": 6,
+        "Nazif": 6,
+        "Mafin": 6,
+        "Safuan": 9,
+        "Tahmid": 10,
+        "Nabil": 11,
+        "Leana": 12,
+        "Daiyaan": 12
+    }
+}
+        document.getElementById("sillyForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            var e = document.getElementById("exam");
+            const examName = e.options[e.selectedIndex].text.split(" - ")[1];
+            let exam = e.value;
+            name = name.trim();
+            // name = name.toLowerCase();
+            // name = name.charAt(0).toUpperCase() + name.slice(1);
+            if (name.length === 0) {
+                document.getElementById("error").innerHTML = "<font color='red'>Enter a name first!</font>";
+            } else {
+                try {
+                    let score = "Total Score: " + data[exam][name]["score"]
+                    let correct = "Total Correct: " + data[exam][name]["correct"]
+                    let wrong = "Total Wrong: " + data[exam][name]["wrong"]
+                    let unanswered = "Total Unanswered: " + data[exam][name]["unanswered"]
+                    let auto = "Total Auto: " + data[exam][name]["auto"]
+                    let wrong_list_str = "Wrong List: ";
+                    for (let i = 0; i < data[exam][name]["wrong_list"].length; i++) {
+                        wrong_list_str += data[exam][name]["wrong_list"][i];
+                        if (i < data[exam][name]["wrong_list"].length - 1) {
+                            wrong_list_str += ", ";
+                        }
+                    }
+                    let unanswered_list_str = "Unanswered List: ";
+                    for (let i = 0; i < data[exam][name]["unanswered_list"].length; i++) {
+                        unanswered_list_str += data[exam][name]["unanswered_list"][i];
+                        if (i < data[exam][name]["unanswered_list"].length - 1) {
+                            unanswered_list_str += ", ";
+                        }
+                    }
+                    let auto_list_str = "Auto List: ";
+                    if (data[exam][name]["auto_list"].length === 0) {
+                        auto_list_str += "<empty>";
+                    }
+                    for (let i = 0; i < data[exam][name]["auto_list"].length; i++) {
+                        auto_list_str += data[exam][name]["auto_list"][i];
+                        if (i < data[exam][name]["auto_list"].length - 1) {
+                            auto_list_str += ", ";
+                        }
+                    }
+                    document.getElementById("error").innerHTML = "";
+                    document.getElementById("examName").innerHTML = "<h2>" + examName + " MCQ Result</h2>";
+                    document.getElementById("participant").innerHTML = "<h3>Name: " + name + "</h3>";
+                    document.getElementById("position").innerHTML = "<h4>Position: " + positions[exam][name] + "/" + (Object.keys(positions[exam]).length); + "</h4>";
+                    document.getElementById("grade").innerHTML = "<h4>" + score + "</h4>\n";
+                    document.getElementById("grade").innerHTML += "<font color='green'>" + correct + "</font><br>\n";
+                    if (parseInt(wrong.split(":")[1]) !== 0) {
+                        document.getElementById("grade").innerHTML += "<font color='red'>" + wrong + "</font><br>\n";
+                        document.getElementById("grade").innerHTML += "<font color='red'>" + wrong_list_str + "</font><br>\n";
+                    }
+                    if (parseInt(unanswered.split(":")[1]) !== 0) {
+                        document.getElementById("grade").innerHTML += "<font color='blue'>" + unanswered + "</font><br>\n";
+                        document.getElementById("grade").innerHTML += "<font color='blue'>" + unanswered_list_str + "</font><br>\n";
+                    }
+                    if (parseInt(auto.split(":")[1]) !== 0) {
+                        document.getElementById("grade").innerHTML += "<font color='green'>" + auto + "</font><br>\n";
+                        document.getElementById("grade").innerHTML += "<font color='green'>" + auto_list_str + "</font><br><br>\n";
+                    }
+                    document.getElementById("omr").innerHTML = "<a href='" + exam + "_" + name + ".jpg' download class='btn btn-primary'>Download OMR Sheet</a><br><br>\n<img src='" + exam + "_" + name + ".jpg'/>"
+                } catch (e) {
+                    document.getElementById("error").innerHTML = "<font color='red'>ফাঁকিবাজটা পরীক্ষা দেয় নাই!!</font>";
+                    document.getElementById("examName").innerHTML = "";
+                    document.getElementById("participant").innerHTML = "";
+                    document.getElementById("position").innerHTML = "";
+                    document.getElementById("grade").innerHTML = "";
+                    document.getElementById("omr").innerHTML = "";
+                }
+            }
+        });
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate researcher with a deep interest in operating systems, compilers, eBPF, binary analysis, and virtual machines. My goal is to design reliable, scalable, and impactful system-level abstractions, addressing challenges in system security and high-performance computing.</p>
-        </section>
+    </script>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
-                    Bachelor of Science in Computer Science and Engineering (2019 – 2024)<br>
-                    CGPA: 3.84/4.00
-                </li>
-            </ul>
-        </section>
-
-        <section id="research">
-            <h2>Research Experience</h2>
-            <div class="card-container">
-                <div class="research-card">
-                    <i class="fas fa-flask research-card-icon"></i>
-                    <div class="research-card-content">
-                        <strong>Summer Research Internship</strong> - OrderLab, University of Michigan (2024 – Present)<br>
-                        • Developed a framework to enhance flexibility and runtime safety of eBPF programs by integrating lightweight runtime checks.<br>
-                        • Contributed to custom intermediate representation (IR) design, runtime passes, and code generation.<br>
-                        • Curated datasets of accepted and rejected eBPF programs for evaluation.<br>
-                        • <em>Paper submitted to OSDI 2025.</em>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <i class="fas fa-project-diagram research-card-icon"></i>
-                    <div class="research-card-content">
-                        <strong>Research Assistant</strong> - BUET and Samsung Research Bangladesh (2024)<br>
-                        • Co-developed LELANTE, an automated testing framework leveraging natural language and LLMs.<br>
-                        • Designed and implemented a two-stage pipeline for executing and verifying test cases.<br>
-                        • Fine-tuned open-source models using LoRa with hardware constraints, achieving an 85% success rate across 390 test cases.<br>
-                        • <em>Work under review at Samsung Research Bangladesh.</em>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Selected Projects</h2>
-            <div class="project-card">
-                <div class="card">
-                    <i class="fas fa-code card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/qcc">QCC - Tiny C Compiler</a><br>
-                        Built a tiny C compiler using C++ that translates C code to assembly.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-microchip card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/MIPS-CPU">4-Bit MIPS CPU</a><br>
-                        Developed hardware and virtual simulation for the CPU pipeline.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-globe card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/Ray-Tracing">Ray-Tracing in OpenGL</a><br>
-                        Implemented rasterization and ray-tracing pipelines in C++ and OpenGL.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-lock card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/crypto-sys">CryptoSys</a><br>
-                        Implemented a basic crypto-system utilizing AES and Diffie-Hellman algorithm.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-server card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/Minimalist-HTTP-Server">HTTP Server</a><br>
-                        Built a multi-threaded HTTP server using Java and socket programming.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-traffic-light card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/automated-traffic-signaling-microcontroller-system">Traffic Signaling System</a><br>
-                        Built an automated traffic signaling system with Arduino.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-book card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/Gradery">Gradery - Online CMS</a><br>
-                        Developed an online course management system for BUET CSE.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-laptop-code card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/KagOJ">KagOJ - Online Judge</a><br>
-                        Co-developed an online judge platform for coding practice and contests.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-gamepad card-icon"></i>
-                    <div class="card-content">
-                        <a href="https://github.com/quvi007/bounce_game_desktop-L1T1-project">Bounce Game</a><br>
-                        Built the desktop version of the popular mobile game, Bounce.
-                    </div>
-                </div>
-                <div class="card">
-                    <i class="fas fa-mobile-alt card-icon"></i>
-                    <div class="card-content">
-                        EmerApp - Helper in Emergency<br>
-                        Developed an Android app to assist users during emergencies.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:quvi007@gmail.com">quvi007@gmail.com</a></p>
-            <p>Email: <a href="mailto:1805007@cse.buet.ac.bd">1805007@cse.buet.ac.bd</a></p>
-            <p>GitHub: <a href="https://github.com/quvi007">github.com/quvi007</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/quvi007">linkedin.com/in/quvi007</a></p>
-        </section>
-
-        <footer>
-            &copy; 2024 Mehbubul Hasan Al-Quvi. All rights reserved.
-        </footer>
-    </div>
 </body>
-</html>
 
+</html>
