@@ -183,7 +183,7 @@ content:
         # quote: >
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          Advised by [Prof. Anindya Iqbal](https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en) and [Prof. Sukarna Barua](https://scholar.google.com/citations?user=hLEPDEIAAAAJ&hl=en)
+          Advised by [Professor Anindya Iqbal](https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en) and [Professor Sukarna Barua](https://scholar.google.com/citations?user=hLEPDEIAAAAJ&hl=en)
 
           SAMSUNG Applied Machine Learning Research Laboratory (SRBDLab@BUET)
 
@@ -204,7 +204,7 @@ content:
 
           Bangladesh University of Engineering and Technology (BUET)
 
-          Thesis: *Analyzing Large Language Models in Low-Resource Settings* advised by Dr. Muhammad Abdullah Adnan
+          Thesis: *Analyzing Large Language Models in Low-Resource Settings* advised by [Professor Muhammad Abdullah Adnan](https://sites.google.com/site/abdullahadnan)
           
 
   - title: Grants and Fellowships
