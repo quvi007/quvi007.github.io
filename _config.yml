@@ -7,14 +7,14 @@ version: 2
 
 # Personal info
 name: Mehbubul Hasan Al-Quvi
-title: Researcher | Prospective Grad Student | Engineer
+title: Systems Researcher | Prospective Grad Student
 email: quvi007 [at] gmail [dot] com
 # email_title: 
 # phone: +88 01877828385
 # phone_title: Phone (Phone title override)
 # website: quvi007.github.io
 # website_title: Web (Website title override)
-cv: files/Quvi_CV.pdf
+cv: https://quvi007.github.io/files/Quvi_CV.pdf
 cv_title: Curriculum vitae
 
 # Dark Mode (true/false/never)
@@ -159,7 +159,7 @@ content:
         # quote: >
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          Advised by Professor Ryan (Peng) Huang
+          Advised by [Professor Ryan (Peng) Huang](https://web.eecs.umich.edu/~ryanph/)
 
           [Ordered Systems Lab, U-M](http://orderlab.io)
       
@@ -170,6 +170,8 @@ content:
         # quote: >
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
+          Advised by [Prof. Anindya Iqbal](https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en)
+          
           EDGE Research Laboratory (EdgeLab@BUET)
 
           Department of Computer Science and Engineering, BUET
@@ -181,6 +183,8 @@ content:
         # quote: >
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
+          Advised by [Prof. Anindya Iqbal](https://scholar.google.com/citations?user=jAuiNFgAAAAJ&hl=en) and [Prof. Sukarna Barua](https://scholar.google.com/citations?user=hLEPDEIAAAAJ&hl=en)
+
           SAMSUNG Applied Machine Learning Research Laboratory (SRBDLab@BUET)
 
           Room 901, ECE Building, BUET
@@ -200,20 +204,23 @@ content:
 
           Bangladesh University of Engineering and Technology (BUET)
 
-          Thesis: *Analyzing Large Language Models in Low-Resource Settings*
+          Thesis: *Analyzing Large Language Models in Low-Resource Settings* advised by Dr. Muhammad Abdullah Adnan
           
 
   - title: Grants and Fellowships
     layout: text
     content: | # this will include new lines to allow paragraphs
       * Selected for RISE Research Grant 2023-24
-      * Selected for High Profile ICT Scholar Fellowship 2023-24
+      * Selected for Deans' List Award 2019-24
+      * Selected for Merit Scholarship 2019-24
+      * Selected for Admission Test Scholarship 2019
+      * Selected for Technical Scholarship 2019-24
 
   - title: Awards and Honors
     layout: text
     content: | # this will include new lines to allow paragraphs
       * Runner Up Student Poster Award - RISE Research Grant, 2023
-      * 2nd Placed Team (BUET Novices) - Intra-BUET Programming Contest, 2019
+      * 2nd Placed Team (BUET TLE) - Intra-BUET Programming Contest, 2019
 
   - title: News
     layout: text
