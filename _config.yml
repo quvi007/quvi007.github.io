@@ -42,7 +42,7 @@ linkedin_username: mehbubul-hasan-al-quvi-b97072275
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/quvi.jpg
+about_profile_image: quvi.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, <b>Quvi</b> here. 
   I am a systems research intern at <a href="https://orderlab.io">OrderLab</a>, 
