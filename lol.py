@@ -1,2 +1,2 @@
-for i in range(1, 43):
-    print(f"""<li>\n<img src="{i}.png"></li>\n""")
+for i in range(1, 53):
+    print(f"""<li>\n<img src="pics/{i}.png"></li>\n""")
