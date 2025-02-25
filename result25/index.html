@@ -4135,8 +4135,6 @@
                     document.getElementById("error").innerHTML = "";
 
                     document.getElementById("indiv_res_header").innerHTML = "<h3 class='text-center'>Individual Result</h3>"
-                    document.getElementById("standings_header").innerHTML = "<h3 class='text-center'>Standings</h3>"
-
                     document.getElementById("examName").innerHTML = "<h2>" + examName + " MCQ Result</h2>";
                     document.getElementById("participant").innerHTML = "<h4>Name: " + name + "</h4>";
                     document.getElementById("position").innerHTML = "<h5>Position: " + positions[exam][name] + "/" + (Object.keys(positions[exam]).length); + "</h4>";
@@ -4164,6 +4162,7 @@
                     document.getElementById("omr").innerHTML = "";
                 }
 
+                document.getElementById("standings_header").innerHTML = "<h3 class='text-center'>Standings</h3>"
                 document.getElementById("standingsList").innerHTML = "";
                 Object.entries(positions[exam]).forEach(([key, value]) => {
                     document.getElementById("standingsList").innerHTML += `<li class='list-group-item'><center>${key} : ${value} / ${(Object.keys(positions[exam]).length)}</center></li>`;
