@@ -18,35 +18,54 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center">View Recent Exam Result</h1>
-        <form id="sillyForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" required>
-                <label for="exam">Exam:</label>
-                <select id="exam" class="form-control" required>
-                    <option value="idealgas25_mcq_1" selected>Physics 1st Paper - Ideal Gas</option>
-                    <option value="diff25_mcq_1">Higher Mathematics 1st Paper - Differentiation</option>
-                    <option value="nm25_mcq_3">Physics 1st Paper - Newtonian Mechanics 3</option>
-                    <option value="matdet25_mcq_1">Higher Mathematics 1st Paper - Matrices and Determinants</option>
-                    <option value="nm25_mcq_2">Physics 1st Paper - Newtonian Mechanics 2</option>
-                    <option value="structural25_mcq_1">Physics 1st Paper - Structural Properties of Matter</option>
-                    <option value="vector_mcq_1">Physics 1st Paper - Vector</option>
-                    <option value="nuclearphysics_mcq_1">Physics 2nd Paper - Nuclear Physics</option>
-                    <option value="thermo25_mcq_0">Physics 2nd Paper - Thermodynamics</option>
-                </select>
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-12">
+                <form id="sillyForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <label for="exam">Exam:</label>
+                        <select id="exam" class="form-control" required>
+                            <option value="idealgas25_mcq_1" selected>Physics 1st Paper - Ideal Gas</option>
+                            <option value="diff25_mcq_1">Higher Mathematics 1st Paper - Differentiation</option>
+                            <option value="nm25_mcq_3">Physics 1st Paper - Newtonian Mechanics 3</option>
+                            <option value="matdet25_mcq_1">Higher Mathematics 1st Paper - Matrices and Determinants</option>
+                            <option value="nm25_mcq_2">Physics 1st Paper - Newtonian Mechanics 2</option>
+                            <option value="structural25_mcq_1">Physics 1st Paper - Structural Properties of Matter</option>
+                            <option value="vector_mcq_1">Physics 1st Paper - Vector</option>
+                            <option value="nuclearphysics_mcq_1">Physics 2nd Paper - Nuclear Physics</option>
+                            <option value="thermo25_mcq_0">Physics 2nd Paper - Thermodynamics</option>
+                        </select>
+                    </div>
+                    <center><button type="submit" class="btn btn-primary">View Result</button></center>
+                </form>
             </div>
-            <button type="submit" class="btn btn-primary">View Result</button>
-        </form>
-        <center>
-            <div class="mt-3">
-                <p id="error" class="text-danger"></p>
-                <div id="examName"></div>
-                <div id="participant"></div>
-                <div id="position"></div>
-                <div id="grade"></div>
-                <div id="omr"></div>
+        </div>
+        <br/>
+        <br/>
+        <h2 align="center" id="examName"></h2>
+        <div class="row">
+            <!-- Individual Result Section -->
+            <div class="col-md-8">
+                <center>
+                    <div id="indiv_res_header">
+                    </div>
+                    <p id="error" class="text-danger text-center"></p>
+                    <p id="participant"></p>
+                    <p id="position"></p>
+                    <p id="grade"></p>
+                    <div id="omr"></div>
+                </center>
             </div>
-        </center>
+            <div class="col-md-4">
+                <div id="standings_header">
+                </div>
+                <ul class="list-group" id="standingsList">
+                    <!-- Standings will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -4071,8 +4090,8 @@
         "Mafin": 21
     }
 }
-        document.getElementById("sillyForm").addEventListener("submit", function (event) {
-            event.preventDefault();
+        
+        function stuff() {
             let name = document.getElementById("name").value;
             var e = document.getElementById("exam");
             const examName = e.options[e.selectedIndex].text.split(" - ")[1];
@@ -4114,10 +4133,14 @@
                         }
                     }
                     document.getElementById("error").innerHTML = "";
+
+                    document.getElementById("indiv_res_header").innerHTML = "<h3 class='text-center'>Individual Result</h3>"
+                    document.getElementById("standings_header").innerHTML = "<h3 class='text-center'>Standings</h3>"
+
                     document.getElementById("examName").innerHTML = "<h2>" + examName + " MCQ Result</h2>";
-                    document.getElementById("participant").innerHTML = "<h3>Name: " + name + "</h3>";
-                    document.getElementById("position").innerHTML = "<h4>Position: " + positions[exam][name] + "/" + (Object.keys(positions[exam]).length); + "</h4>";
-                    document.getElementById("grade").innerHTML = "<h4>" + score + "</h4>\n";
+                    document.getElementById("participant").innerHTML = "<h4>Name: " + name + "</h4>";
+                    document.getElementById("position").innerHTML = "<h5>Position: " + positions[exam][name] + "/" + (Object.keys(positions[exam]).length); + "</h4>";
+                    document.getElementById("grade").innerHTML = "<h5>" + score + "</h4>\n";
                     document.getElementById("grade").innerHTML += "<font color='green'>" + correct + "</font><br>\n";
                     if (parseInt(wrong.split(":")[1]) !== 0) {
                         document.getElementById("grade").innerHTML += "<font color='red'>" + wrong + "</font><br>\n";
@@ -4140,7 +4163,21 @@
                     document.getElementById("grade").innerHTML = "";
                     document.getElementById("omr").innerHTML = "";
                 }
+
+                document.getElementById("standingsList").innerHTML = "";
+                Object.entries(positions[exam]).forEach(([key, value]) => {
+                    document.getElementById("standingsList").innerHTML += `<li class='list-group-item'><center>${key} : ${value} / ${(Object.keys(positions[exam]).length)}</center></li>`;
+                });
             }
+        }
+
+        document.getElementById("exam").addEventListener("change", function (event) {
+            stuff();
+        });
+
+        document.getElementById("sillyForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            stuff();
         });
 
     </script>
