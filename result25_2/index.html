@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for additional styling */
+        #omr img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">View Recent Exam Result</h1>
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-12">
+                <form id="sillyForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                        <label for="exam">Exam:</label>
+                        <select id="exam" class="form-control" required>
+                            <option value="vector25_mcq_1" selected>Physics 1st Paper - Vector</option>
+                        </select>
+                    </div>
+                    <center><button type="submit" class="btn btn-primary">View Result</button></center>
+                </form>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <h2 align="center" id="examName"></h2>
+        <div class="row">
+            <!-- Individual Result Section -->
+            <div class="col-md-8">
+                <center>
+                    <div id="indiv_res_header">
+                    </div>
+                    <p id="error" class="text-danger text-center"></p>
+                    <p id="participant"></p>
+                    <p id="position"></p>
+                    <p id="grade"></p>
+                    <div id="omr"></div>
+                </center>
+            </div>
+            <div class="col-md-4">
+                <div id="standings_header">
+                </div>
+                <ul class="list-group" id="standingsList">
+                    <!-- Standings will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // dynamic data starts
+
+const data = {
+    "vector25_mcq_1": {
+        "Toufiq": {
+            "score": 33.75,
+            "correct": 35,
+            "wrong": 13,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                5,
+                6,
+                8,
+                9,
+                10,
+                12,
+                17,
+                18,
+                24,
+                25,
+                36,
+                38,
+                40
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                13,
+                42
+            ]
+        },
+        "Dip": {
+            "score": 26.5,
+            "correct": 27,
+            "wrong": 10,
+            "unanswered": 11,
+            "auto": 2,
+            "wrong_list": [
+                2,
+                12,
+                21,
+                22,
+                23,
+                26,
+                31,
+                39,
+                46,
+                47
+            ],
+            "unanswered_list": [
+                3,
+                5,
+                6,
+                13,
+                17,
+                27,
+                32,
+                34,
+                35,
+                37,
+                42
+            ],
+            "auto_list": [
+                15,
+                16
+            ]
+        },
+        "Rafid": {
+            "score": 45.0,
+            "correct": 44,
+            "wrong": 4,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                3,
+                19,
+                41,
+                42
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                17,
+                44
+            ]
+        },
+        "Zayed": {
+            "score": 33.75,
+            "correct": 35,
+            "wrong": 13,
+            "unanswered": 0,
+            "auto": 2,
+            "wrong_list": [
+                5,
+                6,
+                19,
+                20,
+                26,
+                29,
+                30,
+                32,
+                35,
+                36,
+                37,
+                42,
+                48
+            ],
+            "unanswered_list": [],
+            "auto_list": [
+                17,
+                38
+            ]
+        }
+    }
+}
+
+// dynamic data ends
+
+// dynamic positions start
+
+const positions = {
+    "vector25_mcq_1": {
+        "Toufiq": 2,
+        "Dip": 4,
+        "Rafid": 1,
+        "Zayed": 2
+    }
+}
+
+// dynamic positions end
+
+        function stuff() {
+            let name = document.getElementById("name").value;
+            var e = document.getElementById("exam");
+            const examName = e.options[e.selectedIndex].text.split(" - ")[1];
+            let exam = e.value;
+            name = name.trim();
+            // name = name.toLowerCase();
+            // name = name.charAt(0).toUpperCase() + name.slice(1);
+            if (name.length === 0) {
+                document.getElementById("error").innerHTML = "<font color='red'>Enter a name first!</font>";
+            } else {
+                try {
+                    let score = "Total Score: " + data[exam][name]["score"]
+                    let correct = "Total Correct: " + data[exam][name]["correct"]
+                    let wrong = "Total Wrong: " + data[exam][name]["wrong"]
+                    let unanswered = "Total Unanswered: " + data[exam][name]["unanswered"]
+                    let auto = "Total Auto: " + data[exam][name]["auto"]
+                    let wrong_list_str = "Wrong List: ";
+                    for (let i = 0; i < data[exam][name]["wrong_list"].length; i++) {
+                        wrong_list_str += data[exam][name]["wrong_list"][i];
+                        if (i < data[exam][name]["wrong_list"].length - 1) {
+                            wrong_list_str += ", ";
+                        }
+                    }
+                    let unanswered_list_str = "Unanswered List: ";
+                    for (let i = 0; i < data[exam][name]["unanswered_list"].length; i++) {
+                        unanswered_list_str += data[exam][name]["unanswered_list"][i];
+                        if (i < data[exam][name]["unanswered_list"].length - 1) {
+                            unanswered_list_str += ", ";
+                        }
+                    }
+                    let auto_list_str = "Auto List: ";
+                    if (data[exam][name]["auto_list"].length === 0) {
+                        auto_list_str += "<empty>";
+                    }
+                    for (let i = 0; i < data[exam][name]["auto_list"].length; i++) {
+                        auto_list_str += data[exam][name]["auto_list"][i];
+                        if (i < data[exam][name]["auto_list"].length - 1) {
+                            auto_list_str += ", ";
+                        }
+                    }
+                    document.getElementById("error").innerHTML = "";
+
+                    document.getElementById("indiv_res_header").innerHTML = "<h3 class='text-center'>Individual Result</h3>"
+                    document.getElementById("examName").innerHTML = "<h2>" + examName + " MCQ Result</h2>";
+                    document.getElementById("participant").innerHTML = "<h4>Name: " + name + "</h4>";
+                    document.getElementById("position").innerHTML = "<h5>Position: " + positions[exam][name] + "/" + (Object.keys(positions[exam]).length); + "</h4>";
+                    document.getElementById("grade").innerHTML = "<h5>" + score + "</h4>\n";
+                    document.getElementById("grade").innerHTML += "<font color='green'>" + correct + "</font><br>\n";
+                    if (parseInt(wrong.split(":")[1]) !== 0) {
+                        document.getElementById("grade").innerHTML += "<font color='red'>" + wrong + "</font><br>\n";
+                        document.getElementById("grade").innerHTML += "<font color='red'>" + wrong_list_str + "</font><br>\n";
+                    }
+                    if (parseInt(unanswered.split(":")[1]) !== 0) {
+                        document.getElementById("grade").innerHTML += "<font color='blue'>" + unanswered + "</font><br>\n";
+                        document.getElementById("grade").innerHTML += "<font color='blue'>" + unanswered_list_str + "</font><br>\n";
+                    }
+                    if (parseInt(auto.split(":")[1]) !== 0) {
+                        document.getElementById("grade").innerHTML += "<font color='green'>" + auto + "</font><br>\n";
+                        document.getElementById("grade").innerHTML += "<font color='green'>" + auto_list_str + "</font><br><br>\n";
+                    }
+                    document.getElementById("omr").innerHTML = "<a href='" + exam + "_" + name + ".jpg' download class='btn btn-primary'>Download OMR Sheet</a><br><br>\n<img src='" + exam + "_" + name + ".jpg'/>"
+                } catch (e) {
+                    document.getElementById("error").innerHTML = "<font color='red'>ফাঁকিবাজটা পরীক্ষা দেয় নাই!!</font>";
+                    document.getElementById("examName").innerHTML = "";
+                    document.getElementById("participant").innerHTML = "";
+                    document.getElementById("position").innerHTML = "";
+                    document.getElementById("grade").innerHTML = "";
+                    document.getElementById("omr").innerHTML = "";
+                }
+
+                document.getElementById("standings_header").innerHTML = "<h3 class='text-center'>Standings</h3>"
+                document.getElementById("standingsList").innerHTML = "";
+                Object.entries(positions[exam]).forEach(([key, value]) => {
+                    document.getElementById("standingsList").innerHTML += `<li class='list-group-item'><center>${key} : ${value} / ${(Object.keys(positions[exam]).length)}</center></li>`;
+                });
+            }
+        }
+
+        document.getElementById("exam").addEventListener("change", function (event) {
+            stuff();
+        });
+
+        document.getElementById("sillyForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            stuff();
+        });
+
+    </script>
+
+</body>
+
+</html>
+
